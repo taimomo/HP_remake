@@ -1,0 +1,51 @@
+/* 基本のリセットCSS */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html, bodyの設定（全体のサイズを100%にするなど） */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* ベースとなるタイポグラフィ */
+body {
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+/* 画像やメディア要素の設定（はみ出し防止など） */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* フォーム要素のフォント継承 */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* リストのスタイルリセット */
+ul,
+ol {
+    list-style: none;
+}
+
+/* テーブルの設定 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
