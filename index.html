@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>持続可能な未来へ | CEM</title>
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- ヘッダー -->
+        <header class="header">
+            <h1>CEM</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#company">会社情報</a></li>
+                    <li><a href="#business">事業内容</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ヒーローセクション -->
+        <section id="hero">
+            <h2>持続可能な未来へ</h2>
+            <h3>
+                水と太陽のエネルギーソリューションで<br />
+                環境経営を積極支援！
+            </h3>
+        </section>
+
+        <!-- News セクション -->
+        <section class="news">
+            <h2>News</h2>
+            <ul>
+                <li>2024.7.10 - ホームページをリニューアルしました。</li>
+                <li>2024.7.12 - マイクロ水力発電のページを更新しました。</li>
+                <li>
+                    2024.7.15 - 「太陽光発電・蓄電」のページを更新しました。
+                </li>
+                <li>
+                    2024.7.18 - 「下水道展2024」に出展いたします。<br />詳細は以下のURLをご参照ください。<br />https://www.gesuidouten.jp/
+                </li>
+            </ul>
+        </section>
+
+        <!-- 会社情報 -->
+        <section id="company" class="company">
+            <h2>会社情報</h2>
+            <img src="/img/about_top.png" alt="会社案内" />
+            <p>
+                シーイーエムについて<br />
+                会社所在地や連絡先はこちら
+            </p>
+            <button>もっと見る</button>
+        </section>
+
+        <!-- 事業内容 -->
+        <section id="business" class="business">
+            <div class="card">
+                <img src="img/micro_exp.jpeg" alt="マイクロ水力発電" />
+                <h3>マイクロ水力発電</h3>
+                <p>屋外用・屋内用のマイクロ水力発電機を提供しています。</p>
+                <p>
+                    農業用水・施設循環水・下水道等の小さな水源を有効活用できます。
+                </p>
+                <button>もっと見る</button>
+            </div>
+            <div class="card">
+                <img src="img/solar_exp.png" alt="太陽光発電・蓄電システム" />
+                <h3>太陽光発電・蓄電システム</h3>
+                <p>建物屋根を利用した太陽光発電システムを提供しています。</p>
+                <p>
+                    既存スペースの有効活用によりエネルギーコストの削減や環境経営に貢献できます。
+                </p>
+                <button>もっと見る</button>
+            </div>
+        </section>
+
+        <!-- お問い合わせフォーム -->
+        <section id="contact" class="contact">
+            <h2>お問い合わせ</h2>
+            <form>
+                <input type="text" name="name" placeholder="お名前" required />
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="メールアドレス"
+                    required
+                />
+                <input
+                    type="text"
+                    name="company"
+                    placeholder="会社名"
+                    required
+                />
+                <input type="tel" name="tel" placeholder="電話番号" required />
+                <textarea
+                    name="message"
+                    placeholder="お問い合わせ内容"
+                    required
+                ></textarea>
+
+                <!-- プライバシーポリシー同意チェックボックス -->
+                <div class="privacy-policy">
+                    <a href="policy">プライバシーポリシーを確認する</a>
+                    <label>
+                        <input type="checkbox" required />
+                        <span>プライバシーポリシーに同意する</span>
+                    </label>
+                </div>
+            </form>
+        </section>
+
+        <!-- フッター -->
+        <footer class="footer">
+            <p>株式会社シーイーエム</p>
+            <p>〒250-0631 神奈川県足柄下郡箱根町仙石原885番地2</p>
+            <p>ミリオンロイヤル箱根仙石原105</p>
+            <p>TEL:0460-83-9535</p>
+
+            <ul class="footer-menu">
+                <li><a href="policy">プライバシーポリシー</a></li>
+            </ul>
+
+            <small>&copy; 2024 CEM.Co., Ltd All Rights Reserved.</small>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
