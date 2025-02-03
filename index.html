@@ -3,19 +3,43 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>持続可能な未来へ | CEM</title>
+        <title>CEM | 水と太陽のエネルギーソリューション</title>
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- ヘッダー -->
         <header class="header">
-            <h1>CEM</h1>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="#company">会社情報</a></li>
-                    <li><a href="#business">事業内容</a></li>
-                    <li><a href="#contact">お問い合わせ</a></li>
+            <input
+                id="nav-global"
+                type="checkbox"
+                class="nav-hidden"
+                aria-label="ナビゲーションの切替"
+            />
+            <label for="nav-global" id="nav-btn">
+                <span></span>
+            </label>
+            <div class="logo">
+                <a href="#"><img src="/img/CEM_logo_@2x.jpeg" alt="ロゴ" /></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-items">
+                    <li class="nav-list"><a href="#company">会社情報</a></li>
+                    <li class="nav-list">
+                        <a href="#micro">マイクロ水力発電</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#solar">太陽光発電・蓄電</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#contact">お問い合わせ</a>
+                    </li>
                 </ul>
             </nav>
         </header>
