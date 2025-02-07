@@ -21,44 +21,53 @@ header {
     text-align: center;
     position: fixed;
     width: 100%;
-}
 
-nav {
-    padding: 10px;
-    text-align: center;
-    a {
-        color: #1e1e1e;
-        margin: 0 10px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .nav,
-    .nav_items {
-        display: flex;
-        .nav_list {
-            padding-left: 1.5rem;
+    nav {
+        padding: 10px;
+        a {
+            color: #1e1e1e;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav_items {
+            display: flex;
+            align-items: center;
+            .nav_list {
+                padding-left: 1.5rem;
+            }
+            .contact_btn a {
+                display: inline-block;
+                background-color: #233270;
+                color: #fff;
+                padding: 0.5rem 1.2rem;
+                border-radius: 30px;
+                font-family: Arial, sans-serif;
+                font-size: 0.9rem;
+                font-weight: bold;
+                margin-right: 0.5rem;
+            }
         }
     }
-}
 
-#nav_btn,
-.nav_hidden {
-    display: none;
-}
+    #nav_btn,
+    .nav_hidden {
+        display: none;
+    }
 
-.logo {
-    width: 150px;
-    height: 70px;
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+    .logo {
+        width: 150px;
+        height: 70px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 }
 
 @media screen and (max-width: 768px) {
     header {
-        flex-direction: column;
         padding: 0.5rem 0;
 
         #nav_btn {
@@ -109,6 +118,7 @@ nav {
         .logo {
             width: 80px;
             height: 40px;
+            margin: 0 auto;
             img {
                 width: 100%;
                 height: 100%;
@@ -116,7 +126,7 @@ nav {
             }
         }
 
-        nav {
+        .nav {
             width: 300px;
             height: 100vh;
             position: fixed;
