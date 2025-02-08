@@ -34,18 +34,38 @@ header {
             display: flex;
             align-items: center;
             .nav_list {
+                display: flex;
+                align-items: center;
                 padding-left: 1.5rem;
+                margin-left: 1.5rem;
+                position: relative;
+                height: 40px;
+                ::before {
+                    display: inline-block;
+                    content: "";
+                    width: 1px;
+                    height: 100%;
+                    background: #000;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .nav_list:first-child::before {
+                    content: none;
+                }
             }
             .contact_btn a {
-                display: inline-block;
+                display: flex;
+                align-items: center;
                 background-color: #233270;
                 color: #fff;
-                padding: 0.5rem 1.2rem;
+                padding: 0 1rem;
                 border-radius: 30px;
                 font-family: Arial, sans-serif;
-                font-size: 0.9rem;
+                font-size: 0.8rem;
                 font-weight: bold;
                 margin-right: 0.5rem;
+                height: 40px;
             }
         }
     }
@@ -141,7 +161,34 @@ header {
                 padding: 4rem 2rem;
                 .nav_list {
                     padding-left: 0;
-                    padding-bottom: 1.5rem;
+                    margin-bottom: 1.5rem;
+                    ::before {
+                        content: none;
+                        /* モバイル時は通常の区切り線を無効化 */
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-grow: 1;
+                        width: auto;
+                        padding: 1rem 0;
+                    }
+                }
+                .nav_list:not(:last-child)::after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    background: #000;
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                }
+                .contact_btn a {
+                    padding: 1.5rem;
+                    flex-grow: 0;
+                    margin: auto;
                 }
             }
         }
