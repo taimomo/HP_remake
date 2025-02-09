@@ -37,24 +37,11 @@ header {
             .nav_list {
                 display: flex;
                 align-items: center;
-                padding-left: 1.5rem;
-                margin-left: 1.5rem;
                 position: relative;
                 height: 40px;
-                ::before {
-                    display: inline-block;
-                    content: "";
-                    width: 1px;
-                    height: 100%;
-                    background: #000;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                }
-                .nav_list:first-child::before {
-                    content: none;
-                }
+                padding: 0 0.5rem;
             }
+
             .contact_btn a {
                 display: flex;
                 align-items: center;
@@ -87,16 +74,31 @@ header {
     }
 }
 
+.nav_list::before {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav_list:first-child::before {
+    content: none;
+}
+
 @media screen and (max-width: 768px) {
     header {
-        padding: 0.5rem 0;
+        padding: 1.5rem 0 0.5rem;
 
         #nav_btn {
             display: block;
             width: 30px;
             height: 20px;
             position: fixed;
-            top: 1.5rem;
+            top: 2rem;
             right: 1rem;
             z-index: 3;
             cursor: pointer;
@@ -163,10 +165,6 @@ header {
                 .nav_list {
                     padding-left: 0;
                     margin-bottom: 1.5rem;
-                    ::before {
-                        content: none;
-                        /* モバイル時は通常の区切り線を無効化 */
-                    }
                     a {
                         display: flex;
                         align-items: center;
@@ -175,6 +173,10 @@ header {
                         width: auto;
                         padding: 1rem 0;
                     }
+                }
+                .nav_list::before {
+                    content: none;
+                    /* モバイル時は通常の区切り線を無効化 */
                 }
                 .nav_list:not(:last-child)::after {
                     content: "";
@@ -273,7 +275,7 @@ footer {
 
 /* Hero要素 */
 #hero {
-    background: url("/img/hero_img.png") center/cover no-repeat;
+    background: url("/img/hero_img.webp") center/cover no-repeat;
     width: 100%;
     height: 80vh;
     display: flex;
@@ -327,6 +329,91 @@ footer {
             font-size: smaller;
             bottom: -35%;
             padding: 1rem 0.5rem;
+        }
+    }
+}
+
+/* Newsセクション */
+#news {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+
+    .news_items {
+        list-style: none;
+        padding: 0 1rem;
+        margin: 0;
+        max-height: 300px; /* 最大高さを指定 */
+        overflow-y: auto; /* 縦スクロールを有効化 */
+        border-top: 1px solid #ddd; /* 上の線のみ適用 */
+        border-bottom: 1px solid #ddd; /* 下の線のみ適用 */
+    }
+
+    /* .news_items::-webkit-scrollbar {
+        width: 8px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .news_items:hover::-webkit-scrollbar {
+        opacity: 1;
+    }
+
+    .news_items::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 4px;
+    }
+
+    .news_items::-webkit-scrollbar-track {
+        background-color: #f5f5f5;
+    } */
+
+    .news_list {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    time {
+        flex: 0 0 120px;
+        font-weight: bold;
+    }
+
+    .news_title {
+        flex: 1;
+        margin-left: 1rem;
+        a {
+            color: #005eff;
+            text-decoration: underline;
+        }
+    }
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    #news {
+        .news_list {
+            flex-direction: column;
+            align-items: flex-start;
+
+            time,
+            .news_title {
+                width: 100%;
+                margin-bottom: 0.5rem;
+                margin-left: 0;
+            }
+            time {
+                flex: 0 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #news {
+        .news_title {
+            font-size: 0.9rem;
         }
     }
 }
