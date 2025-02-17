@@ -55,107 +55,137 @@
             </h3>
         </section>
 
-        <!-- News セクション -->
-        <section id="news">
-            <h2>News</h2>
-            <ul class="news_items">
-                <li class="news_list">
-                    <time datetime="2025-02-10">2025.02.10</time>
-                    <span class="news_title">
-                        ホームページをリニューアルしました。
-                    </span>
-                </li>
-                <li class="news_list">
-                    <time datetime="2025-02-10"> 2025.02.10</time>
-                    <span class="news_title">
-                        マイクロ水力発電のページを更新しました。
-                    </span>
-                </li>
-                <li class="news_list">
-                    <time datetime="2025-02-15">2025.02.15</time>
-                    <span class="news_title">
-                        「太陽光発電・蓄電」のページを更新しました。
-                    </span>
-                </li>
-                <li class="news_list">
-                    <time datetime="2025-02-18">2025.02.18</time>
-                    <span class="news_title">
-                        「下水道展2024」に出展いたします。詳細はURLをご参照ください。<br /><a
-                            href="https://www.gesuidouten.jp/"
-                            >https://www.gesuidouten.jp/</a
-                        >
-                    </span>
-                </li>
-            </ul>
-        </section>
+        <main>
+            <!-- News セクション -->
+            <section id="news">
+                <h2>News</h2>
+                <ul class="news_items">
+                    <li class="news_list">
+                        <time datetime="2025-02-10">2025.02.10</time>
+                        <span class="news_title">
+                            ホームページをリニューアルしました。
+                        </span>
+                    </li>
+                    <li class="news_list">
+                        <time datetime="2025-02-10"> 2025.02.10</time>
+                        <span class="news_title">
+                            マイクロ水力発電のページを更新しました。
+                        </span>
+                    </li>
+                    <li class="news_list">
+                        <time datetime="2025-02-15">2025.02.15</time>
+                        <span class="news_title">
+                            「太陽光発電・蓄電」のページを更新しました。
+                        </span>
+                    </li>
+                    <li class="news_list">
+                        <time datetime="2025-02-18">2025.02.18</time>
+                        <span class="news_title">
+                            「下水道展2024」に出展いたします。詳細はURLをご参照ください。<br /><a
+                                href="https://www.gesuidouten.jp/"
+                                >https://www.gesuidouten.jp/</a
+                            >
+                        </span>
+                    </li>
+                </ul>
+            </section>
 
-        <!-- 会社情報 -->
-        <section id="company" class="company">
-            <h2>会社情報</h2>
-            <img src="/img/about_top.webp" alt="会社案内" />
-            <p>
-                シーイーエムについて<br />
-                会社所在地や連絡先はこちら
-            </p>
-            <button>もっと見る</button>
-        </section>
-
-        <!-- 事業内容 -->
-        <section id="business" class="business">
-            <div class="card">
-                <img src="img/micro_exp.webp" alt="マイクロ水力発電" />
-                <h3>マイクロ水力発電</h3>
-                <p>屋外用・屋内用のマイクロ水力発電機を提供しています。</p>
-                <p>
-                    農業用水・施設循環水・下水道等の小さな水源を有効活用できます。
-                </p>
-                <button>もっと見る</button>
-            </div>
-            <div class="card">
-                <img src="img/solar_exp.webp" alt="太陽光発電・蓄電システム" />
-                <h3>太陽光発電・蓄電システム</h3>
-                <p>建物屋根を利用した太陽光発電システムを提供しています。</p>
-                <p>
-                    既存スペースの有効活用によりエネルギーコストの削減や環境経営に貢献できます。
-                </p>
-                <button>もっと見る</button>
-            </div>
-        </section>
-
-        <!-- お問い合わせフォーム -->
-        <section id="contact" class="contact">
-            <h2>お問い合わせ</h2>
-            <form>
-                <input type="text" name="name" placeholder="お名前" required />
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="メールアドレス"
-                    required
-                />
-                <input
-                    type="text"
-                    name="company"
-                    placeholder="会社名"
-                    required
-                />
-                <input type="tel" name="tel" placeholder="電話番号" required />
-                <textarea
-                    name="message"
-                    placeholder="お問い合わせ内容"
-                    required
-                ></textarea>
-
-                <!-- プライバシーポリシー同意チェックボックス -->
-                <div class="privacy_policy">
-                    <a href="policy">プライバシーポリシーを確認する</a>
-                    <label>
-                        <input type="checkbox" required />
-                        <span>プライバシーポリシーに同意する</span>
-                    </label>
+            <!-- 会社情報 -->
+            <section id="company">
+                <div class="company_container">
+                    <ul class="row_items">
+                        <li class="row_list">
+                            <div class="lg_img">
+                                <img
+                                    src="/img/company_front.webp"
+                                    alt="会社案内"
+                                />
+                            </div>
+                            <div class="lg_content">
+                                <h2>会社情報</h2>
+                                <p class="lg_text">
+                                    シーイーエムについて<br />
+                                    会社所在地等の基本情報を掲載しています。
+                                </p>
+                                <a href="#" class="more_btn">もっと見る</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </form>
-        </section>
+            </section>
+
+            <!-- 事業内容 -->
+            <section id="business" class="business">
+                <div class="card">
+                    <img src="img/micro_exp.webp" alt="マイクロ水力発電" />
+                    <h3>マイクロ水力発電</h3>
+                    <p>屋外用・屋内用のマイクロ水力発電機を提供しています。</p>
+                    <p>
+                        農業用水・施設循環水・下水道等の小さな水源を有効活用できます。
+                    </p>
+                    <button>もっと見る</button>
+                </div>
+                <div class="card">
+                    <img
+                        src="img/solar_exp.webp"
+                        alt="太陽光発電・蓄電システム"
+                    />
+                    <h3>太陽光発電・蓄電システム</h3>
+                    <p>
+                        建物屋根を利用した太陽光発電システムを提供しています。
+                    </p>
+                    <p>
+                        既存スペースの有効活用によりエネルギーコストの削減や環境経営に貢献できます。
+                    </p>
+                    <button>もっと見る</button>
+                </div>
+            </section>
+
+            <!-- お問い合わせフォーム -->
+            <section id="contact" class="contact">
+                <h2>お問い合わせ</h2>
+                <form>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="お名前"
+                        required
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="メールアドレス"
+                        required
+                    />
+                    <input
+                        type="text"
+                        name="company"
+                        placeholder="会社名"
+                        required
+                    />
+                    <input
+                        type="tel"
+                        name="tel"
+                        placeholder="電話番号"
+                        required
+                    />
+                    <textarea
+                        name="message"
+                        placeholder="お問い合わせ内容"
+                        required
+                    ></textarea>
+
+                    <!-- プライバシーポリシー同意チェックボックス -->
+                    <div class="privacy_policy">
+                        <a href="policy">プライバシーポリシーを確認する</a>
+                        <label>
+                            <input type="checkbox" required />
+                            <span>プライバシーポリシーに同意する</span>
+                        </label>
+                    </div>
+                </form>
+            </section>
+        </main>
 
         <!-- フッター -->
         <footer class="footer">
