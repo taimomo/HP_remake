@@ -58,41 +58,43 @@
         <main>
             <!-- News セクション -->
             <section id="news">
-                <h2>News</h2>
-                <ul class="news_items">
-                    <li class="news_list">
-                        <time datetime="2025-02-10">2025.02.10</time>
-                        <span class="news_title">
-                            ホームページをリニューアルしました。
-                        </span>
-                    </li>
-                    <li class="news_list">
-                        <time datetime="2025-02-10"> 2025.02.10</time>
-                        <span class="news_title">
-                            マイクロ水力発電のページを更新しました。
-                        </span>
-                    </li>
-                    <li class="news_list">
-                        <time datetime="2025-02-15">2025.02.15</time>
-                        <span class="news_title">
-                            「太陽光発電・蓄電」のページを更新しました。
-                        </span>
-                    </li>
-                    <li class="news_list">
-                        <time datetime="2025-02-18">2025.02.18</time>
-                        <span class="news_title">
-                            「下水道展2024」に出展いたします。詳細はURLをご参照ください。<br /><a
-                                href="https://www.gesuidouten.jp/"
-                                >https://www.gesuidouten.jp/</a
-                            >
-                        </span>
-                    </li>
-                </ul>
+                <div class="container">
+                    <h2>News</h2>
+                    <ul class="time_items">
+                        <li class="time_list">
+                            <time datetime="2025-02-10">2025.02.10</time>
+                            <span class="time_title">
+                                ホームページをリニューアルしました。
+                            </span>
+                        </li>
+                        <li class="time_list">
+                            <time datetime="2025-02-10"> 2025.02.10</time>
+                            <span class="time_title">
+                                マイクロ水力発電のページを更新しました。
+                            </span>
+                        </li>
+                        <li class="time_list">
+                            <time datetime="2025-02-15">2025.02.15</time>
+                            <span class="time_title">
+                                「太陽光発電・蓄電」のページを更新しました。
+                            </span>
+                        </li>
+                        <li class="time_list">
+                            <time datetime="2025-02-18">2025.02.18</time>
+                            <span class="time_title">
+                                「下水道展2024」に出展いたします。詳細はURLをご参照ください。<br /><a
+                                    href="https://www.gesuidouten.jp/"
+                                    >https://www.gesuidouten.jp/</a
+                                >
+                            </span>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <!-- 会社情報 -->
             <section id="company">
-                <div class="company_container">
+                <div class="container">
                     <ul class="row_items">
                         <li class="row_list">
                             <div class="lg_img">
@@ -107,7 +109,14 @@
                                     シーイーエムについて<br />
                                     会社所在地等の基本情報を掲載しています。
                                 </p>
-                                <a href="#" class="more_btn">もっと見る</a>
+
+                                <a
+                                    href="#"
+                                    class="more_btn"
+                                    role="button"
+                                    tabindex="0"
+                                    >もっと見る</a
+                                >
                             </div>
                         </li>
                     </ul>
@@ -115,29 +124,55 @@
             </section>
 
             <!-- 事業内容 -->
-            <section id="business" class="business">
-                <div class="card">
-                    <img src="img/micro_exp.webp" alt="マイクロ水力発電" />
-                    <h3>マイクロ水力発電</h3>
-                    <p>屋外用・屋内用のマイクロ水力発電機を提供しています。</p>
-                    <p>
-                        農業用水・施設循環水・下水道等の小さな水源を有効活用できます。
-                    </p>
-                    <button>もっと見る</button>
-                </div>
-                <div class="card">
-                    <img
-                        src="img/solar_exp.webp"
-                        alt="太陽光発電・蓄電システム"
-                    />
-                    <h3>太陽光発電・蓄電システム</h3>
-                    <p>
-                        建物屋根を利用した太陽光発電システムを提供しています。
-                    </p>
-                    <p>
-                        既存スペースの有効活用によりエネルギーコストの削減や環境経営に貢献できます。
-                    </p>
-                    <button>もっと見る</button>
+            <section id="business">
+                <div class="container">
+                    <h2>事業内容</h2>
+                    <ul class="card_items">
+                        <li class="card_list">
+                            <img
+                                src="img/micro_exp.webp"
+                                alt="マイクロ水力発電"
+                            />
+                            <div class="card_content">
+                                <h3>マイクロ水力発電</h3>
+                                <p>
+                                    屋外用・屋内用のマイクロ水力発電機を提供しています。
+                                </p>
+                                <p>
+                                    農業用水・施設循環水・下水道等の小さな水源を有効活用できます。
+                                </p>
+                                <a
+                                    href="#"
+                                    class="more_btn"
+                                    role="button"
+                                    tabindex="0"
+                                    >もっと見る</a
+                                >
+                            </div>
+                        </li>
+                        <li class="card_list">
+                            <img
+                                src="img/solar_exp.webp"
+                                alt="太陽光発電・蓄電システム"
+                            />
+                            <div class="card_content">
+                                <h3>太陽光発電・蓄電システム</h3>
+                                <p>
+                                    建物屋根を利用した太陽光発電システムを提供しています。
+                                </p>
+                                <p>
+                                    既存スペースの有効活用によりエネルギーコストの削減や環境経営に貢献できます。
+                                </p>
+                                <a
+                                    href="#"
+                                    class="more_btn"
+                                    role="button"
+                                    tabindex="0"
+                                    >もっと見る</a
+                                >
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
@@ -217,6 +252,6 @@
             </ul>
         </footer>
 
-        <script src="script.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>
