@@ -14,3 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.querySelectorAll(".more_btn").forEach((button) => {
+    button.addEventListener("keypress", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+            this.click(); // Enter / Space でクリック動作
+        }
+    });
+});
