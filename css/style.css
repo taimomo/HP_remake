@@ -69,13 +69,12 @@ main {
             flex: 1;
             min-width: 250px;
             max-width: 550px;
-            min-height: 600px;
+            min-height: 550px;
             margin: 1rem;
             padding: 1.5rem;
             background-color: white;
             box-shadow: 3px 3px 8px rgba(100, 100, 100, 0.3);
             border-radius: 12px;
-            text-align: center;
             transition: all 0.3s;
 
             img {
@@ -90,8 +89,11 @@ main {
                 flex-direction: column;
                 flex-grow: 1;
                 padding: 1rem;
+                h3 {
+                    text-align: center;
+                }
                 p {
-                    flex-grow: 1;
+                    font-size: 0.9rem;
                 }
                 .more_btn {
                     margin-top: auto; /* 一番下に配置 */
@@ -729,3 +731,89 @@ footer {
 
 /* #business {
 } */
+
+/* contact要素 */
+#contact {
+    .container {
+        padding: 2rem;
+        margin: 0 auto;
+        max-width: 800px;
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            width: 80%;
+            max-width: 500px;
+        }
+        .form_body {
+            margin-bottom: 2rem;
+            .form_label {
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+                label {
+                    vertical-align: middle;
+                }
+                .required {
+                    display: inline-block;
+                    color: red;
+                    font-size: 0.8rem;
+                    margin-left: 0.5rem;
+                    vertical-align: middle;
+                }
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"] {
+                width: 100%;
+                padding: 0.5rem;
+                margin-bottom: 1rem;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            textarea {
+                width: 100%;
+                padding: 0.5rem;
+                margin-bottom: 1rem;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                min-height: 300px;
+            }
+        }
+
+        .privacy_policy {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            a {
+                color: #005eff;
+                text-decoration: underline;
+                margin-bottom: 0.5rem;
+            }
+            label .required {
+                display: inline-block;
+                color: red;
+                font-size: 0.8rem;
+                margin-left: 0.5rem;
+                vertical-align: middle;
+            }
+        }
+        .mdl_btn {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .container {
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
