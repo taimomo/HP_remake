@@ -177,48 +177,138 @@
             </section>
 
             <!-- お問い合わせフォーム -->
-            <section id="contact" class="contact">
-                <h2>お問い合わせ</h2>
-                <form>
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="お名前"
-                        required
-                    />
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="メールアドレス"
-                        required
-                    />
-                    <input
-                        type="text"
-                        name="company"
-                        placeholder="会社名"
-                        required
-                    />
-                    <input
-                        type="tel"
-                        name="tel"
-                        placeholder="電話番号"
-                        required
-                    />
-                    <textarea
-                        name="message"
-                        placeholder="お問い合わせ内容"
-                        required
-                    ></textarea>
+            <section id="contact">
+                <div class="container">
+                    <h2>お問い合わせ</h2>
+                    <p>
+                        お問い合わせ内容をご入力の上、「入力内容を確認」ボタンを押してください。
+                    </p>
+                    <form id="form">
+                        <div class="form_body">
+                            <div class="form_label">
+                                <label for="name">お名前</label
+                                ><span class="required">※必須</span>
+                            </div>
+                            <div class="form_input">
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    autocomplete="name"
+                                    required
+                                />
+                            </div>
+                        </div>
 
-                    <!-- プライバシーポリシー同意チェックボックス -->
-                    <div class="privacy_policy">
-                        <a href="policy">プライバシーポリシーを確認する</a>
-                        <label>
-                            <input type="checkbox" required />
-                            <span>プライバシーポリシーに同意する</span>
-                        </label>
-                    </div>
-                </form>
+                        <div class="form_body">
+                            <div class="form_label">
+                                <label for="email">メールアドレス</label
+                                ><span class="required">※必須</span>
+                            </div>
+                            <div class="form_input">
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    autocomplete="email"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="form_body">
+                            <div class="form_label">
+                                <label for="organization">会社名</label>
+                            </div>
+                            <div class="form_input">
+                                <input
+                                    type="text"
+                                    id="organization"
+                                    name="organization"
+                                    autocomplete="organization"
+                                />
+                            </div>
+                        </div>
+                        <div class="form_body">
+                            <div class="form_label">
+                                <label for="tel">電話番号</label>
+                            </div>
+                            <div class="form_input">
+                                <input
+                                    type="tel"
+                                    id="tel"
+                                    name="tel"
+                                    autocomplete="tel"
+                                />
+                            </div>
+                        </div>
+                        <div class="form_body">
+                            <div class="form_label">
+                                <label for="detail">お問い合わせ内容</label>
+                                <span class="required">※必須</span>
+                            </div>
+                            <div class="form_input">
+                                <textarea
+                                    id="detail"
+                                    name="detail"
+                                    required
+                                ></textarea>
+                            </div>
+                        </div>
+
+                        <!-- プライバシーポリシー同意チェックボックス -->
+                        <div class="privacy_policy">
+                            <a href="#">プライバシーポリシーを確認する</a>
+                            <label>
+                                <input type="checkbox" required />
+                                <span>プライバシーポリシーに同意する</span>
+                                <span class="required">※必須</span>
+                            </label>
+                        </div>
+
+                        <button
+                            class="more_btn mdl_btn"
+                            type="button"
+                            onclick="openConfirmDialog()"
+                        >
+                            入力内容を確認
+                        </button>
+                    </form>
+                </div>
+
+                <dialog id="confirmDialog">
+                    <h2>入力内容の確認</h2>
+                    <p>
+                        <strong>お名前:</strong> <span id="confirm_name"></span>
+                    </p>
+                    <p>
+                        <strong>メールアドレス:</strong>
+                        <span id="confirm_email"></span>
+                    </p>
+                    <p>
+                        <strong>会社名:</strong>
+                        <span id="confirm_organization"></span>
+                    </p>
+                    <p>
+                        <strong>電話番号:</strong>
+                        <span id="confirm_tel"></span>
+                    </p>
+                    <p>
+                        <strong>お問い合わせ内容:</strong>
+                        <span id="confirm_detail"></span>
+                    </p>
+
+                    <button onclick="submitForm()">送信する</button>
+                    <button onclick="closeConfirmDialog()">修正する</button>
+                </dialog>
+
+                <dialog id="successDialog">
+                    <h2>ありがとうございます。送信が完了しました。</h2>
+                    <p>
+                        追って担当者よりご連絡差し上げます。<br />
+                        しばらく経っても返信ない場合は、お手数ですがフォームより再度お問い合わせいただきますようお願いいたします。
+                    </p>
+                    <button onclick="closeSuccessDialog()">OK</button>
+                </dialog>
             </section>
         </main>
 
