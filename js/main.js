@@ -1,3 +1,5 @@
+document.cookie = "session_id=abc123; SameSite=None; Secure";
+
 document.addEventListener("DOMContentLoaded", function () {
     const accordionItems = document.querySelectorAll(".accordion-item");
 
