@@ -31,15 +31,6 @@ function initMap() {
     });
 }
 
-// Google Maps API をロードしてから `initMap()` を実行
-// loadGoogleMaps()
-//     .then(() => {
-//         console.log("Google Maps API loaded");
-//     })
-//     .catch(() => {
-//         console.error("Google Maps API のロードに失敗しました");
-//     });
-
 document.addEventListener("DOMContentLoaded", function () {
     const accordionItems = document.querySelectorAll(".accordion-item");
 
