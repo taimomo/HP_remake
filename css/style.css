@@ -887,6 +887,7 @@ footer {
                     margin: 0.5rem 0 1.5rem 0;
                 }
             }
+
             .map_container {
                 display: flex;
                 flex-direction: column;
