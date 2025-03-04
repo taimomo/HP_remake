@@ -106,14 +106,9 @@
                                 FAX : 0460-83-9537
                             </p>
                         </div>
-                        <div class="map">
+                        <div class="map_container">
                             <h3>【アクセス】</h3>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1628.7363696328644!2d139.01117822162587!3d35.269370909282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60199f08117a9205%3A0x8e2718693f34c1cd!2z44CSMjUwLTA2MzEg56We5aWI5bed55yM6Laz5p-E5LiL6YOh566x5qC555S65LuZ55-z5Y6f77yY77yY77yV4oiS77ySIOODn-ODquOCquODs-ODreOCpOODpOODq-euseagueS7meefs-WOnw!5e0!3m2!1sja!2sjp!4v1740891039756!5m2!1sja!2sjp"
-                                allowfullscreen="true"
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"
-                            ></iframe>
+                            <div id="map"></div>
                             <p>
                                 箱根登山バス・小田急箱根高速バス「仙石原文化センター前」　徒歩1分<br /><br />
                                 <span>※ お車でお越しの場合</span><br />
@@ -157,5 +152,10 @@
         </footer>
 
         <script src="/js/main.js"></script>
+        <!-- <script src="config.js"></script>
+        <script>
+            console.log("Google Maps API Key:", CONFIG.GOOGLE_MAPS_API_KEY);
+            console.log("Google Maps Map ID:", CONFIG.MAP_ID);
+        </script> -->
     </body>
 </html>
