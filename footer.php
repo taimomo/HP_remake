@@ -1,3 +1,4 @@
+<!-- footer -->
 <footer class="footer">
     <div class="footer_container">
         <div class="footer_company_name">
@@ -24,3 +25,6 @@
         </li>
     </ul>
 </footer>
+</body>
+
+</html>
