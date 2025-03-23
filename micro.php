@@ -172,6 +172,7 @@ include 'header.php';
                     </div>
                 </div>
             </div>
+            <div class="headline">計画・調達・導入まで一貫サポート！</div>
         </div>
     </section>
 </main>

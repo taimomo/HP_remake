@@ -5,29 +5,33 @@ import { getGoogleMapsConfig } from "./config.js";
 async function loadGoogleMaps() {
     const { apiKey, mapId } = await getGoogleMapsConfig();
 
-    const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`;
-    script.async = true;
-    script.defer = true;
-    document.head.appendChild(script);
+    await new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&v=weekly`;
+        script.async = true;
+        script.defer = true;
+        script.onload = resolve;
+        script.onerror = reject;
+        document.head.appendChild(script);
+    });
 
-    window.initMap = function () {
-        const location = { lat: 35.26939098716046, lng: 139.01192194044734 };
+    const { Map } = await google.maps.importLibrary("maps");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 15,
-            center: location,
-            mapId: mapId,
-        });
+    const location = { lat: 35.26939098716046, lng: 139.01192194044734 };
 
-        new google.maps.Marker({
-            position: location,
-            map: map,
-            title: "ここに会社があります！",
-        });
-    };
+    const map = new Map(document.getElementById("map"), {
+        zoom: 15,
+        center: location,
+        mapId: mapId,
+    });
+
+    new AdvancedMarkerElement({
+        position: location,
+        map,
+        title: "ここに会社があります！",
+    });
 }
-
 window.onload = loadGoogleMaps;
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -38,51 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
-
-// fetch("http://localhost:3000/api/key")
-//     .then((response) => response.json())
-//     .then((data) => {
-//         const script = document.createElement("script");
-//         script.src = `https://maps.googleapis.com/maps/api/js?key=${data.apiKey}&callback=initMap&libraries=marker`;
-//         script.async = true;
-//         script.defer = true;
-//         document.head.appendChild(script);
-
-//         window.GOOGLE_MAPS_MAP_ID = data.mapId;
-//     })
-//     .catch((error) => console.error("APIキーの取得に失敗しました", error));
-
-// function initMap() {
-//     const location = { lat: 35.26939098716046, lng: 139.01192194044734 };
-
-//     const map = new google.maps.Map(document.getElementById("map"), {
-//         zoom: 15,
-//         center: location,
-//         mapId: window.GOOGLE_MAPS_MAP_ID, // 取得した mapId を使用
-//     });
-
-//     new google.maps.marker.AdvancedMarkerElement({
-//         position: location,
-//         map: map,
-//         title: "ここに会社があります！",
-//     });
-// }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     // ヘッダーを読み込む
-//     fetch("header.html")
-//         .then((response) => response.text())
-//         .then((data) => {
-//             document.getElementById("header").innerHTML = data;
-//         });
-
-//     // フッターを読み込む
-//     fetch("footer.html")
-//         .then((response) => response.text())
-//         .then((data) => {
-//             document.getElementById("footer").innerHTML = data;
-//         });
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
     const accordionItems = document.querySelectorAll(".accordion-item");

@@ -2,7 +2,7 @@
 $page_title = "CEM | 会社情報";
 include 'header.php';
 ?>
-<?php include 'config.php'; ?>
+<?php include './config.php'; ?>
 
 <!-- ヒーローセクション -->
 <section id="about" class="hero about_hero">

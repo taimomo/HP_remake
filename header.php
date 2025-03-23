@@ -30,7 +30,7 @@
             <span></span>
         </label>
         <div class="logo">
-            <a href="index.php"><img src="/img/CEM_logo_@2x.jpeg" alt="ロゴ" /></a>
+            <a href="index.php"><img src="../img/CEM_logo_@2x.jpeg" alt="ロゴ" /></a>
         </div>
         <nav class="nav">
             <ul class="nav_items">
