@@ -76,4 +76,6 @@ include 'header.php';
     </section>
 </main>
 
+<!-- <script type="module" src="js/map.js"></script> -->
+
 <?php include 'footer.php'; ?>
