@@ -28,4 +28,11 @@
 </body>
 <script type="module" src="js/main.js"></script>
 
+<?php
+// マップが必要なページだけ map.js を読み込む
+$page = basename($_SERVER['PHP_SELF']);
+if ($page === 'about.php') : ?>
+    <script type="module" src="js/map.js"></script>
+<?php endif; ?>
+
 </html>
