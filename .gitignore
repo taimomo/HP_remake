@@ -2,6 +2,8 @@
 config.js
 node_modules/
 config.php
+map.js
+api.php
 server.js
 
 *.log
