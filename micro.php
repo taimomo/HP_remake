@@ -2,7 +2,6 @@
 $page_title = "CEM | マイクロ水力発電";
 include 'header.php';
 ?>
-<?php include 'config.php'; ?>
 
 <!-- ヒーローセクション -->
 <section id="micro" class="hero micro_hero">
@@ -35,7 +34,7 @@ include 'header.php';
                     <p>
                         発電設備の規模とkW単価は反比例の傾向があるため、数100・数1000kW規模の発電所に比べて建設単価が割高になりがちですが、未利用水を有効活用でき脱炭素にも貢献できるため普及が期待されています。
                     </p>
-                    <table class="advantage-table">
+                    <table class="advantage_table">
                         <thead>
                             <tr>
                                 <th>【マイクロ水力の利点】</th>
@@ -73,19 +72,21 @@ include 'header.php';
             <ul class="card_items">
                 <li class="card_list">
                     <h3>縦置き型マイクロ水力発電機<br>『パワーアルキメデス』</h3>
-                    <img
-                        src="img/hanami_pic.webp"
-                        alt="パワーアルキメデス" />
+                    <div class="card_img">
+                        <img
+                            src="img/hanami_pic.webp"
+                            alt="パワーアルキメデス" />
+                    </div>
                     <div class="card_content">
                         <p class="other_title"><span>【農業用水・排水用 屋外向け】</span></p>
                         <p>
                             開放型・配管型兼用の水車発電機です。主に発電所建設による発電事業を対象とした製品です。
                         </p>
-                        <p class="cent">
+                        <p class="cent tx_ul">
                             適用発電出力：1~50kW
                         </p>
                         <a
-                            href="#"
+                            href="arc.php"
                             class="more_btn"
                             role="button"
                             tabindex="0">もっと見る</a>
@@ -93,19 +94,21 @@ include 'header.php';
                 </li>
                 <li class="card_list">
                     <h3>超小型マイクロ水力発電機 <br>『Crutto』</h3>
-                    <img
-                        src="img/crutto.webp"
-                        alt="Crutto" />
+                    <div class="card_img">
+                        <img
+                            src="img/crutto.webp"
+                            alt="Crutto" />
+                    </div>
                     <div class="card_content">
                         <p class="other_title"><span>【施設循環水・冷却水用 屋内向け】</span></p>
                         <p>
                             配管専用の水車発電機です。主に施設内での自家消費を対象とした製品です。
                         </p>
-                        <p class="cent">
+                        <p class="cent tx_ul">
                             適用発電出力：0.2~5kW
                         </p>
                         <a
-                            href="#"
+                            href="crutto.php"
                             class="more_btn"
                             role="button"
                             tabindex="0">もっと見る</a>
@@ -115,7 +118,7 @@ include 'header.php';
         </div>
     </section>
 
-    <section class="water_flow">
+    <section id="water_flow">
         <div class="container">
             <h2>導入フロー</h2>
             <div class="flow_contents">
