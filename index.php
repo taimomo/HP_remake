@@ -27,7 +27,7 @@ include 'header.php';
                 <li class="time_list">
                     <time datetime="2025-02-10"> 2025.02.10</time>
                     <span class="time_title">
-                        マイクロ水力発電のページを更新しました。
+                        「マイクロ水力発電」のページを更新しました。
                     </span>
                 </li>
                 <li class="time_list">
@@ -81,9 +81,11 @@ include 'header.php';
             <h2>事業内容</h2>
             <ul class="card_items">
                 <li class="card_list">
-                    <img
-                        src="img/micro_exp.webp"
-                        alt="マイクロ水力発電" />
+                    <div class="card_img">
+                        <img
+                            src="img/micro_exp.webp"
+                            alt="マイクロ水力発電" />
+                    </div>
                     <div class="card_content">
                         <h3>マイクロ水力発電</h3>
                         <p>
@@ -93,16 +95,18 @@ include 'header.php';
                             農業用水・施設循環水・下水道等の小さな水源を有効活用できます。
                         </p>
                         <a
-                            href="#"
+                            href="micro.php"
                             class="more_btn"
                             role="button"
                             tabindex="0">もっと見る</a>
                     </div>
                 </li>
                 <li class="card_list">
-                    <img
-                        src="img/solar_exp.webp"
-                        alt="太陽光発電・蓄電システム" />
+                    <div class="card_img">
+                        <img
+                            src="img/solar_exp.webp"
+                            alt="太陽光発電・蓄電システム" />
+                    </div>
                     <div class="card_content">
                         <h3>太陽光発電・蓄電システム</h3>
                         <p>
@@ -112,7 +116,7 @@ include 'header.php';
                             既存スペースの有効活用によりエネルギーコストの削減や環境経営に貢献できます。
                         </p>
                         <a
-                            href="#"
+                            href="solar.php"
                             class="more_btn"
                             role="button"
                             tabindex="0">もっと見る</a>

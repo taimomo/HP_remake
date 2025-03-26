@@ -41,8 +41,33 @@ main {
             text-align: center;
             font-size: 1.1rem;
             font-weight: bold;
-            margin: 1rem 0;
+            margin: 1rem 0.5rem;
+        }
+
+        .tx_ul {
             text-decoration: underline;
+        }
+
+        .sc_sp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            width: 100%;
+        }
+
+        .sc_sp::before,
+        .sc_sp::after {
+            content: "";
+            flex-grow: 1;
+            border-top: 1px dashed black;
+        }
+
+        .sc_sp::before {
+            margin-right: 0.8rem;
+        }
+        .sc_sp::after {
+            margin-left: 0.8rem;
         }
 
         .headline {
@@ -77,9 +102,68 @@ main {
                 }
             }
 
+            .space_del {
+                width: 45vw;
+                aspect-ratio: 3 / 4;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; /* 余白を切り取って画像をフィット */
+                    object-position: center; /* 中央から表示（上下の余白が均等に除去される）*/
+                }
+            }
+
             .img_list {
                 width: 50vw;
                 margin: 1rem;
+                h3 {
+                    text-align: center;
+                    margin: 0.5rem;
+                }
+            }
+        }
+
+        .spec_table {
+            width: 40vw;
+            max-width: 800px;
+            margin: 1rem;
+            h3 {
+                padding: 0.8rem !important;
+                font-size: 1.2rem;
+                font-weight: bold;
+                text-align: center;
+                text-decoration: underline;
+            }
+            p {
+                margin-top: 0.8rem;
+                text-align: center;
+                text-decoration: underline;
+                line-height: 1.8rem;
+            }
+
+            table {
+                width: 100%;
+                border-top: 1px solid #ccc;
+
+                tbody {
+                    tr {
+                        th,
+                        td {
+                            padding: 0.6rem;
+                            text-align: right;
+                            font-size: 1rem;
+                            border-bottom: 1px solid #999;
+                        }
+                        th {
+                            width: 30%;
+                            text-align: left;
+                        }
+                        td {
+                            width: 70%;
+                        }
+                    }
+                }
             }
         }
 
@@ -121,12 +205,15 @@ main {
                 box-shadow: 3px 3px 8px rgba(100, 100, 100, 0.3);
                 border-radius: 12px;
                 transition: all 0.3s;
-
-                img {
-                    width: 80%;
-                    min-height: 250px;
-                    max-height: 250px;
-                    object-fit: cover;
+                .card_img {
+                    aspect-ratio: 16 / 9;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover; /* 余白を切り取って画像をフィット */
+                        object-position: center; /* 中央から表示（上下の余白が均等に除去される）*/
+                    }
                 }
                 h3 {
                     text-align: center;
@@ -145,7 +232,10 @@ main {
                         font-size: 1.2rem;
                         font-weight: bold;
                         text-align: center;
-                        margin: 1rem 0;
+                        margin: 0.5rem 0;
+                    }
+                    .title_left {
+                        text-align: left;
                     }
                     .more_btn {
                         margin-top: auto; /* 一番下に配置 */
@@ -163,6 +253,63 @@ main {
                 p {
                     font-size: 1rem;
                     line-height: 1.8;
+                }
+            }
+            .nf {
+                box-shadow: none;
+                background-color: initial;
+                min-height: 0;
+                justify-content: center;
+                transition: none;
+                padding: 0.5rem;
+                img {
+                    border: 1px solid #333;
+                    border-radius: 10px;
+                }
+                &:hover {
+                    box-shadow: none;
+                }
+            }
+
+            .accordion_header {
+                width: 100%;
+                background-color: #f5f5f5;
+                border: none;
+                text-align: left;
+                padding: 0.5rem;
+                font-weight: bold;
+                font-size: 1rem;
+                cursor: pointer;
+                border-bottom: 2px solid #ccc;
+            }
+
+            .accordion_content {
+                overflow: hidden;
+                max-height: 0;
+                transition: max-height 0.4s ease, padding 0.4s ease;
+                padding: 0 0.5rem;
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 1rem 0;
+
+                    tr {
+                        th,
+                        td {
+                            padding: 0.6rem;
+                            text-align: right;
+                            font-size: 1rem;
+                            border-bottom: 1px solid #999;
+                        }
+                        th {
+                            width: 40%;
+                            text-align: left;
+                        }
+                        td {
+                            width: 60%;
+                        }
+                    }
                 }
             }
         }
@@ -294,6 +441,13 @@ main {
                     width: 90%;
                     margin: 0 auto;
                 }
+                .space_del {
+                    width: 70vw;
+                }
+            }
+
+            .spec_table {
+                width: 70%;
             }
 
             .row_items {
@@ -394,16 +548,30 @@ main {
                 font-size: 0.8rem;
             }
 
-            .card_items .card_list {
-                img {
-                    min-height: 200px;
-                    width: 100%;
+            .card_items {
+                .card_list {
+                    .card_img {
+                        min-height: 200px;
+                        width: 100%;
+                        aspect-ratio: 18/16;
+                    }
                 }
 
                 p {
                     font-size: 0.9rem;
                 }
             }
+
+            .img_text_list {
+                .space_del {
+                    width: 80vw;
+                }
+
+                .spec_table {
+                    width: 90%;
+                }
+            }
+
             .row_items {
                 height: inherit;
                 .row_list {
@@ -727,7 +895,7 @@ footer {
 /* Hero要素 */
 .hero {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -750,7 +918,7 @@ footer {
 
     h3 {
         position: absolute;
-        bottom: 20%;
+        bottom: 30%;
         right: 0;
         background: #0044cc; /* 濃い青色 */
         color: white;
@@ -807,25 +975,6 @@ footer {
             border-top: 2px solid #aaaaaa; /* 上の線のみ適用 */
             border-bottom: 2px solid #aaaaaa; /* 下の線のみ適用 */
         }
-
-        /* .news_items::-webkit-scrollbar {
-            width: 8px;
-            opacity: 0;
-            transition: opacity 0.3s;
-            }
-            
-            .news_items:hover::-webkit-scrollbar {
-                opacity: 1;
-                }
-                
-                .news_items::-webkit-scrollbar-thumb {
-                    background-color: #ccc;
-                    border-radius: 4px;
-                    }
-                    
-                    .news_items::-webkit-scrollbar-track {
-                        background-color: #f5f5f5;
-                        } */
 
         .time_list {
             display: flex;
@@ -1081,33 +1230,53 @@ footer {
     background-color: white;
 }
 
-.water_flow {
+#water_flow {
     background-color: white;
 }
 
-.advantage-table {
+.advantage_table {
     width: 100%;
     max-width: 500px;
     margin: 1rem auto;
     border-collapse: collapse;
+    thead {
+        tr {
+            th {
+                padding: 0.6rem;
+                font-size: 1rem;
+                font-weight: bold;
+                border-bottom: 2px dashed #999;
+                text-align: center;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                padding: 0.5rem;
+                text-align: center;
+                font-size: 0.9rem;
+                border-bottom: 2px dashed #999;
+            }
+        }
+    }
+
+    tbody tr:last-child td {
+        border-bottom: none; /* 最後の要素は下線を削除 */
+    }
 }
 
-.advantage-table th {
-    padding: 0.6rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border-bottom: 2px dashed #999;
-    text-align: center;
+/* acrページ */
+
+.arc_hero {
+    background: url("/img/hanami_pic.webp") center/cover no-repeat;
 }
 
-.advantage-table td {
-    padding: 0.5rem;
-    text-align: center;
-    font-size: 0.9rem;
-    border-bottom: 2px dashed #999;
+#about_arc {
+    background-color: white;
 }
 
-.advantage-table tbody tr:last-child td {
-    border-bottom: none; /* 最後の要素は下線を削除 */
-    font-weight: bold; /* 強調したい場合 */
+#record {
+    background-color: white;
 }

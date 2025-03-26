@@ -9,20 +9,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const accordionItems = document.querySelectorAll(".accordion-item");
+document.querySelectorAll(".accordion_header").forEach((header) => {
+    header.addEventListener("click", function () {
+        const content = this.nextElementSibling;
 
-    accordionItems.forEach((item) => {
-        const header = item.querySelector(".accordion-header");
-        const content = item.querySelector(".accordion-content");
+        // 閉じているときだけ開く処理
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            content.style.paddingTop = "0";
+            content.style.paddingBottom = "0";
+        } else {
+            // まずすべて閉じる（複数開き防止）
+            document.querySelectorAll(".accordion_content").forEach((el) => {
+                el.style.maxHeight = null;
+                el.style.paddingTop = "0";
+                el.style.paddingBottom = "0";
+            });
 
-        header.addEventListener("mouseenter", () => {
-            content.style.display = "block";
-        });
-
-        header.addEventListener("mouseleave", () => {
-            content.style.display = "none";
-        });
+            // 対象だけ開く
+            content.style.maxHeight = content.scrollHeight + "px";
+            content.style.paddingTop = "1rem";
+            content.style.paddingBottom = "1rem";
+        }
     });
 });
 
