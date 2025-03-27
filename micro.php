@@ -82,7 +82,7 @@ include 'header.php';
                         <p>
                             開放型・配管型兼用の水車発電機です。主に発電所建設による発電事業を対象とした製品です。
                         </p>
-                        <p class="cent tx_ul">
+                        <p class="cent tx_ul tx_st">
                             適用発電出力：1~50kW
                         </p>
                         <a
@@ -104,7 +104,7 @@ include 'header.php';
                         <p>
                             配管専用の水車発電機です。主に施設内での自家消費を対象とした製品です。
                         </p>
-                        <p class="cent tx_ul">
+                        <p class="cent tx_ul tx_st">
                             適用発電出力：0.2~5kW
                         </p>
                         <a
