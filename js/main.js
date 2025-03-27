@@ -18,18 +18,13 @@ document.querySelectorAll(".accordion_header").forEach((header) => {
             content.style.maxHeight = null;
             content.style.paddingTop = "0";
             content.style.paddingBottom = "0";
+            this.classList.remove("active");
         } else {
-            // まずすべて閉じる（複数開き防止）
-            document.querySelectorAll(".accordion_content").forEach((el) => {
-                el.style.maxHeight = null;
-                el.style.paddingTop = "0";
-                el.style.paddingBottom = "0";
-            });
-
             // 対象だけ開く
             content.style.maxHeight = content.scrollHeight + "px";
             content.style.paddingTop = "1rem";
             content.style.paddingBottom = "1rem";
+            this.classList.add("active");
         }
     });
 });

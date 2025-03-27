@@ -246,7 +246,9 @@ include 'header.php';
                 <li class="card_list nf">
                     <button class="accordion_header">長野県安曇野市 宮城小水力発電所</button>
                     <div class="accordion_content">
-                        <img src="/img/azumino_pic.webp" alt="安曇野宮城小水力発電所" />
+                        <div class="card_img">
+                            <img src="/img/azumino_pic.webp" alt="安曇野宮城小水力発電所" />
+                        </div>
                         <table>
                             <tr>
                                 <th>使用流量</th>
@@ -278,7 +280,10 @@ include 'header.php';
                 <li class="card_list nf">
                     <button class="accordion_header">岩手県花巻市 松沢川小水力発電所</button>
                     <div class="accordion_content">
-                        <img src="/img/hanamaki.webp" alt="松沢川小水力発電所" />
+                        <div class="card_img">
+
+                            <img src="/img/hanamaki.webp" alt="松沢川小水力発電所" />
+                        </div>
                         <table>
                             <tr>
                                 <th>使用流量</th>
@@ -314,7 +319,10 @@ include 'header.php';
                 <li class="card_list nf">
                     <button class="accordion_header">宮崎県えびの市 田代陣の池ホタル谷発電所</button>
                     <div class="accordion_content">
-                        <img src="/img/Ebino.webp" alt="田代陣の池ホタル谷発電所" />
+                        <div class="card_img">
+
+                            <img src="/img/Ebino.webp" alt="田代陣の池ホタル谷発電所" />
+                        </div>
                         <table>
                             <tr>
                                 <th>使用流量</th>
