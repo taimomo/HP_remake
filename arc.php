@@ -161,7 +161,7 @@ include 'header.php';
     <section id="place">
         <div class="container">
             <h2>設置推奨場所</h2>
-            <p class="cent">どのような水車にも最適な環境での使用が推奨されています。<br>
+            <p class="cent tx_st">どのような水車にも最適な環境での使用が推奨されています。<br>
                 不適切な環境に設置すると性能低下・機器破損につながるため、最適な使用環境を相談した上で運用する事が推奨されます。</p><br>
 
             <h3 class="tx_ul"><i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i> 設置に適している場所 <i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i></h3>
@@ -210,7 +210,7 @@ include 'header.php';
                     </div>
                     <div class="card_content">
                         <div class="other_title">農業用水</div>
-                        <p>※ 100kW超の発電は不得手</p>
+                        <p class="cent">※ 100kW超の発電は不得手</p>
                     </div>
                 </li>
                 <li class="card_list nf">
@@ -221,7 +221,7 @@ include 'header.php';
                     </div>
                     <div class="card_content">
                         <div class="other_title">上水道</div>
-                        <p>※ 飲用水には未対応</p>
+                        <p class="cent">※ 飲用水には未対応</p>
                     </div>
                 </li>
                 <li class="card_list nf">
@@ -232,7 +232,7 @@ include 'header.php';
                     </div>
                     <div class="card_content">
                         <div class="other_title">海水・温泉水・廃液</div>
-                        <p>※ 金属腐食が激しい水質全般</p>
+                        <p class="cent">※ 金属腐食が激しい水質全般</p>
                     </div>
                 </li>
             </ul>
