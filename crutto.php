@@ -41,7 +41,7 @@ include 'header.php';
                 </div>
 
                 <div class="spec_table">
-                    <h3>基本仕様</h3>
+                    <h3 class="cent tx_ul no_dc">基本仕様</h3>
                     <table>
                         <tbody>
                             <tr>

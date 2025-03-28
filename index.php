@@ -104,7 +104,7 @@ include 'header.php';
                 <li class="card_list">
                     <div class="card_img">
                         <img
-                            src="img/solar_exp.webp"
+                            src="img/panel_roof.webp"
                             alt="太陽光発電・蓄電システム" />
                     </div>
                     <div class="card_content">
