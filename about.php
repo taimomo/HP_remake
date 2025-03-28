@@ -28,33 +28,33 @@ include 'header.php';
     <section id="about_company">
         <div class="container">
             <div class="img_text_list">
-                <div class="text_list">
-                    <h3>会社名</h3>
+                <div class="text_list wd_sm">
+                    <h3 class="band_style">会社名</h3>
                     <p>株式会社シーイーエム</p>
 
-                    <h3>設立</h3>
-                    <p>2000年1月1日</p>
+                    <h3 class="band_style">設立</h3>
+                    <p>1999年5月</p>
 
-                    <h3>代表取締役</h3>
+                    <h3 class="band_style">代表取締役</h3>
                     <p>下野 満朗</p>
 
-                    <h3>従業員数</h3>
+                    <h3 class="band_style">従業員数</h3>
                     <p>3名</p>
 
-                    <h3>事業内容</h3>
+                    <h3 class="band_style">事業内容</h3>
                     <ul>
                         <li>マイクロ水力発電設備の販売・導入支援</li>
                         <li>太陽光発電・蓄電設備の販売・導入支援</li>
                     </ul>
 
-                    <h3>所在地</h3>
+                    <h3 class="band_style">所在地</h3>
                     <p>
                         〒250-0631<br />
                         神奈川県足柄下郡箱根町仙石原885番地2<br />
                         ミリオンロイヤル箱根仙石原105
                     </p>
 
-                    <h3>TEL・FAX</h3>
+                    <h3 class="band_style">TEL・FAX</h3>
                     <p>
                         TEL : 0460-83-9535<br />
                         FAX : 0460-83-9537
