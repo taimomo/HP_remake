@@ -8,7 +8,7 @@ body {
 
 main {
     .container {
-        margin: 1rem 0;
+        container-type: inline-size;
         padding: 2rem 0;
         overflow: hidden;
         display: flex;
@@ -51,6 +51,29 @@ main {
             text-decoration: underline;
         }
 
+        .band_style {
+            padding: 0.5rem;
+            border-left: 8px solid #3656a7;
+            background-color: #f1f0f0;
+        }
+
+        .wd_lg {
+            width: 70vw;
+        }
+
+        .wd_sm {
+            width: 35vw;
+            padding: 1rem;
+        }
+
+        .no_dc {
+            background-color: initial;
+            border: none;
+            padding: 0.8rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
         .sc_sp {
             display: flex;
             align-items: center;
@@ -73,6 +96,10 @@ main {
             margin-left: 0.8rem;
         }
 
+        .ar_wd {
+            aspect-ratio: 16/6 !important;
+        }
+
         .headline {
             font-weight: bold;
             font-size: 2.5rem;
@@ -92,13 +119,6 @@ main {
             width: 100%;
 
             .text_list {
-                width: 35vw;
-                padding: 1rem;
-                h3 {
-                    padding: 0.5rem;
-                    border-left: 8px solid #3656a7;
-                    background-color: #f1f0f0;
-                }
                 p,
                 ul {
                     margin: 0.5rem 0 1.5rem 0;
@@ -131,13 +151,6 @@ main {
             width: 40vw;
             max-width: 800px;
             margin: 1rem;
-            h3 {
-                padding: 0.8rem !important;
-                font-size: 1.2rem;
-                font-weight: bold;
-                text-align: center;
-                text-decoration: underline;
-            }
             p {
                 margin-top: 0.8rem;
                 text-align: center;
@@ -217,9 +230,6 @@ main {
                         object-position: center; /* 中央から表示（上下の余白が均等に除去される）*/
                     }
                 }
-                h3 {
-                    text-align: center;
-                }
 
                 .card_content {
                     display: flex;
@@ -250,6 +260,7 @@ main {
 
                 h3 {
                     margin: 1rem 0;
+                    text-align: center;
                 }
 
                 p {
@@ -334,6 +345,11 @@ main {
             }
         }
 
+        .fl_cl {
+            display: flex;
+            flex-direction: column;
+        }
+
         .row_items {
             height: inherit;
             .row_list {
@@ -408,9 +424,12 @@ main {
                         margin-bottom: 0.5rem;
                         text-align: center;
                     }
-                    ul {
+                    ul,
+                    ol {
                         padding-left: 1.2rem;
                         margin: 0.5rem 0;
+                    }
+                    ul {
                         li {
                             list-style-type: disc;
                         }
@@ -1137,11 +1156,13 @@ footer {
 }
 
 /* bread_crumb要素 */
+#bread_crumb {
+    background-color: white;
+}
+
 .bread_crumb_list {
     list-style: none;
-    padding: 0;
-    margin-top: 0.5rem;
-    margin-left: 1rem;
+    padding: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     font-size: 0.9rem;
@@ -1290,4 +1311,71 @@ footer {
 
 .crutto_hero {
     background: url("/img/crutto_hero.webp") center/cover no-repeat;
+}
+
+/* solarページ */
+
+.solar_hero {
+    background: url("/img/solar_exp.webp") center/cover no-repeat;
+}
+
+#about_solar {
+    background-color: white;
+}
+
+#solar_place {
+    background-color: white;
+}
+
+.solar_merit {
+    position: relative;
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+}
+
+.merit_label {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    background: #b2f2bb;
+    color: #a02e5a;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    transform: rotate(-5deg);
+
+    @media screen and (max-width: 748px) {
+        padding: 0.5rem 0.8rem;
+        font-size: 1.2rem;
+        top: -3%;
+        left: 3%;
+    }
+}
+
+.merit_table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+    th,
+    td {
+        padding: 1rem;
+        border-bottom: 1px solid #ccc;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    th {
+        background-color: #f0f0f0;
+    }
+
+    @media screen and (max-width: 748px) {
+        th,
+        td {
+            font-size: 0.8rem;
+        }
+    }
 }

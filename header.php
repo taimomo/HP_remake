@@ -41,7 +41,7 @@
                     <a href="micro.php">マイクロ水力発電</a>
                 </li>
                 <li class="nav_list">
-                    <a href="#solar">太陽光発電・蓄電</a>
+                    <a href="solar.php">太陽光発電・蓄電</a>
                 </li>
                 <li class="nav_list contact_btn">
                     <a href="index.php#contact">お問い合わせ</a>
