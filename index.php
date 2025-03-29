@@ -202,55 +202,20 @@ include 'header.php';
                 <div class="privacy_policy">
                     <a href="policy.php">プライバシーポリシーを確認する</a>
                     <label>
-                        <input type="checkbox" required />
+                        <input type="checkbox" name="agree" value="1" required />
                         <span>プライバシーポリシーに同意する</span>
                         <span class="required">※必須</span>
                     </label>
                 </div>
 
-                <button
+                <a
+                    href="confirm.php"
                     class="more_btn mdl_btn"
-                    type="button"
-                    onclick="openConfirmDialog()">
+                    type="button">
                     入力内容を確認
-                </button>
+                </a>
             </form>
         </div>
-
-        <dialog id="confirmDialog">
-            <h2>入力内容の確認</h2>
-            <p>
-                <strong>お名前:</strong> <span id="confirm_name"></span>
-            </p>
-            <p>
-                <strong>メールアドレス:</strong>
-                <span id="confirm_email"></span>
-            </p>
-            <p>
-                <strong>会社名:</strong>
-                <span id="confirm_organization"></span>
-            </p>
-            <p>
-                <strong>電話番号:</strong>
-                <span id="confirm_tel"></span>
-            </p>
-            <p>
-                <strong>お問い合わせ内容:</strong>
-                <span id="confirm_detail"></span>
-            </p>
-
-            <button onclick="submitForm()">送信する</button>
-            <button onclick="closeConfirmDialog()">修正する</button>
-        </dialog>
-
-        <dialog id="successDialog">
-            <h2>ありがとうございます。送信が完了しました。</h2>
-            <p>
-                追って担当者よりご連絡差し上げます。<br />
-                しばらく経っても返信ない場合は、お手数ですがフォームより再度お問い合わせいただきますようお願いいたします。
-            </p>
-            <button onclick="closeSuccessDialog()">OK</button>
-        </dialog>
     </section>
 </main>
 

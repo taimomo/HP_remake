@@ -622,6 +622,10 @@ main {
         }
     }
 
+    .hd_space {
+        padding-top: 100px;
+    }
+
     .pd {
         padding: 2rem;
     }
@@ -1384,9 +1388,6 @@ footer {
 }
 
 /* policyページ */
-#policy {
-    padding-top: 100px;
-}
 
 .policy_contents {
     padding: 1rem;
