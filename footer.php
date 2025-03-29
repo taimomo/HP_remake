@@ -17,7 +17,7 @@
     <ul class="footer_menu">
         <li>
             <small>
-                <a href="policy">プライバシーポリシー</a>
+                <a href="policy.php">プライバシーポリシー</a>
             </small>
         </li>
         <li>
