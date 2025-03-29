@@ -200,7 +200,7 @@ include 'header.php';
 
                 <!-- プライバシーポリシー同意チェックボックス -->
                 <div class="privacy_policy">
-                    <a href="#">プライバシーポリシーを確認する</a>
+                    <a href="policy.php">プライバシーポリシーを確認する</a>
                     <label>
                         <input type="checkbox" required />
                         <span>プライバシーポリシーに同意する</span>
