@@ -1,47 +1,83 @@
 <?php
-// send.php - PHPMailerを使った送信処理
+// send.php
+session_start();
+
+require 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
-// 入力値の代替（本来は $_SESSION や $_POST から取得）
-$name = 'テストユーザー';
-$email = 'user@example.com';
-$organization = 'テスト会社';
-$tel = '000-0000-0000';
-$detail = "お問い合わせ内容のテストです。\n2行目もあります。";
+$form = $_SESSION['form'] ?? null;
+
+if (!$form) {
+    header('Location: index.php');
+    exit;
+}
 
 $mail = new PHPMailer(true);
 
 try {
-    // サーバ設定
+    // SMTP settings
     $mail->isSMTP();
-    $mail->Host       = 'smtp.example.com'; // SMTPサーバー
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'your@example.com'; // SMTPユーザー
-    $mail->Password   = 'your_password';    // SMTPパスワード
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = 587;
+    $mail->Host = $_ENV['SMTP_HOST'];
+    $mail->SMTPAuth = true;
+    $mail->Username = $_ENV['SMTP_USER'];
+    $mail->Password = $_ENV['SMTP_PASS'];
+    $mail->SMTPSecure = $_ENV['SMTP_SECURE']; // ssl or tls
+    $mail->Port = $_ENV['SMTP_PORT'];
 
-    // 送信者と宛先
-    $mail->setFrom('your@example.com', 'Webお問い合わせ');
-    $mail->addAddress('admin@example.com', '管理者');
-    $mail->addReplyTo($email, $name);
-
-    // メール内容
+    // mail settings
+    $mail->setFrom($_ENV['SMTP_USER'], 'Webお問い合わせ');
+    $recipients = explode(',', $_ENV['MAIL_TO']);
+    foreach ($recipients as $address) {
+        $mail->addAddress(trim($address));
+    }
+    $mail->addReplyTo($form['email'], $form['name']);
     $mail->isHTML(false);
-    $mail->Subject = '【Webお問い合わせ】 ' . $name . '様より';
-    $mail->Body    = "お名前: $name\n"
-        . "メールアドレス: $email\n"
-        . "会社名: $organization\n"
-        . "電話番号: $tel\n"
-        . "お問い合わせ内容:\n$detail";
 
+    $mail->Subject = "【Webお問い合わせ】{$form['name']} 様より";
+    $mail->Body = "お名前: {$form['name']}\n"
+        . "メールアドレス: {$form['email']}\n"
+        . "会社名: {$form['organization']}\n"
+        . "電話番号: {$form['tel']}\n"
+        . "お問い合わせ内容:\n{$form['detail']}";
     $mail->send();
-    header("Location: thanks.php");
+
+    // ユーザーへの自動返信メール
+    $autoReply = new PHPMailer(true);
+    $autoReply->isSMTP();
+    $autoReply->Host = $_ENV['SMTP_HOST'];
+    $autoReply->SMTPAuth = true;
+    $autoReply->Username = $_ENV['SMTP_USER'];
+    $autoReply->Password = $_ENV['SMTP_PASS'];
+    $autoReply->SMTPSecure = $_ENV['SMTP_SECURE'];
+    $autoReply->Port = $_ENV['SMTP_PORT'];
+
+    $autoReply->setFrom($_ENV['SMTP_USER'], '株式会社シーイーエム');
+    $autoReply->addAddress($form['email'], $form['name']);
+    $autoReply->isHTML(false);
+
+    $autoReply->Subject = "【CEM】お問い合わせありがとうございます";
+    $autoReply->Body = "{$form['name']} 様\n\n"
+        . "この度はお問い合わせいただき誠にありがとうございます。\n"
+        . "以下の内容で承りました。追って担当者よりご連絡いたします。\n\n"
+        . "-------------------------------------\n"
+        . "お名前: {$form['name']}\n"
+        . "メールアドレス: {$form['email']}\n"
+        . "会社名: {$form['organization']}\n"
+        . "電話番号: {$form['tel']}\n"
+        . "お問い合わせ内容:\n{$form['detail']}\n"
+        . "-------------------------------------\n\n"
+        . "※このメールは自動送信です。返信は不要です。";
+    $autoReply->send();
+
+    session_unset();
+    session_destroy();
+    header('Location: thanks.php');
     exit;
 } catch (Exception $e) {
-    echo "メール送信に失敗しました: {$mail->ErrorInfo}";
+    echo 'メール送信に失敗しました: ', $mail->ErrorInfo;
 }
