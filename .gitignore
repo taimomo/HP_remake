@@ -21,3 +21,5 @@ yarn.lock
 Thumbs.db
 .idea/
 .vscode/
+
+.htaccess
