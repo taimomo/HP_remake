@@ -209,7 +209,7 @@ include 'header.php';
                             alt="高落差地域" />
                     </div>
                     <div class="card_content">
-                        <div class="other_title">農業用水</div>
+                        <div class="other_title">高落差地域</div>
                         <p class="cent">※ 100kW超の発電は不得手</p>
                     </div>
                 </li>

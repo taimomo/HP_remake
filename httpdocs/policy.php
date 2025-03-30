@@ -4,7 +4,7 @@ include 'header.php';
 ?>
 
 <main>
-    <section id="policy hd_space">
+    <section id="policy" class="hd_space">
         <div class="container pd">
             <h2>プライバシーポリシー</h2>
             <br>
