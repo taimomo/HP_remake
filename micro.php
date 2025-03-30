@@ -87,7 +87,7 @@ include 'header.php';
                         </p>
                         <a
                             href="arc.php"
-                            class="more_btn"
+                            class="more_btn btn_blue"
                             role="button"
                             tabindex="0">もっと見る</a>
                     </div>
@@ -109,7 +109,7 @@ include 'header.php';
                         </p>
                         <a
                             href="crutto.php"
-                            class="more_btn"
+                            class="more_btn btn_blue"
                             role="button"
                             tabindex="0">もっと見る</a>
                     </div>
