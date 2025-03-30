@@ -58,7 +58,7 @@ try {
     $autoReply->Password = $_ENV['SMTP_PASS'];
     $autoReply->SMTPSecure = $_ENV['SMTP_SECURE'];
     $autoReply->Port = $_ENV['SMTP_PORT'];
-    $mail->CharSet = 'UTF-8';
+    $autoReply->CharSet = 'UTF-8';
 
     $autoReply->setFrom($_ENV['SMTP_USER'], '株式会社シーイーエム');
     $autoReply->addAddress($form['email'], $form['name']);

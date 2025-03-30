@@ -199,7 +199,7 @@ include 'header.php';
                 <li class="card_list nf">
                     <div class="card_img">
                         <img
-                            src="img/low_head.webp"
+                            src="img/river.webp"
                             alt="低落差地域" />
                     </div>
                     <div class="card_content">
