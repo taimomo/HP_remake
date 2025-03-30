@@ -6,5 +6,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./:/var/www/html
+      - ./httpdocs:/var/www/html
+      - ./vendor:/var/www/vendor
+      - ./.env:/var/www/.env
     container_name: php-docker

@@ -24,28 +24,9 @@ include 'header.php';
             <h2>News</h2>
             <ul class="time_items">
                 <li class="time_list">
-                    <time datetime="2025-02-10">2025.02.10</time>
+                    <time datetime="2025-03-30">2025.03.30</time>
                     <span class="time_title">
                         ホームページをリニューアルしました。
-                    </span>
-                </li>
-                <li class="time_list">
-                    <time datetime="2025-02-10"> 2025.02.10</time>
-                    <span class="time_title">
-                        「マイクロ水力発電」のページを更新しました。
-                    </span>
-                </li>
-                <li class="time_list">
-                    <time datetime="2025-02-15">2025.02.15</time>
-                    <span class="time_title">
-                        「太陽光発電・蓄電」のページを更新しました。
-                    </span>
-                </li>
-                <li class="time_list">
-                    <time datetime="2025-02-18">2025.02.18</time>
-                    <span class="time_title">
-                        「下水道展2024」に出展いたします。詳細はURLをご参照ください。<br /><a
-                            href="https://www.gesuidouten.jp/">https://www.gesuidouten.jp/</a>
                     </span>
                 </li>
             </ul>
