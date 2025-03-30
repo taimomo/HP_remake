@@ -99,6 +99,19 @@ main {
             aspect-ratio: 16/6 !important;
         }
 
+        dl {
+            width: 80%;
+            border: 1px solid #ccc;
+            dt {
+                margin: 0.8rem;
+                text-decoration: underline;
+            }
+            dd {
+                margin: 0.5rem 0 1.5rem 0;
+                padding-left: 1rem;
+            }
+        }
+
         .headline {
             font-weight: bold;
             font-size: 2.5rem;
@@ -183,12 +196,10 @@ main {
         }
 
         .more_btn {
-            display: inline-block;
+            display: block;
             width: 150px;
             margin: 0 auto;
             padding: 0.5rem;
-            background-color: #2e4488;
-            color: #fff;
             text-align: center;
             border-radius: 30px;
             font-weight: bold;
@@ -198,6 +209,20 @@ main {
         .more_btn:hover {
             background-color: #4a90e2;
             box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.5);
+        }
+
+        .btn_blue {
+            background-color: #2e4488;
+            color: #fff;
+        }
+
+        .btn_gley {
+            background-color: rgb(199, 199, 199);
+            color: black;
+        }
+
+        .btn_space {
+            margin: 0.5rem 0;
         }
 
         .card_items {
