@@ -1,4 +1,9 @@
 <?php
+session_start();
+$form = $_SESSION['form'] ?? $_POST;
+?>
+
+<?php
 $page_title = "CEM | 水と太陽のエネルギーソリューション";
 include 'header.php';
 ?>
@@ -66,7 +71,7 @@ include 'header.php';
 
                         <a
                             href="about.php"
-                            class="more_btn"
+                            class="more_btn btn_blue"
                             role="button"
                             tabindex="0">もっと見る</a>
                     </div>
@@ -96,7 +101,7 @@ include 'header.php';
                         </p>
                         <a
                             href="micro.php"
-                            class="more_btn"
+                            class="more_btn btn_blue"
                             role="button"
                             tabindex="0">もっと見る</a>
                     </div>
@@ -117,7 +122,7 @@ include 'header.php';
                         </p>
                         <a
                             href="solar.php"
-                            class="more_btn"
+                            class=" more_btn btn_blue"
                             role="button"
                             tabindex="0">もっと見る</a>
                     </div>
@@ -133,7 +138,7 @@ include 'header.php';
             <p>
                 お問い合わせ内容をご入力の上、「入力内容を確認」ボタンを押してください。
             </p>
-            <form id="form">
+            <form id="form" action="confirm.php" method="post" autocomplete="on">
                 <div class="form_body">
                     <div class="form_label">
                         <label for="name">お名前</label><span class="required">※必須</span>
@@ -144,7 +149,8 @@ include 'header.php';
                             id="name"
                             name="name"
                             autocomplete="name"
-                            required />
+                            required
+                            value="<?= htmlspecialchars($form['name'] ?? '') ?>" />
                     </div>
                 </div>
 
@@ -158,7 +164,8 @@ include 'header.php';
                             id="email"
                             name="email"
                             autocomplete="email"
-                            required />
+                            required
+                            value="<?= htmlspecialchars($form['email'] ?? '') ?>" />
                     </div>
                 </div>
                 <div class="form_body">
@@ -170,19 +177,22 @@ include 'header.php';
                             type="text"
                             id="organization"
                             name="organization"
-                            autocomplete="organization" />
+                            autocomplete="organization"
+                            value="<?= htmlspecialchars($form['organization'] ?? '') ?>" />
                     </div>
                 </div>
                 <div class="form_body">
                     <div class="form_label">
-                        <label for="tel">電話番号</label>
+                        <label for="tel">電話番号（ハイフン不要）</label>
                     </div>
                     <div class="form_input">
                         <input
                             type="tel"
                             id="tel"
                             name="tel"
-                            autocomplete="tel" />
+                            autocomplete="tel"
+                            pattern="\d{10,11}" title="10〜11桁の数字で入力してください"
+                            value="<?= htmlspecialchars($form['tel'] ?? '') ?>" />
                     </div>
                 </div>
                 <div class="form_body">
@@ -194,7 +204,8 @@ include 'header.php';
                         <textarea
                             id="detail"
                             name="detail"
-                            required></textarea>
+                            required
+                            autocomplete="off"><?= htmlspecialchars($form['detail'] ?? '') ?></textarea>
                     </div>
                 </div>
 
@@ -202,18 +213,13 @@ include 'header.php';
                 <div class="privacy_policy">
                     <a href="policy.php">プライバシーポリシーを確認する</a>
                     <label>
-                        <input type="checkbox" name="agree" value="1" required />
+                        <input type="checkbox" name="agree" value="1" <?= isset($form['agree']) ? 'checked' : '' ?> required />
                         <span>プライバシーポリシーに同意する</span>
                         <span class="required">※必須</span>
                     </label>
                 </div>
 
-                <a
-                    href="confirm.php"
-                    class="more_btn mdl_btn"
-                    type="button">
-                    入力内容を確認
-                </a>
+                <button type="submit" class="more_btn btn_blue">入力内容を確認</button>
             </form>
         </div>
     </section>
