@@ -863,17 +863,19 @@ footer {
     background-color: #233270;
     color: #fff;
     text-align: center;
-    padding: 2rem 1rem 1rem;
+    padding: 2rem;
 
     .footer_container {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr auto;
         align-items: center;
+        gap: 1rem;
         margin: 0 auto 3rem;
 
         .footer_company_name {
             font-size: 1.5rem;
             font-weight: bold;
+            text-align: left;
             h2 {
                 text-shadow: none;
             }
@@ -884,17 +886,22 @@ footer {
         }
 
         .footer_company_info {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            display: grid;
+            gap: 0.25rem;
+            justify-items: start;
+            list-style: none;
             .company_info_item {
                 padding-left: 1.5rem;
             }
         }
     }
     .footer_menu {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        justify-content: center;
+        gap: 1rem;
+        font-size: 0.9rem;
+        list-style: none;
         a {
             text-decoration: underline;
         }
@@ -903,17 +910,17 @@ footer {
 
 @media screen and (max-width: 768px) {
     footer {
-        padding: 2rem 1rem 1rem;
+        padding: 2rem;
 
         .footer_container {
-            flex-wrap: wrap;
-            justify-content: center;
-            max-width: 425px;
+            grid-template-columns: 1fr;
+            text-align: center;
+            justify-items: center;
+            gap: 1.5rem;
             margin-bottom: 2rem;
 
             .footer_company_info {
-                flex-wrap: wrap;
-                align-items: center;
+                justify-items: center;
                 .company_info_item {
                     padding: 0.5rem;
                 }
@@ -931,6 +938,7 @@ footer {
             }
             .footer_menu {
                 font-size: 0.8rem;
+                grid-template-columns: 1fr;
             }
         }
     }
