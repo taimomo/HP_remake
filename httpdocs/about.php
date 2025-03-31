@@ -5,8 +5,10 @@ include 'header.php';
 <?php include './config.php'; ?>
 
 <!-- ヒーローセクション -->
-<section id="about" class="hero about_hero">
-    <h2>会社概要</h2>
+<section id="about" class="hero about_hero hero_svh">
+    <div class="hero_bg bg_gley">
+        <h2 class="ft_sz22">会社概要</h2>
+    </div>
 </section>
 
 <section id="bread_crumb">

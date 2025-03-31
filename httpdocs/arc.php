@@ -5,8 +5,10 @@ include 'header.php';
 
 
 <!-- ヒーローセクション -->
-<section id="arc" class="hero arc_hero">
-    <h2>パワーアルキメデス</h2>
+<section id="arc" class="hero arc_hero hero_svh">
+    <div class="hero_bg bg_gley">
+        <h2 class="ft_sz22">パワーアルキメデス</h2>
+    </div>
 </section>
 
 <section id="bread_crumb">
