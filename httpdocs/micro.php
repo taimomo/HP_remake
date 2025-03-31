@@ -4,8 +4,10 @@ include 'header.php';
 ?>
 
 <!-- ヒーローセクション -->
-<section id="micro" class="hero micro_hero">
-    <h2>マイクロ水力発電</h2>
+<section id="micro" class="hero micro_hero hero_svh">
+    <div class="hero_bg bg_gley">
+        <h2 class="ft_sz22">マイクロ水力発電</h2>
+    </div>
 </section>
 
 <section id="bread_crumb">

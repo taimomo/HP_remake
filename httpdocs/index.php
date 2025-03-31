@@ -10,8 +10,10 @@ include 'header.php';
 
 <!-- ヒーローセクション -->
 <section id="home" class="hero home_hero">
-    <h2>持続可能な未来へ</h2>
-    <h3>
+    <div class="hero_bg bg_gley">
+        <h2 class="ft_sz22">持続可能な未来へ</h2>
+    </div>
+    <h3 class="bg_blue ">
         水と太陽のエネルギーソリューションで<br />
         環境経営を積極支援！
     </h3>
