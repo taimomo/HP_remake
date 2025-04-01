@@ -28,7 +28,12 @@ include 'header.php';
 <main>
     <section id="about_solar">
         <div class="container">
-            <h2>太陽光発電の現状</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>太陽光発電の現状</h2>
+                </div>
+            </div>
             <div class="img_text_list">
                 <div class="text_list wd_lg">
                     <p>
@@ -69,7 +74,12 @@ include 'header.php';
 
     <section id="service">
         <div class="container">
-            <h2>サービス紹介</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>サービス紹介</h2>
+                </div>
+            </div>
             <ul class="card_items">
                 <li class="card_list nf">
                     <div class="card_img">
@@ -127,7 +137,12 @@ include 'header.php';
 
     <section id="solar_place">
         <div class="container">
-            <h2>設置推奨場所</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>設置推奨場所</h2>
+                </div>
+            </div>
             <p class="cent tx_st">日照時間が確保できれば発電自体は可能ですが、無駄なく使用するためには最適な使用環境を見極める必要があります。</p>
 
             <div class="solar_merit">
@@ -187,7 +202,12 @@ include 'header.php';
 
     <section id="solar_flow">
         <div class="container">
-            <h2>導入フロー</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>導入フロー</h2>
+                </div>
+            </div>
             <div class="flow_contents">
                 <img src="/img/solar_flow.webp" alt="太陽光導入フロー">
                 <div class="flow_list">

@@ -23,12 +23,23 @@ include 'header.php';
     <!-- News セクション -->
     <section id="news">
         <div class="container">
-            <h2>News</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>News</h2>
+                </div>
+            </div>
             <ul class="time_items">
                 <li class="time_list">
                     <time datetime="2025-03-30">2025.03.30</time>
                     <span class="time_title">
                         ホームページをリニューアルしました。
+                    </span>
+                </li>
+                <li class="time_list">
+                    <time datetime="2025-04-01">2025.04.01</time>
+                    <span class="time_title">
+                        プライバシーポリシーを改訂しました。
                     </span>
                 </li>
             </ul>
@@ -46,7 +57,12 @@ include 'header.php';
                             alt="会社案内" />
                     </div>
                     <div class="lg_content">
-                        <h2>会社情報</h2>
+                        <div class="section_wrap">
+                            <div class="section_title">
+                                <span class="decor"></span>
+                                <h2>会社情報</h2>
+                            </div>
+                        </div>
                         <p class="lg_text">
                             シーイーエムについて<br />
                             会社所在地等の基本情報を掲載しています。
@@ -66,7 +82,12 @@ include 'header.php';
     <!-- 事業内容 -->
     <section id="business">
         <div class="container">
-            <h2>事業内容</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>事業内容</h2>
+                </div>
+            </div>
             <ul class="card_items">
                 <li class="card_list">
                     <div class="card_img">
@@ -117,7 +138,12 @@ include 'header.php';
     <!-- お問い合わせフォーム -->
     <section id="contact">
         <div class="container">
-            <h2>お問い合わせ</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>お問い合わせ</h2>
+                </div>
+            </div>
             <p>
                 お問い合わせ内容をご入力の上、「入力内容を確認」ボタンを押してください。
             </p>

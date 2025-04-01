@@ -28,7 +28,12 @@ include 'header.php';
 <main>
     <section id="about_micro">
         <div class="container">
-            <h2>マイクロ水力とは？</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>マイクロ水力とは？</h2>
+                </div>
+            </div>
             <div class="img_text_list">
                 <div class="text_list wd_sm">
                     <p>明確な規定はありませんが、主に100kW未満の水力発電を業界内では『マイクロ』と呼称しています。</p>
@@ -70,7 +75,12 @@ include 'header.php';
 
     <section id="product">
         <div class="container">
-            <h2>取扱製品</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>取扱製品</h2>
+                </div>
+            </div>
             <ul class="card_items">
                 <li class="card_list">
                     <h3>縦置き型マイクロ水力発電機<br>『パワーアルキメデス』</h3>
@@ -122,7 +132,12 @@ include 'header.php';
 
     <section id="water_flow">
         <div class="container">
-            <h2>導入フロー</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>導入フロー</h2>
+                </div>
+            </div>
             <div class="flow_contents">
                 <img src="/img/water_flow.webp" alt="水力導入フロー">
                 <div class="flow_list">
