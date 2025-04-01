@@ -34,7 +34,12 @@ include 'header.php';
 <main>
     <section id="about_arc">
         <div class="container">
-            <h2>製品特徴</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>製品情報</h2>
+                </div>
+            </div>
             <div class="img_text_list">
                 <div class="space_del">
                     <img
@@ -156,7 +161,12 @@ include 'header.php';
 
     <section id="place">
         <div class="container">
-            <h2>設置推奨場所</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>設置推奨場所</h2>
+                </div>
+            </div>
             <p class="cent tx_st">設置の難易度が低い製品ではあるものの、闇雲に設置しても高い効果は得られません。<br>
                 不適切な環境に設置すると性能低下・機器破損につながるため、最適な使用環境を相談した上で運用する事が推奨されます。</p><br>
 

@@ -47,7 +47,12 @@ $hideHeaderFooter = true;
     <main>
         <section class="confirm hd_space">
             <div class="container">
-                <h2>入力内容の確認</h2>
+                <div class="section_wrap">
+                    <div class="section_title">
+                        <span class="decor"></span>
+                        <h2>入力内容の確認</h2>
+                    </div>
+                </div>
                 <dl>
                     <dt>お名前</dt>
                     <dd><?= htmlspecialchars($form['name']) ?></dd>

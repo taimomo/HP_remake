@@ -34,7 +34,12 @@ include 'header.php';
 <main>
     <section id="about_arc">
         <div class="container">
-            <h2>製品特徴</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>製品情報</h2>
+                </div>
+            </div>
             <div class="img_text_list">
 
                 <div class="space_del">
@@ -162,7 +167,12 @@ include 'header.php';
 
     <section id="place">
         <div class="container">
-            <h2>設置推奨場所</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>設置推奨場所</h2>
+                </div>
+            </div>
             <p class="cent tx_st">どのような水車にも最適な環境での使用が推奨されています。<br>
                 不適切な環境に設置すると性能低下・機器破損につながるため、最適な使用環境を相談した上で運用する事が推奨されます。</p><br>
 
@@ -243,7 +253,12 @@ include 'header.php';
 
     <section id="record">
         <div class="container">
-            <h2>導入事例</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>導入事例</h2>
+                </div>
+            </div>
             <ul class="card_items">
                 <li class="card_list nf">
                     <button class="accordion_header">長野県安曇野市 宮城小水力発電所</button>
@@ -283,7 +298,6 @@ include 'header.php';
                     <button class="accordion_header">岩手県花巻市 松沢川小水力発電所</button>
                     <div class="accordion_content">
                         <div class="card_img">
-
                             <img src="/img/hanamaki.webp" alt="松沢川小水力発電所" />
                         </div>
                         <table>
@@ -322,7 +336,6 @@ include 'header.php';
                     <button class="accordion_header">宮崎県えびの市 田代陣の池ホタル谷発電所</button>
                     <div class="accordion_content">
                         <div class="card_img">
-
                             <img src="/img/Ebino.webp" alt="田代陣の池ホタル谷発電所" />
                         </div>
                         <table>

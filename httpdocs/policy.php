@@ -6,7 +6,12 @@ include 'header.php';
 <main>
     <section id="policy" class="hd_space">
         <div class="container pd">
-            <h2>プライバシーポリシー</h2>
+            <div class="section_wrap">
+                <div class="section_title">
+                    <span class="decor"></span>
+                    <h2>プライバシーポリシー</h2>
+                </div>
+            </div>
             <br>
             <p> ー </p>
             <br>
