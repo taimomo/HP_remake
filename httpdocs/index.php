@@ -48,7 +48,7 @@ include 'header.php';
 
     <!-- 会社情報 -->
     <section id="company">
-        <div class="container">
+        <div class="container no_pd">
             <ul class="row_items">
                 <li class="row_list">
                     <div class="lg_img">
