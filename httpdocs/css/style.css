@@ -1311,29 +1311,46 @@ footer {
 /* bread_crumb要素 */
 #bread_crumb {
     background-color: white;
+    padding: 0.5rem 1rem;
 }
 
 .bread_crumb_list {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
     list-style: none;
-    padding: 0.5rem;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
     font-size: 0.9rem;
+    width: fit-content;
+    min-width: 0;
 }
 
-.bread_crumb_item + .bread_crumb_item::before {
-    content: ">";
-    padding: 0 8px;
-    color: #ccc;
-}
+.bread_crumb_item {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 0.3rem;
 
-.bread_crumb_item a {
-    text-decoration: none;
-    color: #007bff;
-}
+    a {
+        text-decoration: none;
+        color: #007bff;
+    }
 
-.bread_crumb_item.active {
-    color: #555;
+    &.active {
+        color: #555;
+        font-weight: bold;
+    }
+
+    &::after {
+        content: ">";
+        color: #ccc;
+        margin-left: 0.5rem;
+    }
+
+    &:last-child::after {
+        content: none;
+    }
 }
 
 /* aboutページ */
