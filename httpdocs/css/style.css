@@ -115,7 +115,6 @@ main {
         }
 
         dl {
-            width: 80%;
             border: 1px solid #ccc;
             dt {
                 margin: 0.8rem;
@@ -1147,12 +1146,17 @@ footer {
         form {
             width: 80%;
             max-width: 500px;
+            display: grid;
+            gap: 2rem;
+            place-self: center;
         }
         .form_body {
-            margin-bottom: 2rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: start;
+            gap: 1rem;
             .form_label {
                 font-weight: bold;
-                margin-bottom: 0.5rem;
                 label {
                     vertical-align: middle;
                 }
@@ -1184,29 +1188,26 @@ footer {
         }
 
         .privacy_policy {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            display: grid;
+            place-items: center;
             font-size: 0.8rem;
             margin-bottom: 1rem;
+            text-align: center;
             a {
                 color: #005eff;
                 text-decoration: underline;
                 margin-bottom: 0.5rem;
             }
             label .required {
-                display: inline-block;
+                display: inline-grid;
+                grid-auto-flow: column;
+                gap: 0.5rem;
+                align-items: center;
                 color: red;
                 font-size: 0.8rem;
                 margin-left: 0.5rem;
                 vertical-align: middle;
             }
-        }
-        .mdl_btn {
-            display: block;
-            text-align: center;
-            margin: 0 auto;
         }
     }
 
@@ -1215,6 +1216,92 @@ footer {
             p {
                 font-size: 1rem;
             }
+        }
+    }
+}
+
+.confirm {
+    background-color: #fff;
+    padding: 4rem 1rem;
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        display: grid;
+        dl {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 1rem 2rem;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 2rem;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+
+            dt {
+                font-weight: bold;
+                text-decoration: underline;
+                margin: 0;
+                align-self: center;
+            }
+
+            dd {
+                margin: 0;
+                padding-left: 0;
+                line-height: 1.6;
+                word-break: break-word;
+            }
+
+            @media screen and (max-width: 768px) {
+                grid-template-columns: 1fr;
+
+                dt {
+                    margin-bottom: 0.3rem;
+                }
+
+                dd {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        form {
+            place-items: center;
+        }
+    }
+}
+
+.thanks {
+    display: grid;
+    place-items: center;
+    padding: 4rem 1rem;
+
+    .container {
+        display: grid;
+        gap: 2rem;
+        max-width: 600px;
+        width: 100%;
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #333;
+    }
+
+    @media screen and (max-width: 480px) {
+        h2 {
+            font-size: 1.4rem;
+        }
+        p {
+            font-size: 0.95rem;
         }
     }
 }
