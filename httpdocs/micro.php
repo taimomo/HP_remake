@@ -83,7 +83,7 @@ include 'header.php';
             </div>
             <ul class="card_items">
                 <li class="card_list">
-                    <h3>縦置き型マイクロ水力発電機<br>『パワーアルキメデス』</h3>
+                    <h3 class="cent tt_space">縦置き型マイクロ水力発電機<br>『パワーアルキメデス』</h3>
                     <div class="card_img">
                         <img
                             src="img/hanami_pic.webp"
@@ -105,7 +105,7 @@ include 'header.php';
                     </div>
                 </li>
                 <li class="card_list">
-                    <h3>超小型マイクロ水力発電機 <br>『Crutto』</h3>
+                    <h3 class="cent tt_space">超小型マイクロ水力発電機 <br>『Crutto』</h3>
                     <div class="card_img">
                         <img
                             src="img/crutto.webp"

@@ -52,6 +52,9 @@ main {
             text-align: center;
         }
 
+        .tt_space {
+            margin: 1rem 0;
+        }
         .tx_st {
             font-size: 1.1rem;
             font-weight: bold;
@@ -239,42 +242,47 @@ main {
 
         .card_items {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            align-items: start; /* 上端揃え */
-            gap: 1rem;
-            padding: 1rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            align-items: stretch; /* 高さ揃え */
+            gap: 2.5rem;
+            max-width: 1250px; /* 全体の幅制限 */
+            margin: 0 auto;
+            padding: 2rem 1rem;
+
+            @media screen and (max-width: 610px) {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
 
             .card_list {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                margin: 1rem;
+                display: grid;
+                grid-template-rows: auto auto 1fr;
+                background: white;
                 padding: 1.5rem;
-                background-color: white;
-                box-shadow: 3px 3px 8px rgba(100, 100, 100, 0.3);
                 border-radius: 12px;
-                transition: all 0.3s;
+                box-shadow: 3px 3px 8px rgba(100, 100, 100, 0.3);
+                transition: box-shadow 0.3s ease;
+                min-width: 0;
+                max-width: 500px;
+                width: 100%;
+
                 .card_img {
                     aspect-ratio: 16 / 10;
                     overflow: hidden;
-                    max-width: 1200px;
                     img {
                         width: 100%;
                         height: 100%;
-                        object-fit: cover; /* 余白を切り取って画像をフィット */
-                        object-position: center; /* 中央から表示（上下の余白が均等に除去される）*/
+                        object-fit: cover;
+                        object-position: center;
+                        display: block;
                     }
                 }
 
                 .card_content {
-                    display: flex;
-                    flex-direction: column;
-                    flex-grow: 1;
+                    display: grid;
+                    grid-template-rows: auto 1fr auto;
+                    gap: 1rem;
                     padding: 1rem;
-                    p {
-                        font-size: 1rem;
-                        margin-bottom: 1rem;
-                    }
+
                     .other_title {
                         font-size: 1.2rem;
                         font-weight: bold;
@@ -285,22 +293,23 @@ main {
                         text-align: left;
                     }
                     .more_btn {
-                        margin-top: auto; /* 一番下に配置 */
+                        margin-top: auto;
+                        align-self: end;
+                        justify-self: center;
+                    }
+                    h3 {
+                        margin: 1rem 0;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        line-height: 1.6;
                     }
                 }
 
                 &:hover {
                     box-shadow: 3px 3px 8px rgba(100, 100, 100, 0.5);
-                }
-
-                h3 {
-                    margin: 1rem 0;
-                    text-align: center;
-                }
-
-                p {
-                    font-size: 1rem;
-                    line-height: 1.8;
                 }
             }
             .nf {
@@ -490,6 +499,10 @@ main {
             }
 
             .card_items {
+                max-width: 650px;
+                .card_list {
+                    max-width: 400px;
+                }
                 .card_content {
                     .other_title {
                         font-size: 1.1rem;
@@ -615,8 +628,13 @@ main {
             }
 
             .card_items {
-                p {
-                    font-size: 0.9rem;
+                grid-template-columns: 1fr;
+                .card_list {
+                    .card_content {
+                        p {
+                            font-size: 0.9rem;
+                        }
+                    }
                 }
             }
 
@@ -1101,7 +1119,7 @@ footer {
 
 /* company要素 */
 #company {
-    height: 60vh;
+    min-height: 60vh;
     display: grid;
     .container {
         background-color: white;
@@ -1109,7 +1127,7 @@ footer {
     }
 
     @media screen and (max-width: 768px) {
-        height: auto;
+        min-height: 0;
     }
 }
 
