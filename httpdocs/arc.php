@@ -41,8 +41,7 @@ include 'header.php';
                 </div>
             </div>
             <div class="img_text_list">
-
-                <div class="space_del">
+                <div class="img_list ar_tl">
                     <img
                         src="img/arc_style.webp"
                         alt="パワーアルキメデス全景" />
@@ -105,64 +104,64 @@ include 'header.php';
                     </p>
                 </div>
 
-                <ul class="card_items">
-                    <li class="card_list nf">
-                        <div class="card_img">
-                            <img
-                                src="img/low_head.webp"
-                                alt="低落差対応" />
-                        </div>
-                        <div class="card_content">
-                            <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 低落差で発電可能</span></p>
-                            <p>
-                                多くの水力発電機は数10mの落差が必要で、長大な配管を敷設する手間と敷地が必要です。
-                            </p>
-                            <p>
-                                パワーアルキメデスは配管だけでなく開水路にも設置でき、数mの落差でも発電を可能としています。
-                            </p>
-                        </div>
-                    </li>
-                    <li class="card_list nf">
-                        <div class="card_img">
-                            <img
-                                src="img/mini_pic.webp"
-                                alt="シンプル構造" />
-                        </div>
-                        <div class="card_content">
-                            <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 手早く設置可能なシンプル構造</span></p>
-                            <p>
-                                構造を徹底的にシンプル化。最短で半日の据付を可能とし長期間の止水困難な場所にも対応できます。
-                            </p>
-                            <p><small>
-                                    ※ 設置環境によっては時間要する可能性があります。<br>
-                                    ※ 水車発電機の設置のみ。配線や付帯設備工事等は別途。
-                                </small>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="card_list nf">
-                        <div class="card_img">
-                            <img
-                                src="img/garbage.webp"
-                                alt="低落差対応" />
-                        </div>
-                        <div class="card_content">
-                            <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 異物混入に強い構造</span></p>
-                            <p>
-                                大半の水車は異物混入に弱く、出力低下だけでなく致命的な故障の原因にもなり得ます。
-                            </p>
-                            <p>
-                                パワーアルキメデスはプロペラ状の羽根車を採用しているため、空き缶や落ち葉等の多くは通過して下流に排出されます。塵一つ許さないような精密な管理は必要ありません。
-                            </p>
-                            <p><small>
-                                    ※ 故障は発生し難くても、出力低下の要因にはなり得ます。<br>
-                                    ※ 万が一に備えて適切な除塵設備は必要です。
-                                </small>
-                            </p>
-                        </div>
-                    </li>
-                </ul>
             </div>
+            <ul class="card_items">
+                <li class="card_list nf">
+                    <div class="card_img">
+                        <img
+                            src="img/low_head.webp"
+                            alt="低落差対応" />
+                    </div>
+                    <div class="card_content">
+                        <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 低落差で発電可能</span></p>
+                        <p>
+                            多くの水力発電機は数10mの落差が必要で、長大な配管を敷設する手間と敷地が必要です。
+                        </p>
+                        <p>
+                            パワーアルキメデスは配管だけでなく開水路にも設置でき、数mの落差でも発電を可能としています。
+                        </p>
+                    </div>
+                </li>
+                <li class="card_list nf">
+                    <div class="card_img">
+                        <img
+                            src="img/mini_pic.webp"
+                            alt="シンプル構造" />
+                    </div>
+                    <div class="card_content">
+                        <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 手早く設置可能なシンプル構造</span></p>
+                        <p>
+                            構造を徹底的にシンプル化。最短で半日の据付を可能とし長期間の止水困難な場所にも対応できます。
+                        </p>
+                        <p><small>
+                                ※ 設置環境によっては時間要する可能性があります。<br>
+                                ※ 水車発電機の設置のみ。配線や付帯設備工事等は別途。
+                            </small>
+                        </p>
+                    </div>
+                </li>
+                <li class="card_list nf">
+                    <div class="card_img">
+                        <img
+                            src="img/garbage.webp"
+                            alt="低落差対応" />
+                    </div>
+                    <div class="card_content">
+                        <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 異物混入に強い構造</span></p>
+                        <p>
+                            大半の水車は異物混入に弱く、出力低下だけでなく致命的な故障の原因にもなり得ます。
+                        </p>
+                        <p>
+                            パワーアルキメデスはプロペラ状の羽根車を採用しているため、空き缶や落ち葉等の多くは通過して下流に排出されます。塵一つ許さないような精密な管理は必要ありません。
+                        </p>
+                        <p><small>
+                                ※ 故障は発生し難くても、出力低下の要因にはなり得ます。<br>
+                                ※ 万が一に備えて適切な除塵設備は必要です。
+                            </small>
+                        </p>
+                    </div>
+                </li>
+            </ul>
     </section>
 
     <section id="place">
@@ -176,7 +175,7 @@ include 'header.php';
             <p class="cent tx_st">どのような水車にも最適な環境での使用が推奨されています。<br>
                 不適切な環境に設置すると性能低下・機器破損につながるため、最適な使用環境を相談した上で運用する事が推奨されます。</p><br>
 
-            <h3 class="tx_ul"><i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i> 設置に適している場所 <i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i></h3>
+            <h3 class="tx_ul cent"><i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i> 設置に適している場所 <i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i></h3>
             <ul class="card_items">
                 <li class="card_list nf">
                     <div class="card_img">

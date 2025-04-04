@@ -35,7 +35,7 @@ include 'header.php';
                 </div>
             </div>
             <div class="img_text_list">
-                <div class="text_list wd_sm">
+                <div class="text_list">
                     <p>明確な規定はありませんが、主に100kW未満の水力発電を業界内では『マイクロ』と呼称しています。</p>
 
                     <p>
