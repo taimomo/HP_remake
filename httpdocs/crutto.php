@@ -41,7 +41,7 @@ include 'header.php';
                 </div>
             </div>
             <div class="img_text_list">
-                <div class="space_del">
+                <div class="img_list ar_tl">
                     <img
                         src="img/crutto_status.webp"
                         alt="crutto全景" />
@@ -103,60 +103,60 @@ include 'header.php';
                     </table>
                 </div>
 
-                <ul class="card_items">
-                    <li class="card_list nf">
-                        <div class="card_img">
-                            <img
-                                src="img/compar_hydro.webp"
-                                alt="省スペース化" />
-                        </div>
-                        <div class="card_content">
-                            <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 徹底的な省スペース化を実現</span></p>
-                            <p>
-                                Cruttoは既設配管にも接続できるよう、徹底的な省スペース化を追求。家電クラスの小型化を実現しました。
-                            </p>
-                            <p>
-                                重量も30~50kgと男性二人いれば持ち上げられるため、施設内で人力運搬も可能です。
-                            </p>
-                        </div>
-                    </li>
-                    <li class="card_list nf">
-                        <div class="card_img">
-                            <img
-                                src="img/low_cost.webp"
-                                alt="ローコストで設置" />
-                        </div>
-                        <div class="card_content">
-                            <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> ローコストで設置</span></p>
-                            <p>
-                                既存設備を最大限活かせる事で工事費も削減。これまでの水力発電と比べて導入のハードルがぐんと下がりました。
-                            </p>
-                            <p>
-                                低コストでも安全性はしっかり確保。数々の検証を経て、落差60m相当の水圧にも対応できる高い耐久性を持ち合わせています。
-                            </p>
-                            <p><small>
-                                    ※ 設置環境によっては対応コストを要する可能性があります。<br>
-                                    ※ 水車発電機の設置のみ。配線や付帯設備工事等は別途。
-                                </small>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="card_list nf">
-                        <div class="card_img">
-                            <img
-                                src="img/100-200v.webp"
-                                alt="100・200V対応" />
-                        </div>
-                        <div class="card_content">
-                            <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 100V・200V選択可能</span></p>
-                            <p>
-                                電源仕様を100Vか200Vで選択できます。<br>
-                                100Vで日常的な電源として、200Vで動力使用や売電を視野に入れる事ができます。
-                            </p>
-                        </div>
-                    </li>
-                </ul>
             </div>
+            <ul class="card_items">
+                <li class="card_list nf">
+                    <div class="card_img">
+                        <img
+                            src="img/compar_hydro.webp"
+                            alt="省スペース化" />
+                    </div>
+                    <div class="card_content">
+                        <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 徹底的な省スペース化を実現</span></p>
+                        <p>
+                            Cruttoは既設配管にも接続できるよう、徹底的な省スペース化を追求。家電クラスの小型化を実現しました。
+                        </p>
+                        <p>
+                            重量も30~50kgと男性二人いれば持ち上げられるため、施設内で人力運搬も可能です。
+                        </p>
+                    </div>
+                </li>
+                <li class="card_list nf">
+                    <div class="card_img">
+                        <img
+                            src="img/low_cost.webp"
+                            alt="ローコストで設置" />
+                    </div>
+                    <div class="card_content">
+                        <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> ローコストで設置</span></p>
+                        <p>
+                            既存設備を最大限活かせる事で工事費も削減。これまでの水力発電と比べて導入のハードルがぐんと下がりました。
+                        </p>
+                        <p>
+                            低コストでも安全性はしっかり確保。数々の検証を経て、落差60m相当の水圧にも対応できる高い耐久性を持ち合わせています。
+                        </p>
+                        <p><small>
+                                ※ 設置環境によっては対応コストを要する可能性があります。<br>
+                                ※ 水車発電機の設置のみ。配線や付帯設備工事等は別途。
+                            </small>
+                        </p>
+                    </div>
+                </li>
+                <li class="card_list nf">
+                    <div class="card_img">
+                        <img
+                            src="img/100-200v.webp"
+                            alt="100・200V対応" />
+                    </div>
+                    <div class="card_content">
+                        <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 100V・200V選択可能</span></p>
+                        <p>
+                            電源仕様を100Vか200Vで選択できます。<br>
+                            100Vで日常的な電源として、200Vで動力使用や売電を視野に入れる事ができます。
+                        </p>
+                    </div>
+                </li>
+            </ul>
     </section>
 
     <section id="place">
@@ -170,7 +170,7 @@ include 'header.php';
             <p class="cent tx_st">設置の難易度が低い製品ではあるものの、闇雲に設置しても高い効果は得られません。<br>
                 不適切な環境に設置すると性能低下・機器破損につながるため、最適な使用環境を相談した上で運用する事が推奨されます。</p><br>
 
-            <h3 class="tx_ul"><i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i> 設置に適している場所 <i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i></h3>
+            <h3 class="tx_ul cent"><i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i> 設置に適している場所 <i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i></h3>
             <ul class="card_items">
                 <li class="card_list nf">
                     <div class="card_img">
