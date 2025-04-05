@@ -36,9 +36,9 @@ include 'header.php';
             </div>
             <div class="img_text_list">
                 <div class="text_list">
-                    <p class="content_cent">明確な規定はありませんが、主に100kW未満の水力発電を業界内では『マイクロ』と呼称しています。</p>
+                    <p class="self_cent mw_800">明確な規定はありませんが、主に100kW未満の水力発電を業界内では『マイクロ』と呼称しています。</p>
 
-                    <p class="content_cent">
+                    <p class="self_cent mw_800">
                         発電設備の規模とkW単価は反比例の傾向があるため、数100・数1000kW規模の発電所に比べて建設単価が割高になりがちですが、未利用水を有効活用でき脱炭素にも貢献できるため普及が期待されています。
                     </p>
                     <table class="advantage_table">

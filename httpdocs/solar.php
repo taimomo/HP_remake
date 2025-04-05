@@ -34,37 +34,34 @@ include 'header.php';
                     <h2>太陽光発電の現状</h2>
                 </div>
             </div>
-            <div class="img_text_list grid_1fr">
-                <div class="text_list">
-                    <p class="content_cent">
-                        これまでの太陽光発電は、発電量を追求した売電事業が盛んでしたが、FIT（固定価格買取制度）の買取価格低下及び電気代の高騰により、作った電気を『売る』時代から『使う』時代に移行しています。
+            <p class="self_cent mw_800">
+                これまでの太陽光発電は、発電量を追求した売電事業が盛んでしたが、FIT（固定価格買取制度）の買取価格低下及び電気代の高騰により、作った電気を『売る』時代から『使う』時代に移行しています。
+            </p>
+            <ul class="card_items">
+                <li class="card_list">
+                    <h3 class="cent no_dc tx_ul">これまでの太陽光発電</h3>
+                    <div class="card_img ar_wd">
+                        <img
+                            src="img/old_solar.webp"
+                            alt="これまでの太陽光発電" />
+                    </div>
+                    <p class="cent tx_st">
+                        FIT主体（野建・広域・高出力）
                     </p>
-                    <ul class="card_items">
-                        <li class="card_list">
-                            <h3 class="cent no_dc tx_ul">これまでの太陽光発電</h3>
-                            <div class="card_img ar_wd">
-                                <img
-                                    src="img/old_solar.webp"
-                                    alt="これまでの太陽光発電" />
-                            </div>
-                            <p class="cent tx_st">
-                                FIT主体（野建・広域・高出力）
-                            </p>
-                        </li>
-                        <li class="card_list">
-                            <h3 class="cent no_dc tx_ul">現在の太陽光発電</h3>
-                            <div class="card_img ar_wd">
-                                <img
-                                    src="img/now_solar.webp"
-                                    alt="現在の太陽光発電" />
-                            </div>
-                            <p class="cent tx_st">
-                                自家消費・蓄電主体（屋根置・需要ベース）
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                </li>
+                <li class="card_list">
+                    <h3 class="cent no_dc tx_ul">現在の太陽光発電</h3>
+                    <div class="card_img ar_wd">
+                        <img
+                            src="img/now_solar.webp"
+                            alt="現在の太陽光発電" />
+                    </div>
+                    <p class="cent tx_st">
+                        自家消費・蓄電主体（屋根置・需要ベース）
+                    </p>
+                </li>
+            </ul>
+
         </div>
     </section>
 
@@ -139,7 +136,7 @@ include 'header.php';
                     <h2>設置推奨場所</h2>
                 </div>
             </div>
-            <p class="cent tx_st">日照時間が確保できれば発電自体は可能ですが、無駄なく使用するためには最適な使用環境を見極める必要があります。</p>
+            <p class="self_cent tx_st">日照時間が確保できれば発電自体は可能ですが、無駄なく使用するためには最適な使用環境を見極める必要があります。</p>
 
             <div class="solar_merit">
                 <div class="merit_label">メリット大</div>
