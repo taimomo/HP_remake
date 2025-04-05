@@ -167,7 +167,7 @@ include 'header.php';
                     <h2>設置推奨場所</h2>
                 </div>
             </div>
-            <p class="cent tx_st">設置の難易度が低い製品ではあるものの、闇雲に設置しても高い効果は得られません。<br>
+            <p class="self_cent tx_st">設置の難易度が低い製品ではあるものの、闇雲に設置しても高い効果は得られません。<br>
                 不適切な環境に設置すると性能低下・機器破損につながるため、最適な使用環境を相談した上で運用する事が推奨されます。</p><br>
 
             <h3 class="tx_ul cent"><i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i> 設置に適している場所 <i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i></h3>
@@ -205,7 +205,9 @@ include 'header.php';
             </ul>
 
             <div class="sc_sp">
+                <div class="sp_line"></div>
                 <h3><small>設置に適さない場所</small></h3>
+                <div class="sp_line"></div>
             </div>
             <ul class="card_items">
                 <li class="card_list nf">
@@ -227,8 +229,8 @@ include 'header.php';
                     </div>
                     <div class="card_content">
                         <div class="other_title">圧送管</div>
-                        <p class="cent">※ 減圧されるため本来の用途に支障あり <br>
-                            余剰圧力の使用は可</p>
+                        <p class="self_cent">※ 減圧されるため本来の用途に支障あり <br>
+                            ※ 余剰圧力の使用は可</p>
                     </div>
                 </li>
                 <li class="card_list nf">
