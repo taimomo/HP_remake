@@ -70,7 +70,7 @@ include 'header.php';
                     <script type="module" src="/js/main.js"></script>
                     <p>
                         箱根登山バス・小田急箱根高速バス「仙石原文化センター前」　徒歩1分<br /><br />
-                        <span>※ お車でお越しの場合</span><br />
+                        <span>※ お車でお越しの場合</span>
                         建物敷地の駐車場は先着順となっております（予約不可）。<br />
                         駐車できない場合はご相談ください。
                     </p>
