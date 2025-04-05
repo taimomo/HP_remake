@@ -52,6 +52,10 @@ main {
             text-align: center;
         }
 
+        .content_cent {
+            margin: 0 auto;
+        }
+
         .tt_space {
             margin: 1rem 0;
         }
@@ -209,12 +213,11 @@ main {
                 gap: 1rem;
                 width: 100%;
                 padding: 1rem;
+                margin: 0.5rem 0;
 
-                p,
-                ul {
-                    margin: 0.5rem 0 1.5rem 0;
+                p {
+                    max-width: 600px;
                 }
-
                 ul {
                     list-style: disc;
                     padding-left: 1.5rem;
@@ -235,6 +238,10 @@ main {
                     object-position: center; /* 中央から表示（上下の余白が均等に除去される）*/
                 }
             }
+        }
+
+        .grid_1fr {
+            grid-template-columns: 1fr;
         }
 
         .spec_table {

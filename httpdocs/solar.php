@@ -34,9 +34,9 @@ include 'header.php';
                     <h2>太陽光発電の現状</h2>
                 </div>
             </div>
-            <div class="img_text_list">
-                <div class="text_list wd_lg">
-                    <p>
+            <div class="img_text_list grid_1fr">
+                <div class="text_list">
+                    <p class="content_cent">
                         これまでの太陽光発電は、発電量を追求した売電事業が盛んでしたが、FIT（固定価格買取制度）の買取価格低下及び電気代の高騰により、作った電気を『売る』時代から『使う』時代に移行しています。
                     </p>
                     <ul class="card_items">
@@ -47,11 +47,9 @@ include 'header.php';
                                     src="img/old_solar.webp"
                                     alt="これまでの太陽光発電" />
                             </div>
-                            <div class="card_content">
-                                <p class="cent tx_st">
-                                    FIT主体（野建・広域・高出力）
-                                </p>
-                            </div>
+                            <p class="cent tx_st">
+                                FIT主体（野建・広域・高出力）
+                            </p>
                         </li>
                         <li class="card_list">
                             <h3 class="cent no_dc tx_ul">現在の太陽光発電</h3>
@@ -60,11 +58,9 @@ include 'header.php';
                                     src="img/now_solar.webp"
                                     alt="現在の太陽光発電" />
                             </div>
-                            <div class="card_content">
-                                <p class="cent tx_st">
-                                    自家消費・蓄電主体（屋根置・需要ベース）
-                                </p>
-                            </div>
+                            <p class="cent tx_st">
+                                自家消費・蓄電主体（屋根置・需要ベース）
+                            </p>
                         </li>
                     </ul>
                 </div>
