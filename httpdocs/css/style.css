@@ -96,10 +96,6 @@ main {
             background-color: #f1f0f0;
         }
 
-        .wd_lg {
-            width: 70vw;
-        }
-
         .no_dc {
             background-color: initial;
             border: none;
@@ -302,17 +298,11 @@ main {
 
         .card_items {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             align-items: stretch; /* 高さ揃え */
-            gap: 2.5rem;
-            max-width: 1250px; /* 全体の幅制限 */
+            gap: 2rem;
             margin: 0 auto;
             padding: 2rem 1rem;
-
-            @media screen and (max-width: 610px) {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                max-width: 600px;
-            }
 
             .card_list {
                 display: grid;
@@ -323,21 +313,19 @@ main {
                 box-shadow: 3px 3px 8px rgba(100, 100, 100, 0.3);
                 transition: box-shadow 0.3s ease;
                 min-width: 0;
-                max-width: 500px;
                 width: 100%;
-                @media screen and (max-width: 768px) {
-                    max-width: 400px;
-                }
 
                 .card_img {
                     aspect-ratio: 16 / 10;
-                    overflow: hidden;
+                    /* overflow: hidden; */
+                    width: 100%;
                     img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
                         object-position: center;
                         display: block;
+                        overflow: hidden;
                     }
                 }
 
