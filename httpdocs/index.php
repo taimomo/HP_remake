@@ -13,7 +13,7 @@ include 'header.php';
     <div class="hero_bg bg_gley">
         <h2 class="ft_sz22">持続可能な未来へ</h2>
     </div>
-    <h3 class="bg_blue ">
+    <h3 class="bg-blue-500 text-white">
         水と太陽のエネルギーソリューションで<br />
         環境経営を積極支援！
     </h3>
