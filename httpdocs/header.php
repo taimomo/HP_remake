@@ -21,7 +21,7 @@
 
 <body>
     <!-- ヘッダー -->
-    <header class="header">
+    <header class="header md:px-6 lg:px-12">
         <input
             id="nav_input"
             type="checkbox"
