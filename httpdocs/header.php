@@ -21,31 +21,43 @@
 
 <body>
     <!-- ヘッダー -->
-    <header class="header">
-        <input
-            id="nav_input"
-            type="checkbox"
-            class="nav_hidden"
-            aria-label="ナビゲーションの切替" />
-        <label for="nav_input" id="nav_btn">
-            <span></span>
-        </label>
-        <div class="logo">
-            <a href="index.php"><img src="../img/CEM_logo_@2x.jpeg" alt="ロゴ" /></a>
+    <header class="grid grid-cols-3 md:grid-cols-[auto_1fr_auto] items-center bg-white px-4 py-4 md:py-2 fixed w-full z-30 shadow-md gap-4">
+        <!-- 共通チェックボックス（peer） -->
+        <input id="nav_input" type="checkbox" class="peer hidden md:pointer-events-none" aria-label="ナビゲーションの切替" />
+
+        <!-- ハンバーガーアイコン（spanを直接配置） -->
+        <span class="md:hidden absolute top-8 right-4 w-[30px] h-[2px] bg-gray-800 transition-transform duration-300 peer-checked:rotate-45 peer-checked:top-[40px] z-40"></span>
+        <span class="md:hidden absolute top-[40px] right-4 w-[30px] h-[2px] bg-gray-800 transition-opacity duration-300 peer-checked:opacity-0 z-40"></span>
+        <span class="md:hidden absolute top-[49px] right-4 w-[30px] h-[2px] bg-gray-800 transition-transform duration-300 peer-checked:-rotate-45 peer-checked:top-[40px] z-40"></span>
+
+        <!-- ラベル（クリック領域） -->
+        <label for="nav_input" aria-label="メニューを開閉" class="fixed top-8 right-4 w-[30px] h-[30px] md:cursor-default z-50 md:pointer-events-none"></label>
+
+
+        <!-- ロゴ -->
+        <div class="col-start-2 justify-self-center w-[80px] h-[40px] md:col-auto md:w-[100px] md:h-[60px] md:mx-auto">
+            <a href="index.php"><img src="../img/CEM_logo_@2x.jpeg" alt="ロゴ" class="w-full h-full object-contain" /></a>
         </div>
-        <nav class="nav">
-            <ul class="nav_items">
-                <li class="nav_list">
-                    <a href="about.php">会社概要</a>
+
+        <nav class="justify-self-center px-2 transition-all duration-500 fixed top-0 right-[-100%] z-20 w-[280px] h-screen bg-white peer-checked:right-0 md:static md:w-auto md:h-auto md:right-auto md:bg-transparent">
+            <ul class="grid md:grid-flow-col grid-cols-1 gap-1 items-center justify-center pt-20 md:gap-4 md:px-4 md:py-4">
+                <li class="w-full md:w-auto grid place-items-center relative h-10 transition-all">
+                    <a href="about.php" class="whitespace-nowrap font-bold text-gray-800 px-3 py-2 relative after:content-[' '] after:absolute after:bottom-[-4px] after:left-1/2 after:w-0 after:h-[2px] after:bg-[#233270] after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-4/5">会社概要</a>
                 </li>
-                <li class="nav_list">
-                    <a href="micro.php">マイクロ水力発電</a>
+                <li class="w-full md:w-auto grid place-items-center relative h-10 transition-all md:before:content-[' '] md:before:absolute md:before:left-0 md:before:-ml-2 md:before:top-0 md:before:h-full md:before:w-px md:before:bg-black">
+                    <a href="micro.php" class="whitespace-nowrap font-bold text-gray-800 px-3 py-2 relative after:content-[' '] after:absolute after:bottom-[-4px] after:left-1/2 after:w-0 after:h-[2px] after:bg-[#233270] after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-4/5">
+                        マイクロ水力発電
+                    </a>
                 </li>
-                <li class="nav_list">
-                    <a href="solar.php">太陽光発電・蓄電</a>
+                <li class="w-full md:w-auto grid place-items-center relative h-10 transition-all md:before:content-[' '] md:before:absolute md:before:left-0 md:before:-ml-2 md:before:top-0 md:before:h-full md:before:w-px md:before:bg-black">
+                    <a href="solar.php" class="whitespace-nowrap font-bold text-gray-800 px-3 py-2 relative after:content-[' '] after:absolute after:bottom-[-4px] after:left-1/2 after:w-0 after:h-[2px] after:bg-[#233270] after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-4/5">
+                        太陽光発電・蓄電
+                    </a>
                 </li>
-                <li class="nav_list contact_btn">
-                    <a href="index.php#contact">お問い合わせ</a>
+                <li class="w-full md:w-auto grid place-items-center relative h-10 transition-all md:before:content-[' '] md:before:absolute md:before:left-0 md:before:-ml-2 md:before:top-0 md:before:h-full md:before:w-px md:before:bg-black">
+                    <a href="index.php#contact" class="grid place-items-center bg-[#233270] text-white px-4 h-10 rounded-full text-sm md:text-base whitespace-nowrap">
+                        お問い合わせ
+                    </a>
                 </li>
             </ul>
         </nav>
