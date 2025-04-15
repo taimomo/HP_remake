@@ -40,21 +40,23 @@
         </div>
 
         <nav class="justify-self-center px-2 transition-all duration-500 fixed top-0 right-[-100%] z-20 w-[280px] h-screen bg-white peer-checked:right-0 md:static md:w-auto md:h-auto md:right-auto md:bg-transparent">
-            <ul class="grid md:grid-flow-col grid-cols-1 gap-1 items-center justify-center pt-20 md:gap-4 md:px-4 md:py-4">
-                <li class="w-full md:w-auto grid place-items-center relative h-10 transition-all">
-                    <a href="about.php" class="whitespace-nowrap font-bold text-gray-800 px-3 py-2 relative after:content-[' '] after:absolute after:bottom-[-4px] after:left-1/2 after:w-0 after:h-[2px] after:bg-[#233270] after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-4/5">会社概要</a>
+            <ul class="grid md:grid-flow-col grid-cols-1 gap-4 items-center justify-center pt-20 md:gap-4 md:px-4 md:py-4">
+                <!-- li：モバイル時に70%幅、2pxのdivider追加、ホバー下線はmd以上のみ -->
+                <li class="w-full md:w-auto grid place-items-center relative h-10 transition-all after:content-[''] after:block after:mx-auto  after:w-[70%] after:h-[2px] after:bg-gray-300 after:md:hidden last:after:hidden">
+                    <a href="about.php" class="whitespace-nowrap font-bold text-gray-800 px-3 py-2 relative after:content-[' '] after:absolute after:bottom-[-4px] after:left-1/2 after:w-0 after:h-[2px] after:bg-[#233270] after:transition-all after:duration-300 after:transform after:-translate-x-1/2 md:hover:after:w-4/5">会社概要</a>
                 </li>
-                <li class="w-full md:w-auto grid place-items-center relative h-10 transition-all md:before:content-[' '] md:before:absolute md:before:left-0 md:before:-ml-2 md:before:top-0 md:before:h-full md:before:w-px md:before:bg-black">
-                    <a href="micro.php" class="whitespace-nowrap font-bold text-gray-800 px-3 py-2 relative after:content-[' '] after:absolute after:bottom-[-4px] after:left-1/2 after:w-0 after:h-[2px] after:bg-[#233270] after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-4/5">
+
+                <li class="w-full md:w-auto grid place-items-center relative h-10 transition-all md:before:content-[' '] md:before:absolute md:before:left-0 md:before:-ml-2 md:before:top-0 md:before:h-full md:before:w-px md:before:bg-black after:content-[''] after:block after:mx-auto  after:w-[70%] after:h-[2px] after:bg-gray-300 after:md:hidden last:after:hidden">
+                    <a href="micro.php" class="whitespace-nowrap font-bold text-gray-800 px-3 py-2 relative after:content-[' '] after:absolute after:bottom-[-4px] after:left-1/2 after:w-0 after:h-[2px] after:bg-[#233270] after:transition-all after:duration-300 after:transform after:-translate-x-1/2 md:hover:after:w-4/5">
                         マイクロ水力発電
                     </a>
                 </li>
-                <li class="w-full md:w-auto grid place-items-center relative h-10 transition-all md:before:content-[' '] md:before:absolute md:before:left-0 md:before:-ml-2 md:before:top-0 md:before:h-full md:before:w-px md:before:bg-black">
-                    <a href="solar.php" class="whitespace-nowrap font-bold text-gray-800 px-3 py-2 relative after:content-[' '] after:absolute after:bottom-[-4px] after:left-1/2 after:w-0 after:h-[2px] after:bg-[#233270] after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-4/5">
+                <li class="w-full md:w-auto grid place-items-center relative h-10 transition-all md:before:content-[' '] md:before:absolute md:before:left-0 md:before:-ml-2 md:before:top-0 md:before:h-full md:before:w-px md:before:bg-black after:content-[''] after:block after:mx-auto  after:w-[70%] after:h-[2px] after:bg-gray-300 after:md:hidden last:after:hidden">
+                    <a href="solar.php" class="whitespace-nowrap font-bold text-gray-800 px-3 py-2 relative after:content-[' '] after:absolute after:bottom-[-4px] after:left-1/2 after:w-0 after:h-[2px] after:bg-[#233270] after:transition-all after:duration-300 after:transform after:-translate-x-1/2 md:hover:after:w-4/5">
                         太陽光発電・蓄電
                     </a>
                 </li>
-                <li class="w-full md:w-auto grid place-items-center relative h-10 transition-all md:before:content-[' '] md:before:absolute md:before:left-0 md:before:-ml-2 md:before:top-0 md:before:h-full md:before:w-px md:before:bg-black">
+                <li class="w-full md:w-auto grid place-items-center relative h-10 transition-all md:before:content-[' '] md:before:absolute md:before:left-0 md:before:-ml-2 md:before:top-0 md:before:h-full md:before:w-px md:before:bg-black after:content-[''] after:block after:mx-auto  after:w-[70%] after:h-[2px] after:bg-gray-300 after:md:hidden last:after:hidden">
                     <a href="index.php#contact" class="grid place-items-center bg-[#233270] text-white px-4 h-10 rounded-full text-sm md:text-base whitespace-nowrap">
                         お問い合わせ
                     </a>
