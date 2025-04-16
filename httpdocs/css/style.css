@@ -623,149 +623,6 @@ main {
     }
 }
 
-/* footer要素 */
-footer {
-    background-color: #233270;
-    color: #fff;
-    text-align: center;
-    padding: 2rem;
-
-    @media screen and (max-width: 768px) {
-        padding: 2rem;
-    }
-
-    .footer_container {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        align-items: center;
-        gap: 1rem;
-        margin: 0 auto 3rem;
-
-        @media screen and (max-width: 768px) {
-            grid-template-columns: 1fr;
-            text-align: center;
-            justify-items: center;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer_company_name {
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-align: left;
-            h2 {
-                text-shadow: none;
-                @media screen and (max-width: 425px) {
-                    font-size: 1.5rem;
-                }
-            }
-        }
-
-        .footer_company_name h2::before {
-            content: none;
-        }
-
-        .footer_company_info {
-            display: grid;
-            gap: 0.25rem;
-            justify-items: start;
-            list-style: none;
-            @media screen and (max-width: 768px) {
-                justify-items: center;
-            }
-            @media screen and (max-width: 425px) {
-                li {
-                    font-size: 1rem;
-                }
-            }
-            .company_info_item {
-                padding-left: 1.5rem;
-
-                @media screen and (max-width: 768px) {
-                    padding: 0.5rem;
-                }
-            }
-        }
-    }
-    .footer_menu {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-        justify-content: center;
-        gap: 1rem;
-        font-size: 0.9rem;
-        list-style: none;
-        a {
-            text-decoration: underline;
-        }
-        @media screen and (max-width: 425px) {
-            font-size: 0.8rem;
-            grid-template-columns: 1fr;
-        }
-    }
-}
-
-/* Hero要素 */
-.hero {
-    display: grid;
-    grid-template-rows: repeat(7, 1fr); /* 高さを7分割 */
-    grid-template-columns: repeat(12, 1fr); /* 横も12カラム */
-    min-height: calc(90vh - 100px); /* ヘッダーを除いた全画面高 */
-    height: 70vh;
-    color: white;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-
-    .hero_bg {
-        display: grid;
-        grid-column: 1 / -1;
-        grid-row: 3 / 4; /* 縦：3段目 */
-
-        h2 {
-            grid-column: 2 / 12;
-            align-self: center;
-            @media screen and (max-width: 768px) {
-                grid-column: 6 / 12;
-                font-size: 2rem;
-            }
-            @media screen and (max-width: 425px) {
-                font-size: 1.6rem;
-            }
-        }
-    }
-
-    h3 {
-        grid-row: 7 / 8;
-        grid-column: 9 / 13; /* 右側に配置する場合 */
-        padding: 1rem;
-        text-align: center;
-        border-radius: 5px;
-        text-decoration: underline;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-        justify-self: end; /* 横：右寄せ */
-        align-self: end;
-        white-space: nowrap;
-        @media screen and (max-width: 768px) {
-            font-size: 1.2rem;
-        }
-        @media screen and (max-width: 425px) {
-            font-size: 0.9rem;
-            justify-self: center;
-            grid-column: 2 / 12;
-        }
-    }
-}
-
-.home_hero {
-    background: url("/img/hero_img2.webp") center/cover no-repeat;
-}
-
-.hero_svh {
-    min-height: calc(70dvh - 100px);
-    height: auto;
-    .hero_bg {
-        grid-row: 4 / 5;
-    }
-}
-
 /* News要素 */
 #news {
     .container {
@@ -1053,10 +910,6 @@ footer {
 
 /* aboutページ */
 
-.about_hero {
-    background: url("/img/about_top.webp") center/cover no-repeat;
-}
-
 #about_company {
     .container {
         background-color: white;
@@ -1093,10 +946,6 @@ footer {
 
 /* microページ */
 
-.micro_hero {
-    background: url("/img/micro_exp.webp") center/cover no-repeat;
-}
-
 #about_micro {
     background-color: white;
 }
@@ -1106,11 +955,6 @@ footer {
 }
 
 /* acrページ */
-
-.arc_hero {
-    background: url("/img/hanami_pic.webp") center/cover no-repeat;
-}
-
 #about_arc {
     background-color: white;
 }
@@ -1119,18 +963,7 @@ footer {
     background-color: white;
 }
 
-/* cruttoページ */
-
-.crutto_hero {
-    background: url("/img/crutto_hero.webp") center/cover no-repeat;
-}
-
 /* solarページ */
-
-.solar_hero {
-    background: url("/img/solar_exp.webp") center/cover no-repeat;
-}
-
 #about_solar {
     background-color: white;
 }
