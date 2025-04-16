@@ -5,9 +5,14 @@ include 'header.php';
 
 
 <!-- ヒーローセクション -->
-<section id="arc" class="hero arc_hero hero_svh">
-    <div class="hero_bg bg_gley">
-        <h2 class="ft_sz22">パワーアルキメデス</h2>
+<section
+    id="arc"
+    class="pt-[75px] md:pt-[90px] relative grid grid-cols-12 grid-rows-6 h-80 text-white bg-gray-800 bg-[url('/img/hanami_pic.webp')] bg-center bg-cover bg-no-repeat">
+    <!-- 中央に配置するタイトル -->
+    <div class="col-span-12 row-start-2 row-end-4 grid grid-cols-12 bg-gray-700/50">
+        <h2 class="col-start-1 col-end-13 place-self-center md:col-start-1 md:col-end-6 text-3xl md:text-4xl font-bold">
+            パワーアルキメデス
+        </h2>
     </div>
 </section>
 
