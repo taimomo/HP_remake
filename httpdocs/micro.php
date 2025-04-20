@@ -31,12 +31,12 @@ include 'header.php';
 </section>
 
 <main>
-    <section id="about_micro">
-        <div class="container">
-            <div class="section_wrap">
-                <div class="section_title">
-                    <span class="decor"></span>
-                    <h2>マイクロ水力とは？</h2>
+    <section id="about_micro" class="py-8">
+        <div class="grid justify-center overflow-hidden">
+            <div class="grid justify-center my-8 max-[425px]:mt-4">
+                <div class="grid grid-cols-[auto_1fr] items-center gap-3 text-left">
+                    <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
+                    <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">マイクロ水力とは？</h2>
                 </div>
             </div>
             <div class="img_text_list">
@@ -78,12 +78,12 @@ include 'header.php';
         </div>
     </section>
 
-    <section id="product">
-        <div class="container">
-            <div class="section_wrap">
-                <div class="section_title">
-                    <span class="decor"></span>
-                    <h2>取扱製品</h2>
+    <section id="products" class="py-8">
+        <div class="grid justify-center py-8 overflow-hidden">
+            <div class="grid justify-center my-8 max-[425px]:mt-4">
+                <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
+                    <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
+                    <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">取扱製品</h2>
                 </div>
             </div>
             <ul class="card_items">
@@ -135,12 +135,12 @@ include 'header.php';
         </div>
     </section>
 
-    <section id="water_flow">
-        <div class="container">
-            <div class="section_wrap">
-                <div class="section_title">
-                    <span class="decor"></span>
-                    <h2>導入フロー</h2>
+    <section id="water_flow" class="py-8">
+        <div class="grid justify-center py-8 overflow-hidden">
+            <div class="grid justify-center my-8 max-[425px]:mt-4">
+                <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
+                    <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
+                    <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">導入フロー</h2>
                 </div>
             </div>
             <div class="flow_contents">

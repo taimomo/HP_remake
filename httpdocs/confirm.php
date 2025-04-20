@@ -45,12 +45,12 @@ $hideHeaderFooter = true;
 <body>
 
     <main>
-        <section class="confirm hd_space">
-            <div class="container">
-                <div class="section_wrap">
-                    <div class="section_title">
-                        <span class="decor"></span>
-                        <h2>入力内容の確認</h2>
+        <section id="confirm" class="py-8">
+            <div class="grid justify-center overflow-hidden">
+                <div class="grid justify-center my-8 max-[425px]:mt-4">
+                    <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
+                        <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
+                        <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">入力内容の確認</h2>
                     </div>
                 </div>
                 <dl>

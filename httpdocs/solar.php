@@ -31,12 +31,12 @@ include 'header.php';
 </section>
 
 <main>
-    <section id="about_solar">
-        <div class="container">
-            <div class="section_wrap">
-                <div class="section_title">
-                    <span class="decor"></span>
-                    <h2>太陽光発電の現状</h2>
+    <section id="about_solar" class="py-8">
+        <div class="grid justify-center py-8 overflow-hidden">
+            <div class="grid justify-center my-8 max-[425px]:mt-4">
+                <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
+                    <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
+                    <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">太陽光発電の現状</h2>
                 </div>
             </div>
             <p class="self_cent mw_800">
@@ -70,12 +70,12 @@ include 'header.php';
         </div>
     </section>
 
-    <section id="service">
-        <div class="container">
-            <div class="section_wrap">
-                <div class="section_title">
-                    <span class="decor"></span>
-                    <h2>サービス紹介</h2>
+    <section id="service" class="py-8">
+        <div class="grid justify-center py-8 overflow-hidden">
+            <div class="grid justify-center my-8 max-[425px]:mt-4">
+                <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
+                    <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
+                    <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">サービス紹介</h2>
                 </div>
             </div>
             <ul class="card_items">
@@ -133,12 +133,12 @@ include 'header.php';
         </div>
     </section>
 
-    <section id="solar_place">
-        <div class="container">
-            <div class="section_wrap">
-                <div class="section_title">
-                    <span class="decor"></span>
-                    <h2>設置推奨場所</h2>
+    <section id="solar_place" class="py-8">
+        <div class="grid justify-center py-8 overflow-hidden">
+            <div class="grid justify-center my-8 max-[425px]:mt-4">
+                <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
+                    <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
+                    <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">設置推奨場所</h2>
                 </div>
             </div>
             <p class="self_cent tx_st">日照時間が確保できれば発電自体は可能ですが、無駄なく使用するためには最適な使用環境を見極める必要があります。</p>
@@ -198,12 +198,12 @@ include 'header.php';
         </div>
     </section>
 
-    <section id="solar_flow">
-        <div class="container">
-            <div class="section_wrap">
-                <div class="section_title">
-                    <span class="decor"></span>
-                    <h2>導入フロー</h2>
+    <section id="solar_flow" class="py-8">
+        <div class="grid justify-center py-8 overflow-hidden">
+            <div class="grid justify-center my-8 max-[425px]:mt-4">
+                <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
+                    <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
+                    <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">導入フロー</h2>
                 </div>
             </div>
             <div class="flow_contents">
