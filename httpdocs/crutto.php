@@ -16,25 +16,14 @@ include 'header.php';
     </div>
 </section>
 
-<section id="bread_crumb">
-    <nav aria-label="breadcrumb">
-        <ol class="bread_crumb_list">
-            <li class="bread_crumb_item">
-                <a href="/">
-                    <i class="fa-solid fa-house"></i> ホーム
-                </a>
-            </li>
-            <li class="bread_crumb_item">
-                <a href="micro.php">
-                    マイクロ水力発電
-                </a>
-            </li>
-            <li class="bread_crumb_item active" aria-current="page">
-                Crutto
-            </li>
-        </ol>
-    </nav>
-</section>
+<?php
+$breadcrumbs = [
+    ['url' => '/',               'label' => 'ホーム'],
+    ['url' => 'micro.php',       'label' => 'マイクロ水力発電'],
+    ['url' => 'crutto.php',      'label' => 'Crutto', 'active' => true],
+];
+include 'bread.php';
+?>
 
 <main>
     <section id="about_crutto" class="py-8">

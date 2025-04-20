@@ -15,20 +15,13 @@ include 'header.php';
     </div>
 </section>
 
-<section id="bread_crumb">
-    <nav aria-label="breadcrumb">
-        <ol class="bread_crumb_list">
-            <li class="bread_crumb_item">
-                <a href="/">
-                    <i class="fa-solid fa-house"></i> ホーム
-                </a>
-            </li>
-            <li class="bread_crumb_item active" aria-current="page">
-                太陽光発電・蓄電システム
-            </li>
-        </ol>
-    </nav>
-</section>
+<?php
+$breadcrumbs = [
+    ['url' => '/',               'label' => 'ホーム'],
+    ['url' => 'solar.php',       'label' => '太陽光発電・蓄電システム', 'active' => true],
+];
+include 'bread.php';
+?>
 
 <main>
     <section id="about_solar" class="py-8">
