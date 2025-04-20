@@ -15,20 +15,13 @@ include 'header.php';
     </div>
 </section>
 
-<section id="bread_crumb">
-    <nav aria-label="breadcrumb">
-        <ol class="bread_crumb_list">
-            <li class="bread_crumb_item">
-                <a href="/">
-                    <i class="fa-solid fa-house"></i> ホーム
-                </a>
-            </li>
-            <li class="bread_crumb_item active" aria-current="page">
-                マイクロ水力発電
-            </li>
-        </ol>
-    </nav>
-</section>
+<?php
+$breadcrumbs = [
+    ['url' => '/',               'label' => 'ホーム'],
+    ['url' => 'micro.php',       'label' => 'マイクロ水力発電', 'active' => true],
+];
+include 'bread.php';
+?>
 
 <main>
     <section id="about_micro" class="py-8">
