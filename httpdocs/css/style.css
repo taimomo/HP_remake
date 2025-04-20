@@ -44,35 +44,6 @@ main {
             }
         }
 
-        .section_wrap {
-            display: grid;
-            justify-content: center;
-            margin: 2rem 0 1rem 0;
-
-            @media screen and (max-width: 425px) {
-                margin-top: 1rem;
-            }
-
-            .section_title {
-                display: grid;
-                grid-template-columns: auto 1fr;
-                align-items: center; /* ← 縦中央揃え */
-                column-gap: 1rem;
-                text-align: left;
-            }
-            .decor {
-                width: 10px;
-                height: 1.8rem;
-                background: linear-gradient(to bottom, #4a90e2, #2e4488);
-                transform: skewX(-30deg);
-            }
-            h2 {
-                font-weight: bold;
-                text-shadow: 2px -1px 3px #fff,
-                    -2px -2px 5px rgba(70, 70, 70, 0.5);
-            }
-        }
-
         .other_title {
             font-size: 1.2rem;
             font-weight: bold;
