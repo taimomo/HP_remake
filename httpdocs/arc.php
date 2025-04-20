@@ -37,12 +37,12 @@ include 'header.php';
 </section>
 
 <main>
-    <section id="about_arc">
-        <div class="container">
-            <div class="section_wrap">
-                <div class="section_title">
-                    <span class="decor"></span>
-                    <h2>製品情報</h2>
+    <section id="about_arc" class="py-8">
+        <div class="grid justify-center py-8 overflow-hidden">
+            <div class="grid justify-center my-8 max-[425px]:mt-4">
+                <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
+                    <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
+                    <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">製品情報</h2>
                 </div>
             </div>
             <div class="img_text_list">
@@ -169,12 +169,12 @@ include 'header.php';
             </ul>
     </section>
 
-    <section id="place">
-        <div class="container">
-            <div class="section_wrap">
-                <div class="section_title">
-                    <span class="decor"></span>
-                    <h2>設置推奨場所</h2>
+    <section id="arc_place" class="py-8">
+        <div class="grid justify-center py-8 overflow-hidden">
+            <div class="grid justify-center my-8 max-[425px]:mt-4">
+                <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
+                    <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
+                    <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">設置推奨場所</h2>
                 </div>
             </div>
             <p class="self_cent tx_st">どのような水車にも最適な環境での使用が推奨されています。<br>
@@ -257,12 +257,12 @@ include 'header.php';
         </div>
     </section>
 
-    <section id="record">
-        <div class="container">
-            <div class="section_wrap">
-                <div class="section_title">
-                    <span class="decor"></span>
-                    <h2>導入事例</h2>
+    <section id="record" class="py-8">
+        <div class="grid justify-center py-8 overflow-hidden">
+            <div class="grid justify-center my-8 max-[425px]:mt-4">
+                <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
+                    <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
+                    <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">導入事例</h2>
                 </div>
             </div>
             <ul class="card_items">

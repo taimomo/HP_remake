@@ -19,7 +19,7 @@ include 'header.php';
         </h2>
     </div>
     <!-- 右下に配置するサブ見出し -->
-    <div class="col-start-1 col-end-13 row-start-5 row-end-6 grid">
+    <div class="col-start-1 col-end-13 row-start-6 row-end-7 grid">
         <h3 class="bg-blue-700 text-white text-center px-4 py-2 rounded underline shadow-md text-lg md:text-xl max-[425px]:text-base justify-self-center md:justify-self-end">
             水と太陽のエネルギーソリューションで<br />
             環境経営を積極支援！
@@ -29,12 +29,12 @@ include 'header.php';
 
 <main>
     <!-- News セクション -->
-    <section id="news">
-        <div class="container">
-            <div class="section_wrap">
-                <div class="section_title">
-                    <span class="decor"></span>
-                    <h2>News</h2>
+    <section id="news" class="py-8">
+        <div class="grid justify-center overflow-hidden">
+            <div class="grid justify-center my-8 max-[425px]:mt-4">
+                <div class="grid grid-cols-[auto_1fr] items-center gap-3 text-left">
+                    <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
+                    <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">News</h2>
                 </div>
             </div>
             <ul class="time_items">
@@ -55,8 +55,8 @@ include 'header.php';
     </section>
 
     <!-- 会社情報 -->
-    <section id="company">
-        <div class="container no_pd">
+    <section id="company" class="py-8">
+        <div class="grid justify-center overflow-hidden">
             <ul class="row_items">
                 <li class="row_list">
                     <div class="lg_img">
@@ -65,10 +65,10 @@ include 'header.php';
                             alt="会社案内" />
                     </div>
                     <div class="lg_content">
-                        <div class="section_wrap">
-                            <div class="section_title">
-                                <span class="decor"></span>
-                                <h2>会社情報</h2>
+                        <div class="grid justify-center my-8 max-[425px]:mt-4">
+                            <div class="grid grid-cols-[auto_1fr] items-center gap-3 text-left">
+                                <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
+                                <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">会社情報</h2>
                             </div>
                         </div>
                         <p class="lg_text">
@@ -88,12 +88,12 @@ include 'header.php';
     </section>
 
     <!-- 事業内容 -->
-    <section id="business">
-        <div class="container">
-            <div class="section_wrap">
-                <div class="section_title">
-                    <span class="decor"></span>
-                    <h2>事業内容</h2>
+    <section id="news" class="py-8">
+        <div class="grid justify-center overflow-hidden">
+            <div class="grid justify-center my-8 max-[425px]:mt-4">
+                <div class="grid grid-cols-[auto_1fr] items-center gap-3 text-left">
+                    <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
+                    <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">事業内容</h2>
                 </div>
             </div>
             <ul class="card_items">
@@ -144,12 +144,12 @@ include 'header.php';
     </section>
 
     <!-- お問い合わせフォーム -->
-    <section id="contact">
-        <div class="container">
-            <div class="section_wrap">
-                <div class="section_title">
-                    <span class="decor"></span>
-                    <h2>お問い合わせ</h2>
+    <section id="news" class="py-8">
+        <div class="grid justify-center overflow-hidden">
+            <div class="grid justify-center my-8 max-[425px]:mt-4">
+                <div class="grid grid-cols-[auto_1fr] items-center gap-3 text-left">
+                    <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
+                    <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">お問い合わせ</h2>
                 </div>
             </div>
             <p>
