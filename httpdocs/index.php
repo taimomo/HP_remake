@@ -30,24 +30,49 @@ include 'header.php';
 <main>
     <!-- News セクション -->
     <section id="news" class="py-8">
-        <div class="grid justify-center overflow-hidden">
+        <div class="grid justify-center px-4 overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-3 text-left">
                     <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">News</h2>
                 </div>
             </div>
-            <ul class="time_items">
-                <li class="time_list">
-                    <time datetime="2025-03-30">2025.03.30</time>
-                    <span class="time_title">
+            <ul
+                class="mx-auto px-4 my-4 max-h-[300px] max-w-[600px] overflow-auto border-t-2 border-b-2 border-gray-400 max-[425px]:max-w-[300px]">
+                <!-- リストアイテム -->
+                <li
+                    class="grid grid-cols-1 md:grid-cols-[120px_1fr] gap-4 items-center py-4 border-b border-gray-200 last:border-b-0">
+                    <time class="font-bold w-full mb-2 md:mb-0 md:w-auto" datetime="2025-03-30">
+                        2025.03.30
+                    </time>
+                    <span class="w-full min-w-0 break-words">
                         ホームページをリニューアルしました。
                     </span>
                 </li>
-                <li class="time_list">
-                    <time datetime="2025-04-01">2025.04.01</time>
-                    <span class="time_title">
+
+                <li
+                    class="grid grid-cols-1 md:grid-cols-[120px_1fr] gap-4 items-center py-4 border-b border-gray-200 last:border-b-0">
+                    <time class="font-bold w-full mb-2 md:mb-0 md:w-auto" datetime="2025-04-01">
+                        2025.04.01
+                    </time>
+                    <span class="w-full min-w-0 break-words">
                         プライバシーポリシーを改訂しました。
+                    </span>
+                </li>
+
+                <li
+                    class="grid grid-cols-1 md:grid-cols-[120px_1fr] gap-4 items-center py-4">
+                    <time class="font-bold w-full mb-2 md:mb-0 md:w-auto" datetime="2025-04-14">
+                        2025.04.14
+                    </time>
+                    <span class="w-full grid gap-y-1 min-w-0">
+                        弊社監修の『マイクロ水力発電機』ページが、産業用製品・メーカー情報比較サイト
+                        「Metoree（メトリー）」にて公開されました。<br>
+                        <a
+                            href="https://metoree.com/categories/9409/"
+                            class="text-[#005eff] underline break-words min-w-0">
+                            https://metoree.com/categories/9409/
+                        </a>
                     </span>
                 </li>
             </ul>
