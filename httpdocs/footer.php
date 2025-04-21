@@ -4,7 +4,7 @@
     <div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 md:gap-4 justify-items-center md:justify-items-start mx-auto mb-8 md:mb-12">
         <!-- 会社名 -->
         <div class="md:grid md:items-center text-left">
-            <h2 class="text-2xl font-bold">株式会社シーイーエム</h2>
+            <h2 class="text-2xl md:text-3xl font-bold">株式会社シーイーエム</h2>
         </div>
         <!-- 会社情報 -->
         <ul class="grid gap-1 list-none justify-items-center md:justify-items-start">
