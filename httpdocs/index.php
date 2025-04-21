@@ -38,7 +38,7 @@ include 'header.php';
                 </div>
             </div>
             <ul
-                class="mx-auto px-4 my-4 max-h-[300px] max-w-[600px] overflow-auto border-t-2 border-b-2 border-gray-400 max-[425px]:max-w-[300px]">
+                class="mx-auto px-4 my-4 max-h-72 max-w-xl overflow-auto border-t-2 border-b-2 border-gray-400 max-[425px]:max-w-72">
                 <!-- リストアイテム -->
                 <li
                     class="grid grid-cols-1 md:grid-cols-[120px_1fr] gap-4 items-center py-4 border-b border-gray-200 last:border-b-0">
@@ -82,30 +82,40 @@ include 'header.php';
     <!-- 会社情報 -->
     <section id="company" class="py-8">
         <div class="grid justify-center overflow-hidden">
-            <ul class="row_items">
-                <li class="row_list">
-                    <div class="lg_img">
+            <ul class="grid grid-cols-1">
+                <li class="grid md:grid-cols-[2fr_1fr] grid-cols-1 ">
+                    <!-- 画像部分 -->
+                    <div class="grid max-h-96 overflow-hidden col-start-1 row-start-1 w-full h-full">
                         <img
                             src="/img/company_front.webp"
-                            alt="会社案内" />
+                            alt="会社案内"
+                            class="w-full object-contain mask_img" />
                     </div>
-                    <div class="lg_content">
-                        <div class="grid justify-center my-8 max-[425px]:mt-4">
+                    <!-- テキスト部分 -->
+                    <div
+                        class="grid grid-rows-[auto_1fr_auto] p-4 place-items-center place-self-center gap-6 col-start-1 row-start-1 md:col-start-auto max-w-[65%] md:max-w-full">
+                        <!-- タイトル -->
+                        <div class="grid justify-center my-4 md:mt-4">
                             <div class="grid grid-cols-[auto_1fr] items-center gap-3 text-left">
                                 <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
-                                <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">会社情報</h2>
+                                <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">
+                                    会社情報
+                                </h2>
                             </div>
                         </div>
-                        <p class="lg_text">
+                        <!-- 説明文 -->
+                        <p class="text-center text-lg font-bold leading-relaxed text-gray-800 max-[768px]:text-base max-[425px]:text-sm">
                             シーイーエムについて<br />
                             会社所在地等の基本情報を掲載しています。
                         </p>
-
+                        <!-- ボタン -->
                         <a
                             href="about.php"
-                            class="more_btn btn_blue"
                             role="button"
-                            tabindex="0">もっと見る</a>
+                            tabindex="0"
+                            class="block w-36 md:w-40 px-4 py-2 text-center rounded-full font-bold bg-[#2e4488] text-white shadow-md hover:shadow-lg max-[425px]:text-[0.8rem]">
+                            もっと見る
+                        </a>
                     </div>
                 </li>
             </ul>
