@@ -30,7 +30,7 @@ include 'bread.php';
         <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
-                    <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
+                    <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">製品情報</h2>
                 </div>
             </div>
@@ -172,7 +172,7 @@ include 'bread.php';
         <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
-                    <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
+                    <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">設置推奨場所</h2>
                 </div>
             </div>
