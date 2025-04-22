@@ -26,8 +26,9 @@ include 'bread.php';
 ?>
 
 <main>
+    <!-- 製品情報 -->
     <section id="about_arc" class="py-8">
-        <div class="grid justify-center py-8 overflow-hidden">
+        <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
                     <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
@@ -97,153 +98,202 @@ include 'bread.php';
                         本製品は設置場所に合わせて設計・製造するオーダーメイド品です。<br>価格・寸法は都度異なるため、詳細はお問い合わせください。
                     </p>
                 </div>
-
             </div>
-            <ul class="card_items">
-                <li class="card_list nf">
-                    <div class="card_img">
-                        <img
-                            src="img/low_head.webp"
-                            alt="低落差対応" />
+
+            <!-- 製品情報・カードリスト -->
+            <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
+                        <img src="img/low_head.webp"
+                            alt="低落差対応"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 低落差で発電可能</span></p>
-                        <p>
-                            多くの水力発電機は数10mの落差が必要で、長大な配管を敷設する手間と敷地が必要です。
-                        </p>
-                        <p>
-                            パワーアルキメデスは配管だけでなく開水路にも設置でき、数mの落差でも発電を可能としています。
-                        </p>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                            <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 低落差で発電可能</p>
+                            <p class="min-h-[80px]">
+                                多くの水力発電機は数10mの落差が必要で、長大な配管を敷設する手間と敷地が必要です。
+                            </p>
+                            <p class="min-h-[80px]">
+                                パワーアルキメデスは配管だけでなく開水路にも設置でき、数mの落差でも発電を可能としています。
+                            </p>
+                        </div>
                     </div>
                 </li>
-                <li class="card_list nf">
-                    <div class="card_img">
-                        <img
-                            src="img/mini_pic.webp"
-                            alt="シンプル構造" />
+
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
+                        <img src="img/mini_pic.webp"
+                            alt="シンプル構造"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 手早く設置可能なシンプル構造</span></p>
-                        <p>
-                            構造を徹底的にシンプル化。最短で半日の据付を可能とし長期間の止水困難な場所にも対応できます。
-                        </p>
-                        <p><small>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                            <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 手早く設置可能なシンプル構造</p>
+                            <p class="min-h-[80px]">
+                                構造を徹底的にシンプル化。最短で半日の据付を可能とし長期間の止水困難な場所にも対応できます。
+                            </p>
+                            <p class="min-h-[80px] text-sm">
                                 ※ 設置環境によっては時間要する可能性があります。<br>
                                 ※ 水車発電機の設置のみ。配線や付帯設備工事等は別途。
-                            </small>
-                        </p>
+                            </p>
+                        </div>
                     </div>
                 </li>
-                <li class="card_list nf">
-                    <div class="card_img">
-                        <img
-                            src="img/garbage.webp"
-                            alt="低落差対応" />
+
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
+                        <img src="img/garbage.webp"
+                            alt="異物混入に強い"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 異物混入に強い構造</span></p>
-                        <p>
-                            大半の水車は異物混入に弱く、出力低下だけでなく致命的な故障の原因にもなり得ます。
-                        </p>
-                        <p>
-                            パワーアルキメデスはプロペラ状の羽根車を採用しているため、空き缶や落ち葉等の多くは通過して下流に排出されます。塵一つ許さないような精密な管理は必要ありません。
-                        </p>
-                        <p><small>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                            <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 異物混入に強い構造</p>
+                            <p class="min-h-[80px]">
+                                大半の水車は異物混入に弱く、出力低下だけでなく致命的な故障の原因にもなり得ます。
+                            </p>
+                            <p class="min-h-[80px]">
+                                パワーアルキメデスはプロペラ状の羽根車を採用しているため、空き缶や落ち葉等の多くは通過して下流に排出されます。塵一つ許さないような精密な管理は必要ありません。
+                            </p>
+                            <p class="min-h-[80px] text-sm">
                                 ※ 故障は発生し難くても、出力低下の要因にはなり得ます。<br>
                                 ※ 万が一に備えて適切な除塵設備は必要です。
-                            </small>
-                        </p>
+                            </p>
+                        </div>
                     </div>
                 </li>
             </ul>
     </section>
 
+    <!-- 設置推奨場所 -->
     <section id="arc_place" class="py-8">
-        <div class="grid justify-center py-8 overflow-hidden">
+        <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
                     <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">設置推奨場所</h2>
                 </div>
             </div>
-            <p class="self_cent tx_st">どのような水車にも最適な環境での使用が推奨されています。<br>
-                不適切な環境に設置すると性能低下・機器破損につながるため、最適な使用環境を相談した上で運用する事が推奨されます。</p><br>
+            <p class="justify-self-center px-4 font-medium tracking-wide md:text-lg">
+                どのような水車にも最適な環境での使用が推奨されています。<br>
+                不適切な環境に設置すると性能低下・機器破損につながるため、最適な使用環境を相談した上で運用する事が推奨されます。</p>
 
+            <!-- 適している場所 -->
             <h3 class="tx_ul cent"><i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i> 設置に適している場所 <i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i></h3>
-            <ul class="card_items">
-                <li class="card_list nf">
-                    <div class="card_img">
+
+            <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
                         <img
                             src="img/agri_water.webp"
-                            alt="農業用水" />
+                            alt="農業用水"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <div class="other_title">農業用水</div>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
+                            <p class="text-center font-bold text-lg">農業用水</p>
+                        </div>
                     </div>
                 </li>
-                <li class="card_list nf">
-                    <div class="card_img">
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
                         <img
                             src="img/plant_water.webp"
-                            alt="工場排水" />
+                            alt="工場排水"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <div class="other_title">工場排水</div>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
+                            <p class="text-center font-bold text-lg">工場排水</p>
+                        </div>
                     </div>
                 </li>
-                <li class="card_list nf">
-                    <div class="card_img">
-                        <img
-                            src="img/sewage_plant.webp"
-                            alt="下水処理場" />
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
+                        <img src="img/sewage_plant.webp"
+                            alt="下水処理場"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <div class="other_title">下水処理場</div>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
+                            <p class="text-center font-bold text-lg">下水処理場</p>
+                        </div>
                     </div>
                 </li>
             </ul>
 
+            <!-- 適していない場所 -->
             <div class="sc_sp">
                 <div class="sp_line"></div>
                 <h3><small>設置に適さない場所</small></h3>
                 <div class="sp_line"></div>
             </div>
-            <ul class="card_items">
-                <li class="card_list nf">
-                    <div class="card_img">
+
+            <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
                         <img
                             src="img/high_head.webp"
-                            alt="高落差地域" />
+                            alt="高落差地域"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <div class="other_title">高落差地域</div>
-                        <p class="cent">※ 100kW超の発電は不得手</p>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
+                            <p class="text-center font-bold text-lg">高落差地域</p>
+                            <p class="text-center text-base">※ 100kW超の発電は不得手</p>
+                        </div>
                     </div>
                 </li>
-                <li class="card_list nf">
-                    <div class="card_img">
+
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
                         <img
                             src="img/supply.webp"
-                            alt="上水道" />
+                            alt="上水道"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <div class="other_title">上水道</div>
-                        <p class="cent">※ 飲用水には未対応</p>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
+                            <p class="text-center font-bold text-lg">上水道</p>
+                            <p class="text-center text-base">※ 飲用水には未対応</p>
+                        </div>
                     </div>
                 </li>
-                <li class="card_list nf">
-                    <div class="card_img">
+
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
                         <img
                             src="img/dirty.webp"
-                            alt="海水・温泉水・廃液" />
+                            alt="海水・温泉水・廃液"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <div class="other_title">海水・温泉水・廃液</div>
-                        <p class="cent">※ 金属腐食が激しい水質全般</p>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
+                            <p class="text-center font-bold text-lg">海水・温泉水・廃液</p>
+                            <p class="text-center text-base">※ 金属腐食が激しい水質全般</p>
+                        </div>
                     </div>
                 </li>
             </ul>
-        </div>
     </section>
 
     <section id="record" class="py-8">

@@ -25,116 +25,140 @@ include 'bread.php';
 
 <main>
     <section id="about_solar" class="py-8">
-        <div class="grid justify-center py-8 overflow-hidden">
+        <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
                     <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">太陽光発電の現状</h2>
                 </div>
             </div>
-            <p class="self_cent mw_800">
+            <p class="justify-self-center md:max-w-3xl p-4 font-medium tracking-wide md:text-lg">
                 これまでの太陽光発電は、発電量を追求した売電事業が盛んでしたが、FIT（固定価格買取制度）の買取価格低下及び電気代の高騰により、作った電気を『売る』時代から『使う』時代に移行しています。
             </p>
-            <ul class="card_items">
-                <li class="card_list">
-                    <h3 class="cent no_dc tx_ul">これまでの太陽光発電</h3>
-                    <div class="card_img ar_wd">
-                        <img
-                            src="img/old_solar.webp"
-                            alt="これまでの太陽光発電" />
+
+            <!-- 太陽光新旧比較 -->
+            <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,450px)]">
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit  rounded-xl border border-black">
+                    <h3 class="text-lg font-bold text-center my-4">これまでの太陽光発電</h3>
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/4] md:aspect-[16/6] w-full">
+                        <img src="img/old_solar.webp"
+                            alt="これまでの太陽光発電"
+                            class="w-full h-full object-cover object-center block" />
                     </div>
-                    <p class="cent tx_st">
-                        FIT主体（野建・広域・高出力）
-                    </p>
+                    <!-- コンテンツエリア -->
+                    <div class="p-4 place-items-center min-w-0">
+                        <p class="text-center font-bold text-lg leading-relaxed max-[425px]:text-base">FIT主体（野建・広域・高出力）</p>
+                    </div>
                 </li>
-                <li class="card_list">
-                    <h3 class="cent no_dc tx_ul">現在の太陽光発電</h3>
-                    <div class="card_img ar_wd">
-                        <img
-                            src="img/now_solar.webp"
-                            alt="現在の太陽光発電" />
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit  rounded-xl border border-black">
+                    <h3 class="text-lg font-bold text-center my-4">現在の太陽光発電</h3>
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/4] md:aspect-[16/6] w-full">
+                        <img src="img/now_solar.webp"
+                            alt="現在の太陽光発電"
+                            class="w-full h-full object-cover object-center block" />
                     </div>
-                    <p class="cent tx_st">
-                        自家消費・蓄電主体（屋根置・需要ベース）
-                    </p>
+                    <!-- コンテンツエリア -->
+                    <div class="p-4 place-items-center min-w-0">
+                        <p class="text-center font-bold text-lg leading-relaxed max-[425px]:text-base">自家消費・蓄電主体（屋根置・需要ベース）</p>
+                    </div>
                 </li>
             </ul>
-
         </div>
     </section>
 
+
+    <!-- サービス紹介 -->
     <section id="service" class="py-8">
-        <div class="grid justify-center py-8 overflow-hidden">
+        <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
                     <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">サービス紹介</h2>
                 </div>
             </div>
-            <ul class="card_items">
-                <li class="card_list nf">
-                    <div class="card_img">
-                        <img
-                            src="img/promise.webp"
-                            alt="充実のサポート" />
+
+            <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/10] w-full">
+                        <img src="img/promise.webp"
+                            alt="充実のサポート"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 安心・充実のサポート・保証体制</span></p>
-                        <p>
-                            多種多様な製品・サービスが増加し、最適解の選択が難しくなりつつあります。
-                        </p>
-                        <p>
-                            弊社は熟練の国内メーカー協力の元、お客様の環境・ニーズに基づいた最適プランをご提案。保証も含め、スタートから運用まで強力にサポートいたします。
-                        </p>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                            <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 安心・充実のサポート・保証体制</p>
+                            <p class="min-h-[80px]">
+                                多種多様な製品・サービスが増加し、最適解の選択が難しくなりつつあります。
+                            </p>
+                            <p class="min-h-[80px]">
+                                弊社は熟練の国内メーカー協力の元、お客様の環境・ニーズに基づいた最適プランをご提案。保証も含め、スタートから運用まで強力にサポートいたします。
+                            </p>
+                        </div>
                     </div>
                 </li>
-                <li class="card_list nf">
-                    <div class="card_img">
-                        <img
-                            src="img/mente.webp"
-                            alt="柔軟な設置方法" />
+
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/10] w-full">
+                        <img src="img/mente.webp"
+                            alt="柔軟な設置方法"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 設置場所に配慮した柔軟な設置方法</span></p>
-                        <p>
-                            陸屋根・折半屋根両方に対応可能な架台をご用意。<br>
-                            穴開け不要な工法※もあるため、屋根トラブルを防ぎ安心・安全な運用に繋がります。
-                        </p>
-                        <p><small>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                            <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 設置場所に配慮した柔軟な設置方法</p>
+                            <p class="min-h-[80px]">
+                                陸屋根・折半屋根両方に対応可能な架台をご用意。<br>
+                                穴開け不要な工法<span class="align-super text-xs">※</span>もあるため、屋根トラブルを防ぎ安心・安全な運用に繋がります。
+                            </p>
+                            <p class="min-h-[80px] text-sm">
                                 ※ 使用に一定の条件があります。詳細はお問い合わせください。
-                            </small>
-                        </p>
+                                </small>
+                            </p>
+                        </div>
                     </div>
                 </li>
-                <li class="card_list nf">
-                    <div class="card_img">
-                        <img
-                            src="img/advice.webp"
-                            alt="オプション品多数" />
+
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/10] w-full">
+                        <img src="img/advice.webp"
+                            alt="オプション品多数"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <p class="other_title title_left"><span><i class="fa-regular fa-pen-to-square"></i> 豊富で頼れる数々のオプション品</span></p>
-                        <p>
-                            再エネ機器の導入は短期の収益増以外に、企業価値向上等の目的もあります。
-                        </p>
-                        <p>
-                            弊社では遠隔監視システムや、外部に成果をPRできる計測・表示システムもラインナップ。お客様のご希望に応じて選択可能です。
-                        </p>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                            <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 豊富で頼れる数々のオプション品</p>
+                            <p class="min-h-[80px]">
+                                再エネ機器の導入は短期の収益増以外に、企業価値向上等の目的もあります。
+                            </p>
+                            <p class="min-h-[80px]">
+                                弊社では遠隔監視システムや、外部に成果をPRできる計測・表示システムもラインナップ。お客様のご希望に応じて選択可能です。
+                            </p>
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
     </section>
 
+    <!-- 設置推奨場所 -->
     <section id="solar_place" class="py-8">
-        <div class="grid justify-center py-8 overflow-hidden">
+        <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
                     <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">設置推奨場所</h2>
                 </div>
             </div>
-            <p class="self_cent tx_st">日照時間が確保できれば発電自体は可能ですが、無駄なく使用するためには最適な使用環境を見極める必要があります。</p>
+            <p class="justify-self-center px-4 font-medium tracking-wide md:text-lg">
+                日照時間が確保できれば発電自体は可能ですが、無駄なく使用するためには最適な使用環境を見極める必要があります。</p>
 
             <div class="solar_merit">
                 <div class="merit_label">メリット大</div>
@@ -155,36 +179,52 @@ include 'bread.php';
                 </table>
             </div>
 
-            <h3 class="cent tx_st">【代表的な施設・設備】</h3>
-            <ul class="card_items">
-                <li class="card_list nf">
-                    <div class="card_img">
+            <!-- 代表的な設備 -->
+            <h3 class="text-lg font-bold text-center mt-6">【代表的な施設・設備】</h3>
+            <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
                         <img
                             src="img/refrige_ware.webp"
-                            alt="冷凍・冷蔵倉庫" />
+                            alt="冷凍・冷蔵倉庫"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <div class="other_title">冷凍・冷蔵倉庫</div>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
+                            <p class="text-center font-bold text-lg">冷凍・冷蔵倉庫</p>
+                        </div>
                     </div>
                 </li>
-                <li class="card_list nf">
-                    <div class="card_img">
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
                         <img
                             src="img/arcade.webp"
-                            alt="娯楽施設" />
+                            alt="娯楽施設"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <div class="other_title">娯楽施設</div>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
+                            <p class="text-center font-bold text-lg">娯楽施設</p>
+                        </div>
                     </div>
                 </li>
-                <li class="card_list nf">
-                    <div class="card_img">
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
                         <img
                             src="img/hoslpital.webp"
-                            alt="医療機関" />
+                            alt="医療機関"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
-                    <div class="card_content">
-                        <div class="other_title">医療機関</div>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
+                            <p class="text-center font-bold text-lg">医療機関</p>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -192,7 +232,7 @@ include 'bread.php';
     </section>
 
     <section id="solar_flow" class="py-8">
-        <div class="grid justify-center py-8 overflow-hidden">
+        <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
                     <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>

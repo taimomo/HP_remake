@@ -30,7 +30,7 @@ include 'header.php';
 <main>
     <!-- News セクション -->
     <section id="news" class="py-8">
-        <div class="grid justify-center px-4 overflow-hidden">
+        <div class="grid px-4 overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-3 text-left">
                     <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
@@ -81,7 +81,7 @@ include 'header.php';
 
     <!-- 会社情報 -->
     <section id="company" class="py-8">
-        <div class="grid justify-center overflow-hidden">
+        <div class="grid overflow-hidden">
             <ul class="grid grid-cols-1">
                 <li class="grid md:grid-cols-[2fr_1fr] grid-cols-1 ">
                     <!-- 画像部分 -->
@@ -113,7 +113,7 @@ include 'header.php';
                             href="about.php"
                             role="button"
                             tabindex="0"
-                            class="block w-36 md:w-40 px-4 py-2 text-center rounded-full font-bold bg-[#2e4488] text-white shadow-md hover:shadow-lg max-[425px]:text-[0.8rem]">
+                            class="block w-36 md:w-40 px-4 py-2 text-center rounded-full font-bold bg-[#2e4488] hover:bg-sky-400 text-white shadow-md hover:shadow-lg transition-colors duration-300 ease-in-out max-[425px]:text-[0.8rem]">
                             もっと見る
                         </a>
                     </div>
@@ -123,56 +123,62 @@ include 'header.php';
     </section>
 
     <!-- 事業内容 -->
-    <section id="news" class="py-8">
-        <div class="grid justify-center overflow-hidden">
+    <section id="business" class="py-8">
+        <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-3 text-left">
                     <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">事業内容</h2>
                 </div>
             </div>
-            <ul class="card_items">
-                <li class="card_list">
-                    <div class="card_img">
-                        <img
-                            src="img/micro_exp.webp"
-                            alt="マイクロ水力発電" />
+            <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center rounded-xl shadow-[3px_3px_8px_rgba(100,100,100,0.3)] hover:shadow-[3px_3px_8px_rgba(100,100,100,0.5)] transition-shadow max-w-sm min-w-0 md:max-w-none">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
+                        <img src="img/micro_exp.webp" alt="マイクロ水力発電" class="w-full h-full object-cover object-center block rounded-xl" />
                     </div>
-                    <div class="card_content">
-                        <h3>マイクロ水力発電</h3>
-                        <p>
-                            屋外用・屋内用のマイクロ水力発電機を提供しています。
-                        </p>
-                        <p>
-                            農業用水・施設循環水・下水道等の小さな水源を有効活用できます。
-                        </p>
-                        <a
-                            href="micro.php"
-                            class="more_btn btn_blue"
-                            role="button"
-                            tabindex="0">もっと見る</a>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <h3 class="text-xl font-bold text-center my-4">マイクロ水力発電</h3>
+                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                            <p>屋外用・屋内用のマイクロ水力発電機を提供しています。</p>
+                            <p>農業用水・施設循環水・下水道等の小さな水源を有効活用できます。</p>
+                        </div>
                     </div>
+                    <a
+                        href="micro.php"
+                        role="button"
+                        tabindex="0"
+                        class="block w-36 md:w-40 px-4 py-2 text-center rounded-full align-self-end justify-self-center font-bold bg-[#2e4488] hover:bg-sky-400 text-white shadow-md hover:shadow-lg transition-colors duration-300 ease-in-out max-[425px]:text-[0.8rem]">
+                        もっと見る
+                    </a>
                 </li>
-                <li class="card_list">
-                    <div class="card_img">
-                        <img
-                            src="img/panel_roof.webp"
-                            alt="太陽光発電・蓄電システム" />
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center rounded-xl shadow-[3px_3px_8px_rgba(100,100,100,0.3)] hover:shadow-[3px_3px_8px_rgba(100,100,100,0.5)] transition-shadow max-w-sm min-w-0 md:max-w-none">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
+                        <img src="img/panel_roof.webp"
+                            alt="太陽光発電・蓄電システム"
+                            class="w-full h-full object-cover object-center block rounded-xl" />
                     </div>
-                    <div class="card_content">
-                        <h3>太陽光発電・蓄電システム</h3>
-                        <p>
-                            建物屋根を利用した太陽光発電システムを提供しています。
-                        </p>
-                        <p>
-                            スペースの有効活用によりエネルギーコストの削減や環境経営に貢献できます。
-                        </p>
-                        <a
-                            href="solar.php"
-                            class=" more_btn btn_blue"
-                            role="button"
-                            tabindex="0">もっと見る</a>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <h3 class="text-xl font-bold text-center my-4">太陽光発電・蓄電システム</h3>
+                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                            <p>
+                                建物屋根を利用した太陽光発電システムを提供しています。
+                            </p>
+                            <p>
+                                スペースの有効活用によりエネルギーコストの削減や環境経営に貢献できます。
+                            </p>
+                        </div>
                     </div>
+                    <a
+                        href="solar.php"
+                        role="button"
+                        tabindex="0"
+                        class="block w-36 md:w-40 px-4 py-2 text-center rounded-full align-self-end justify-self-center font-bold bg-[#2e4488] hover:bg-sky-400 text-white shadow-md hover:shadow-lg transition-colors duration-300 ease-in-out max-[425px]:text-[0.8rem]">
+                        もっと見る
+                    </a>
                 </li>
             </ul>
         </div>
