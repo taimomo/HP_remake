@@ -57,7 +57,7 @@
                     </a>
                 </li>
                 <li class="w-full md:w-auto grid place-items-center relative h-10 transition-all md:before:content-[' '] md:before:absolute md:before:left-0 md:before:-ml-2 md:before:top-0 md:before:h-full md:before:w-px md:before:bg-black after:content-[''] after:block after:mx-auto  after:w-[70%] after:h-[2px] after:bg-gray-300 after:md:hidden last:after:hidden">
-                    <a href="index.php#contact" class="grid place-items-center bg-[#233270] text-white px-4 h-10 rounded-full text-sm md:text-base whitespace-nowrap">
+                    <a href="index.php#contact" class="grid place-items-center bg-[#233270] hover:bg-sky-400 shadow-md hover:shadow-lg transition-colors duration-300 ease-in-out text-white px-4 h-10 rounded-full text-sm md:text-base whitespace-nowrap">
                         お問い合わせ
                     </a>
                 </li>

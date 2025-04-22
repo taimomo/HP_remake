@@ -26,7 +26,7 @@ include 'bread.php';
 
 <main>
     <section id="about_company">
-        <div class="grid justify-center overflow-hidden">
+        <div class="grid overflow-hidden">
             <div class="img_text_list">
                 <div class="text_list">
                     <h3 class="band_style">会社名</h3>

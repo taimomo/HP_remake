@@ -25,7 +25,7 @@ include 'bread.php';
 
 <main>
     <section id="about_micro" class="py-8">
-        <div class="grid justify-center overflow-hidden">
+        <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-3 text-left">
                     <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
@@ -72,64 +72,74 @@ include 'bread.php';
     </section>
 
     <section id="products" class="py-8">
-        <div class="grid justify-center py-8 overflow-hidden">
+        <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
                     <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">取扱製品</h2>
                 </div>
             </div>
-            <ul class="card_items">
-                <li class="card_list">
-                    <h3 class="cent tt_space">縦置き型マイクロ水力発電機<br>『パワーアルキメデス』</h3>
-                    <div class="card_img">
-                        <img
-                            src="img/hanami_pic.webp"
-                            alt="パワーアルキメデス" />
+
+            <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center rounded-xl shadow-[3px_3px_8px_rgba(100,100,100,0.3)] hover:shadow-[3px_3px_8px_rgba(100,100,100,0.5)] transition-shadow max-w-sm min-w-0 md:max-w-none">
+                    <h3 class="text-xl font-bold text-center my-4">縦置き型マイクロ水力発電機<br>『パワーアルキメデス』</h3>
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
+                        <img src="img/hanami_pic.webp"
+                            alt="パワーアルキメデス"
+                            class="w-full h-full object-cover object-center block rounded-xl" />
                     </div>
-                    <div class="card_content">
-                        <p class="other_title"><span>【農業用水・排水用 屋外向け】</span></p>
-                        <p>
-                            開放型・配管型兼用の水車発電機です。主に発電所建設による発電事業を対象とした製品です。
-                        </p>
-                        <p class="cent tx_ul tx_st">
-                            適用発電出力：1~50kW
-                        </p>
-                        <a
-                            href="arc.php"
-                            class="more_btn btn_blue"
-                            role="button"
-                            tabindex="0">もっと見る</a>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                            <p class="text-center font-bold text-lg">【農業用水・排水用 屋外向け】</p>
+                            <p class="min-h-[80px]">開放型・配管型兼用の水車発電機です。主に発電所建設による発電事業を対象とした製品です。</p>
+                            <p class="font-bold text-md text-center leading-relaxed underline">
+                                適用発電出力：1~50kW
+                            </p>
+                        </div>
                     </div>
+                    <a
+                        href="arc.php"
+                        role="button"
+                        tabindex="0"
+                        class="block w-36 md:w-40 px-4 py-2 text-center rounded-full align-self-end justify-self-center font-bold bg-[#2e4488] hover:bg-sky-400 text-white shadow-md hover:shadow-lg transition-colors duration-300 ease-in-out max-[425px]:text-[0.8rem]">
+                        もっと見る
+                    </a>
                 </li>
-                <li class="card_list">
-                    <h3 class="cent tt_space">超小型マイクロ水力発電機 <br>『Crutto』</h3>
-                    <div class="card_img">
-                        <img
-                            src="img/crutto.webp"
-                            alt="Crutto" />
+
+                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center rounded-xl shadow-[3px_3px_8px_rgba(100,100,100,0.3)] hover:shadow-[3px_3px_8px_rgba(100,100,100,0.5)] transition-shadow max-w-sm min-w-0 md:max-w-none">
+                    <h3 class="text-xl font-bold text-center my-4">超小型マイクロ水力発電機 <br>『Crutto』</h3>
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/9] w-full">
+                        <img src="img/crutto.webp"
+                            alt="Crutto"
+                            class="w-full h-full object-cover object-center block rounded-xl" />
                     </div>
-                    <div class="card_content">
-                        <p class="other_title"><span>【施設循環水・冷却水用 屋内向け】</span></p>
-                        <p>
-                            配管専用の水車発電機です。主に施設内での自家消費を対象とした製品です。
-                        </p>
-                        <p class="cent tx_ul tx_st">
-                            適用発電出力：0.2~5kW
-                        </p>
-                        <a
-                            href="crutto.php"
-                            class="more_btn btn_blue"
-                            role="button"
-                            tabindex="0">もっと見る</a>
+                    <!-- コンテンツエリア -->
+                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                            <p class="text-center font-bold text-lg">【施設循環水・冷却水用 屋内向け】</p>
+                            <p class="min-h-[80px]">配管専用の水車発電機です。主に施設内での自家消費を対象とした製品です。</p>
+                            <p class="font-bold text-md text-center leading-relaxed underline">
+                                適用発電出力：0.2~5kW
+                            </p>
+                        </div>
                     </div>
+                    <a
+                        href="crutto.php"
+                        role="button"
+                        tabindex="0"
+                        class="block w-36 md:w-40 px-4 py-2 text-center rounded-full align-self-end justify-self-center font-bold bg-[#2e4488] hover:bg-sky-400 text-white shadow-md hover:shadow-lg transition-colors duration-300 ease-in-out max-[425px]:text-[0.8rem]">
+                        もっと見る
+                    </a>
                 </li>
             </ul>
         </div>
     </section>
 
     <section id="water_flow" class="py-8">
-        <div class="grid justify-center py-8 overflow-hidden">
+        <div class="grid  overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
                     <span class="w-2 h-7 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-12 block"></span>
