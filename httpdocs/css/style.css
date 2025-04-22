@@ -104,10 +104,6 @@ main {
         }
     }
 
-    .ar_wd {
-        aspect-ratio: 16 / 6 !important;
-    }
-
     .ar_tl {
         aspect-ratio: 4 / 3;
     }
@@ -255,16 +251,6 @@ main {
         }
     }
 
-    .btn_blue {
-        background-color: #2e4488;
-        color: #fff;
-    }
-
-    .btn_gley {
-        background-color: rgb(199, 199, 199);
-        color: black;
-    }
-
     .btn_space {
         margin: 0.5rem 0;
     }
@@ -388,20 +374,6 @@ main {
 
 .pd {
     padding: 2rem;
-}
-
-/* company要素 */
-#company {
-    min-height: 60vh;
-    display: grid;
-    .container {
-        background-color: white;
-        height: 100%;
-    }
-
-    @media screen and (max-width: 768px) {
-        min-height: 0;
-    }
 }
 
 /* contact要素 */
