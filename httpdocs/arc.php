@@ -35,141 +35,146 @@ include 'bread.php';
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">製品情報</h2>
                 </div>
             </div>
-            <div class="img_text_list">
-                <div class="img_list ar_tl">
+
+            <!-- 製品画像・スペック -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-screen-xl mx-auto px-4 py-6">
+                <!-- 画像セクション -->
+                <div class="place-self-center m-4 w-full aspect-[4/3] max-w-screen-sm">
                     <img
                         src="img/arc_style.webp"
-                        alt="パワーアルキメデス全景" />
+                        alt="パワーアルキメデス全景"
+                        class="w-full h-full object-cover object-center rounded-md shadow-md" />
                 </div>
 
-                <div class="spec_table">
-                    <h3 class="cent tx_ul no_dc">基本仕様</h3>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>水車形式</th>
-                                <td>縦軸軸流水車</td>
-                            </tr>
-                            <tr>
-                                <th>適用流量</th>
-                                <td>
-                                    開放型：0.1〜2.5m³/s<br>
-                                    配管型：0.01〜1.0m³/s
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>適用落差</th>
-                                <td>
-                                    開放型：1〜5m<br>
-                                    配管型：5〜30m
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>発電効率</th>
-                                <td>最大65%</td>
-                            </tr>
-                            <tr>
-                                <th>発電出力</th>
-                                <td>1〜50kW</td>
-                            </tr>
-                            <tr>
-                                <th>電力用途</th>
-                                <td>売電 / 自家消費</td>
-                            </tr>
-                            <tr>
-                                <th>寸法</th>
-                                <td>□800〜1600mm <br>高さ1500〜6000mm</td>
-                            </tr>
-                            <tr>
-                                <th>重量</th>
-                                <td>2〜5t</td>
-                            </tr>
-                            <tr>
-                                <th>材質</th>
-                                <td>スチール＋亜鉛メッキ / ステンレス</td>
-                            </tr>
-                            <tr>
-                                <th>製造元</th>
-                                <td>株式会社 北陸精機</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p>
+                <!-- テーブル -->
+                <div class="grid gap-4 w-full px-4">
+                    <h3 class="text-lg font-bold justify-self-center">【基本仕様】</h3>
+
+                    <dl class="w-3/4 lg:w-5/6 max-[510px]:w-full mx-auto border-x-0 border-t border-b border-solid border-gray-500 divide-y divide-gray-300 text-sm spec-table">
+                        <!-- 各行を grid で 2 列に -->
+                        <div>
+                            <dt>水車形式</dt>
+                            <dd>縦軸軸流水車</dd>
+                        </div>
+                        <div>
+                            <dt>適用流量</dt>
+                            <dd>開放型：0.1〜2.5m³/s<br>
+                                配管型：0.01〜1.0m³/s</dd>
+                        </div>
+                        <div>
+                            <dt>適用落差</dt>
+                            <dd>
+                                開放型：1〜5m<br>
+                                配管型：5〜30m
+                            </dd>
+                        </div>
+                        <div>
+                            <dt>発電効率</dt>
+                            <dd>最大65%</dd>
+                        </div>
+                        <div>
+                            <dt>発電出力</dt>
+                            <dd>1〜50kW</dd>
+                        </div>
+                        <div>
+                            <dt>電力用途</dt>
+                            <dd>売電 / 自家消費</dd>
+                        </div>
+                        <div>
+                            <dt>寸法</dt>
+                            <dd>□800〜1600mm <br>高さ1500〜6000mm</dd>
+                        </div>
+                        <div>
+                            <dt>重量</dt>
+                            <dd>2〜5t</dd>
+                        </div>
+                        <div>
+                            <dt>材質</dt>
+                            <dd>スチール＋亜鉛メッキ / ステンレス</dd>
+                        </div>
+                        <div>
+                            <dt>製造元</dt>
+                            <dd>株式会社 北陸精機</dd>
+                        </div>
+                    </dl>
+                    <p class="text-center">
                         本製品は設置場所に合わせて設計・製造するオーダーメイド品です。<br>価格・寸法は都度異なるため、詳細はお問い合わせください。
                     </p>
                 </div>
             </div>
+        </div>
 
-            <!-- 製品情報・カードリスト -->
-            <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
-                    <!-- 画像エリア -->
-                    <div class="aspect-[16/9] w-full">
-                        <img src="img/low_head.webp"
-                            alt="低落差対応"
-                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
+        <!-- 製品情報・カードリスト -->
+        <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
+            <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <!-- 画像エリア -->
+                <div class="aspect-[16/9] w-full">
+                    <img src="img/low_head.webp"
+                        alt="低落差対応"
+                        class="w-full h-full object-cover object-center block rounded-xl border border-black" />
+                </div>
+                <!-- コンテンツエリア -->
+                <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                    <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                        <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 低落差で発電可能</p>
+                        <p class="min-h-[80px]">
+                            多くの水力発電機は数10mの落差が必要で、長大な配管を敷設する手間と敷地が必要です。
+                        </p>
+                        <p class="min-h-[80px]">
+                            パワーアルキメデスは配管だけでなく開水路にも設置でき、数mの落差でも発電を可能としています。
+                        </p>
                     </div>
-                    <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
-                            <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 低落差で発電可能</p>
-                            <p class="min-h-[80px]">
-                                多くの水力発電機は数10mの落差が必要で、長大な配管を敷設する手間と敷地が必要です。
-                            </p>
-                            <p class="min-h-[80px]">
-                                パワーアルキメデスは配管だけでなく開水路にも設置でき、数mの落差でも発電を可能としています。
-                            </p>
-                        </div>
-                    </div>
-                </li>
+                </div>
+            </li>
 
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
-                    <!-- 画像エリア -->
-                    <div class="aspect-[16/9] w-full">
-                        <img src="img/mini_pic.webp"
-                            alt="シンプル構造"
-                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
+            <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <!-- 画像エリア -->
+                <div class="aspect-[16/9] w-full">
+                    <img src="img/mini_pic.webp"
+                        alt="シンプル構造"
+                        class="w-full h-full object-cover object-center block rounded-xl border border-black" />
+                </div>
+                <!-- コンテンツエリア -->
+                <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                    <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                        <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 手早く設置可能なシンプル構造</p>
+                        <p class="min-h-[80px]">
+                            構造を徹底的にシンプル化。最短で半日の据付を可能とし長期間の止水困難な場所にも対応できます。
+                        </p>
+                        <p class="min-h-[80px] text-sm">
+                            ※ 設置環境によっては時間要する可能性があります。<br>
+                            ※ 水車発電機の設置のみ。配線や付帯設備工事等は別途。
+                        </p>
                     </div>
-                    <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
-                            <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 手早く設置可能なシンプル構造</p>
-                            <p class="min-h-[80px]">
-                                構造を徹底的にシンプル化。最短で半日の据付を可能とし長期間の止水困難な場所にも対応できます。
-                            </p>
-                            <p class="min-h-[80px] text-sm">
-                                ※ 設置環境によっては時間要する可能性があります。<br>
-                                ※ 水車発電機の設置のみ。配線や付帯設備工事等は別途。
-                            </p>
-                        </div>
-                    </div>
-                </li>
+                </div>
+            </li>
 
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
-                    <!-- 画像エリア -->
-                    <div class="aspect-[16/9] w-full">
-                        <img src="img/garbage.webp"
-                            alt="異物混入に強い"
-                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
+            <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <!-- 画像エリア -->
+                <div class="aspect-[16/9] w-full">
+                    <img src="img/garbage.webp"
+                        alt="異物混入に強い"
+                        class="w-full h-full object-cover object-center block rounded-xl border border-black" />
+                </div>
+                <!-- コンテンツエリア -->
+                <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                    <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                        <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 異物混入に強い構造</p>
+                        <p class="min-h-[80px]">
+                            大半の水車は異物混入に弱く、出力低下だけでなく致命的な故障の原因にもなり得ます。
+                        </p>
+                        <p class="min-h-[80px]">
+                            パワーアルキメデスはプロペラ状の羽根車を採用しているため、空き缶や落ち葉等の多くは通過して下流に排出されます。塵一つ許さないような精密な管理は必要ありません。
+                        </p>
+                        <p class="min-h-[80px] text-sm">
+                            ※ 故障は発生し難くても、出力低下の要因にはなり得ます。<br>
+                            ※ 万が一に備えて適切な除塵設備は必要です。
+                        </p>
                     </div>
-                    <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
-                            <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 異物混入に強い構造</p>
-                            <p class="min-h-[80px]">
-                                大半の水車は異物混入に弱く、出力低下だけでなく致命的な故障の原因にもなり得ます。
-                            </p>
-                            <p class="min-h-[80px]">
-                                パワーアルキメデスはプロペラ状の羽根車を採用しているため、空き缶や落ち葉等の多くは通過して下流に排出されます。塵一つ許さないような精密な管理は必要ありません。
-                            </p>
-                            <p class="min-h-[80px] text-sm">
-                                ※ 故障は発生し難くても、出力低下の要因にはなり得ます。<br>
-                                ※ 万が一に備えて適切な除塵設備は必要です。
-                            </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                </div>
+            </li>
+        </ul>
+        </div>
     </section>
 
     <!-- 設置推奨場所 -->
@@ -189,7 +194,7 @@ include 'bread.php';
             <h3 class="tx_ul cent"><i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i> 設置に適している場所 <i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i></h3>
 
             <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -204,7 +209,7 @@ include 'bread.php';
                         </div>
                     </div>
                 </li>
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -219,7 +224,7 @@ include 'bread.php';
                         </div>
                     </div>
                 </li>
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img src="img/sewage_plant.webp"
@@ -243,7 +248,7 @@ include 'bread.php';
             </div>
 
             <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -260,7 +265,7 @@ include 'bread.php';
                     </div>
                 </li>
 
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -277,7 +282,7 @@ include 'bread.php';
                     </div>
                 </li>
 
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img

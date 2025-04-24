@@ -133,51 +133,6 @@ main {
         }
     }
 
-    .advantage_table {
-        border-top: none;
-        width: auto;
-        margin: 1rem auto;
-        border-collapse: collapse;
-        thead {
-            tr {
-                th {
-                    padding: 0.6rem;
-                    font-size: 1rem;
-                    font-weight: bold;
-                    border-bottom: 2px dashed #999;
-                    text-align: center;
-                }
-            }
-        }
-
-        tbody {
-            tr {
-                td {
-                    padding: 0.5rem;
-                    text-align: center;
-                    font-size: 0.9rem;
-                    border-bottom: 2px dashed #999;
-                }
-            }
-        }
-
-        tbody tr:last-child td {
-            border-bottom: none; /* 最後の要素は下線を削除 */
-        }
-    }
-
-    dl {
-        border: 1px solid #ccc;
-        dt {
-            margin: 0.8rem;
-            text-decoration: underline;
-        }
-        dd {
-            margin: 0.5rem 0 1.5rem 0;
-            padding-left: 1rem;
-        }
-    }
-
     .headline {
         font-weight: bold;
         font-size: 2.5rem;
@@ -192,81 +147,6 @@ main {
         }
         @media screen and (max-width: 425px) {
             font-size: 1.5rem;
-        }
-    }
-
-    .img_text_list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        align-items: start;
-        width: 100%;
-
-        @media screen and (max-width: 940px) {
-            grid-template-columns: 1fr;
-        }
-
-        .text_list {
-            display: grid;
-            gap: 1rem;
-            width: 100%;
-            padding: 1rem;
-            margin: 0.5rem 0;
-            ul {
-                list-style: disc;
-                padding-left: 1.5rem;
-            }
-        }
-
-        .img_list {
-            place-self: center;
-            margin: 1rem;
-            h3 {
-                text-align: center;
-                margin: 0.5rem;
-            }
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover; /* 余白を切り取って画像をフィット */
-                object-position: center; /* 中央から表示（上下の余白が均等に除去される）*/
-            }
-        }
-    }
-
-    .grid_1fr {
-        grid-template-columns: 1fr;
-    }
-
-    .spec_table {
-        padding: 1rem;
-        place-self: center;
-        width: 100%;
-        max-width: 550px;
-        p {
-            margin-top: 0.8rem;
-            text-align: center;
-            text-decoration: underline;
-            line-height: 1.8rem;
-        }
-    }
-
-    .btn_space {
-        margin: 0.5rem 0;
-    }
-
-    .nf {
-        box-shadow: none;
-        background-color: initial;
-        min-height: 0;
-        transition: none;
-        padding: 0.5rem;
-        img {
-            border: 1px solid #333;
-            border-radius: 10px;
-        }
-        &:hover {
-            box-shadow: none;
         }
     }
 
@@ -362,18 +242,6 @@ main {
             }
         }
     }
-}
-
-.no_pd {
-    padding: 0;
-}
-
-.hd_space {
-    padding-top: 100px;
-}
-
-.pd {
-    padding: 2rem;
 }
 
 /* contact要素 */
@@ -546,56 +414,34 @@ main {
 /* aboutページ */
 
 #about_company {
-    .container {
-        background-color: white;
-        .img_text_list {
-            .map_container {
-                display: grid;
-                gap: 1rem;
-                width: 100%;
-                padding: 1rem;
-                place-self: center;
-                #map {
-                    height: 50vh;
-                    min-height: 400px;
-                    width: 100%;
-                    border-radius: 8px;
-                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-                }
-                h3 {
-                    text-align: center;
-                }
-                p {
-                    margin: 0.5rem 0;
-                    text-align: left;
-                    span {
-                        display: block;
-                        margin-top: 0.5rem;
-                        font-weight: bold;
-                    }
-                }
+    background-color: white;
+
+    .map_container {
+        display: grid;
+        gap: 1rem;
+        width: 100%;
+        padding: 1rem;
+        place-self: center;
+        #map {
+            height: 50vh;
+            min-height: 400px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h3 {
+            text-align: center;
+        }
+        p {
+            margin: 0.5rem 0;
+            text-align: left;
+            span {
+                display: block;
+                margin-top: 0.5rem;
+                font-weight: bold;
             }
         }
     }
-}
-
-/* microページ */
-
-#about_micro {
-    background-color: white;
-}
-
-#water_flow {
-    background-color: white;
-}
-
-/* acrページ */
-#about_arc {
-    background-color: white;
-}
-
-#record {
-    background-color: white;
 }
 
 /* solarページ */

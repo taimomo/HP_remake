@@ -27,8 +27,9 @@ include 'bread.php';
 <main>
     <section id="about_company">
         <div class="grid overflow-hidden">
-            <div class="img_text_list">
-                <div class="text_list">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mx-auto px-4 py-6">
+                <!-- テキストセクション -->
+                <div class="grid gap-4 w-4/5 max-[480px]:w-full px-4 justify-self-center">
                     <h3 class="band_style">会社名</h3>
                     <p>株式会社シーイーエム</p>
 
@@ -73,6 +74,7 @@ include 'bread.php';
                         駐車できない場合はご相談ください。
                     </p>
                 </div>
+            </div>
     </section>
 </main>
 
