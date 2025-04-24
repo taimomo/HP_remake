@@ -32,40 +32,56 @@ include 'bread.php';
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">マイクロ水力とは？</h2>
                 </div>
             </div>
-            <div class="img_text_list">
-                <div class="text_list">
-                    <p class="self_cent mw_800">明確な規定はありませんが、主に100kW未満の水力発電を業界内では『マイクロ』と呼称しています。</p>
-
-                    <p class="self_cent mw_800">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-screen-xl mx-auto px-4 py-6">
+                <!-- テキストセクション -->
+                <div class="grid gap-4 w-full px-4">
+                    <p class="max-w-prose leading-relaxed text-gray-800 justify-self-center">
+                        明確な規定はありませんが、主に100kW未満の水力発電を業界内では『マイクロ』と呼称しています。
+                    </p>
+                    <p class="max-w-prose leading-relaxed text-gray-800 justify-self-center">
                         発電設備の規模とkW単価は反比例の傾向があるため、数100・数1000kW規模の発電所に比べて建設単価が割高になりがちですが、未利用水を有効活用でき脱炭素にも貢献できるため普及が期待されています。
                     </p>
-                    <table class="advantage_table">
+
+                    <!-- テーブル -->
+                    <table class="w-auto mx-auto border-collapse text-sm text-gray-800 rounded-md shadow-sm max-w-[400px]">
                         <thead>
                             <tr>
-                                <th>【マイクロ水力の利点】</th>
+                                <th class="px-4 py-2 font-bold border-b-2 border-dashed border-gray-300 text-center text-lg">
+                                    【マイクロ水力の利点】
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>ダム等の巨大設備不要</td>
+                                <td class="px-4 py-2 border-b-2 border-dashed border-gray-300 text-center">
+                                    ダム等の巨大設備不要
+                                </td>
                             </tr>
                             <tr>
-                                <td>小規模の水源を利用可能</td>
+                                <td class="px-4 py-2 border-b-2 border-dashed border-gray-300 text-center">
+                                    小規模の水源を利用可能
+                                </td>
                             </tr>
                             <tr>
-                                <td>大規模に比べて手続き等が簡素</td>
+                                <td class="px-4 py-2 border-b-2 border-dashed border-gray-300 text-center">
+                                    大規模に比べて手続き等が簡素
+                                </td>
                             </tr>
                             <tr>
-                                <td>売電単価が高い（2024年時点 34円/kW）</td>
+                                <td class="px-4 py-2 text-center border-gray-300">
+                                    売電単価が高い（2024年時点 34円/kW）
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="img_list">
+                <!-- 画像セクション -->
+                <div class="place-self-center m-4 w-full aspect-[16/9] max-w-screen-sm">
                     <img
                         src="img/water_station.webp"
-                        alt="マイクロ水力発電" />
+                        alt="マイクロ水力発電"
+                        class="w-full h-full object-cover object-center rounded-md shadow-md" />
                 </div>
             </div>
         </div>

@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    /* 各行（grid 2 列） */
+    .spec-table > div {
+        @apply grid grid-cols-[1fr_2fr] py-2;
+    }
+    /* 見出し側 */
+    .spec-table dt {
+        @apply font-semibold text-gray-800 self-center p-2;
+    }
+    /* 定義側 */
+    .spec-table dd {
+        @apply text-right p-2;
+    }
+}
