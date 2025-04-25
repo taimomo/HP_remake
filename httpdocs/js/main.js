@@ -9,22 +9,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-document.querySelectorAll(".accordion_header").forEach((header) => {
-    header.addEventListener("click", function () {
-        const content = this.nextElementSibling;
+document.querySelectorAll(".accordion_header").forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling; // .accordion_content
+        const inner = content.querySelector(".accordion_inner");
 
-        // 閉じているときだけ開く処理
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
-            content.style.paddingTop = "0";
-            content.style.paddingBottom = "0";
-            this.classList.remove("active");
+            btn.classList.remove("active");
         } else {
-            // 対象だけ開く
-            content.style.maxHeight = content.scrollHeight + "px";
-            content.style.paddingTop = "1rem";
-            content.style.paddingBottom = "1rem";
-            this.classList.add("active");
+            // inner の重さ（padding込みの高さ）を測ってセット
+            content.style.maxHeight = inner.scrollHeight + "px";
+            btn.classList.add("active");
         }
     });
 });
@@ -36,38 +32,3 @@ document.querySelectorAll(".more_btn").forEach((button) => {
         }
     });
 });
-
-// モーダル関連
-function openConfirmDialog() {
-    // 入力内容を取得
-    document.getElementById("confirm_name").textContent =
-        document.getElementById("name").value;
-    document.getElementById("confirm_email").textContent =
-        document.getElementById("email").value;
-    document.getElementById("confirm_organization").textContent =
-        document.getElementById("organization").value;
-    document.getElementById("confirm_tel").textContent =
-        document.getElementById("tel").value;
-    document.getElementById("confirm_detail").textContent =
-        document.getElementById("detail").value;
-
-    // 確認モーダルを表示
-    document.getElementById("confirmDialog").showModal();
-}
-
-function closeConfirmDialog() {
-    document.getElementById("confirmDialog").close();
-}
-
-function submitForm() {
-    // 確認モーダルを閉じる
-    document.getElementById("confirmDialog").close();
-
-    // 送信完了モーダルを表示
-    document.getElementById("successDialog").showModal();
-}
-
-function closeSuccessDialog() {
-    document.getElementById("successDialog").close();
-    document.getElementById("contactForm").reset(); // フォームをリセット
-}

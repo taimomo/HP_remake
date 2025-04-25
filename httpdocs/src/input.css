@@ -4,15 +4,37 @@
 
 @layer components {
     /* 各行（grid 2 列） */
-    .spec-table > div {
+    .col2_list > div {
         @apply grid grid-cols-[1fr_2fr] py-2;
     }
     /* 見出し側 */
-    .spec-table dt {
+    .col2_list dt {
         @apply font-semibold text-gray-800 self-center p-2;
     }
     /* 定義側 */
-    .spec-table dd {
+    .col2_list dd {
         @apply text-right p-2;
+    }
+
+    /* アコーディオンのヘッダー部分 */
+    .accordion_header {
+        @apply relative w-full text-left font-bold text-base
+        pl-2 pr-8 py-2 border-b-2 border-gray-300 cursor-pointer
+        focus:outline-none focus:ring-2 focus:ring-blue-400
+        transition-colors duration-200;
+    }
+    .accordion_header::after {
+        content: "";
+        @apply absolute right-2 top-1/2 w-4 h-4 bg-no-repeat bg-center bg-contain
+        transition-transform duration-300 -translate-y-1/2;
+        background-image: url("../img/down.svg");
+    }
+    .accordion_header.active::after {
+        background-image: url("../img/Up.svg");
+    }
+
+    /* アコーディオンの中身部分 */
+    .accordion_content {
+        @apply overflow-hidden max-h-0 px-2 transition-[max-height] duration-700 ease-in-out;
     }
 }
