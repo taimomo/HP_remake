@@ -50,7 +50,7 @@ include 'bread.php';
                 <div class="grid gap-4 w-full px-4">
                     <h3 class="text-lg font-bold justify-self-center">【基本仕様】</h3>
 
-                    <dl class="w-3/4 lg:w-5/6 max-[510px]:w-full mx-auto border-x-0 border-t border-b border-solid border-gray-500 divide-y divide-gray-300 text-sm spec-table">
+                    <dl class="w-3/4 lg:w-5/6 max-[510px]:w-full mx-auto border-x-0 border-t border-b border-solid border-gray-500 divide-y divide-gray-300 text-sm col2_list">
                         <!-- 各行を grid で 2 列に -->
                         <div>
                             <dt>水車形式</dt>
@@ -301,122 +301,159 @@ include 'bread.php';
             </ul>
     </section>
 
+    <!-- 導入事例 -->
     <section id="record" class="py-8">
-        <div class="grid justify-center py-8 overflow-hidden">
+        <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
                     <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">導入事例</h2>
                 </div>
             </div>
-            <ul class="card_items">
-                <li class="card_list nf">
-                    <button class="accordion_header">長野県安曇野市 宮城小水力発電所</button>
-                    <div class="accordion_content">
-                        <div class="card_img">
-                            <img src="/img/azumino_pic.webp" alt="安曇野宮城小水力発電所" />
+
+            <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
+                <li class="overflow-hidden justify-self-center max-w-sm min-w-0 md:max-w-none py-8">
+                    <!-- ヘッダー（ボタン） -->
+                    <button class="accordion_header">
+                        長野県安曇野市 宮城小水力発電所
+                    </button>
+
+                    <!-- 折りたたみコンテンツ -->
+                    <div class="accordion_content bg-inherit">
+                        <div class="accordion_inner px-2 py-4">
+                            <!-- 画像部分 -->
+                            <div class="mb-4 aspect-[16/9]">
+                                <img
+                                    src="/img/azumino_pic.webp"
+                                    alt="安曇野宮城小水力発電所"
+                                    class="w-full h-full object-cover object-center block rounded-xl border border-black" />
+                            </div>
+                            <!-- 説明リスト（共有のdl/dt/dd） -->
+                            <dl class="gap-y-2 text-sm divide-y divide-gray-300 border-t border-b border-solid border-gray-500 col2_list">
+                                <div>
+                                    <dt>使用流量</dt>
+                                    <dd>0.95m³/s</dd>
+                                </div>
+                                <div>
+                                    <dt>有効落差</dt>
+                                    <dd>3.0m</dd>
+                                </div>
+                                <div>
+                                    <dt>最大発電出力</dt>
+                                    <dd>16.9kW</dd>
+                                </div>
+                                <div>
+                                    <dt>発電方式</dt>
+                                    <dd>低落差開放型</dd>
+                                </div>
+                                <div>
+                                    <dt>電力用途</dt>
+                                    <dd>全量売電</dd>
+                                </div>
+                                <div>
+                                    <dt>事業者</dt>
+                                    <dd>有明土地改良区</dd>
+                                </div>
+                            </dl>
                         </div>
-                        <table>
-                            <tr>
-                                <th>使用流量</th>
-                                <td>0.95m³/s</td>
-                            </tr>
-                            <tr>
-                                <th>有効落差</th>
-                                <td>3.0m</td>
-                            </tr>
-                            <tr>
-                                <th>最大発電出力</th>
-                                <td>16.9kW</td>
-                            </tr>
-                            <tr>
-                                <th>発電方式</th>
-                                <td>低落差開放型</td>
-                            </tr>
-                            <tr>
-                                <th>電力用途</th>
-                                <td>全量売電</td>
-                            </tr>
-                            <tr>
-                                <th>事業者</th>
-                                <td>有明土地改良区</td>
-                            </tr>
-                        </table>
                     </div>
                 </li>
-                <li class="card_list nf">
-                    <button class="accordion_header">岩手県花巻市 松沢川小水力発電所</button>
-                    <div class="accordion_content">
-                        <div class="card_img">
-                            <img src="/img/hanamaki.webp" alt="松沢川小水力発電所" />
+
+                <li class="overflow-hidden justify-self-center max-w-sm min-w-0 md:max-w-none py-8">
+                    <!-- ヘッダー（ボタン） -->
+                    <button class="accordion_header">
+                        岩手県花巻市 松沢川小水力発電所
+                    </button>
+
+                    <!-- 折りたたみコンテンツ -->
+                    <div class="accordion_content bg-inherit">
+                        <div class="accordion_inner px-2 py-4">
+                            <!-- 画像部分 -->
+                            <div class="mb-4 aspect-[16/9]">
+                                <img
+                                    src="/img/hanamaki.webp" alt="松沢川小水力発電所"
+                                    class="w-full h-full object-cover object-center block rounded-xl border border-black" />
+                            </div>
+                            <!-- 説明リスト（共有のdl/dt/dd） -->
+                            <dl class="gap-y-2 text-sm divide-y divide-gray-300 border-t border-b border-solid border-gray-500 col2_list">
+                                <div>
+                                    <dt>使用流量</dt>
+                                    <dd>1号機：1.4m³/s<br>
+                                        2号機：0.95m³/s</dd>
+                                </div>
+                                <div>
+                                    <dt>有効落差</dt>
+                                    <dd>4.1m</dd>
+                                </div>
+                                <div>
+                                    <dt>最大発電出力</dt>
+                                    <dd>1号機：33.7kW<br>
+                                        2号機：13.5kW</dd>
+                                </div>
+                                <div>
+                                    <dt>発電方式</dt>
+                                    <dd>低落差開放型</dd>
+                                </div>
+                                <div>
+                                    <dt>電力用途</dt>
+                                    <dd>全量売電</dd>
+                                </div>
+                                <div>
+                                    <dt>事業者</dt>
+                                    <dd>豊沢川土地改良区</dd>
+                                </div>
+                            </dl>
                         </div>
-                        <table>
-                            <tr>
-                                <th>使用流量</th>
-                                <td>1号機：1.4m³/s<br>
-                                    2号機：0.95m³/s
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>有効落差</th>
-                                <td>4.1m</td>
-                            </tr>
-                            <tr>
-                                <th>最大発電出力</th>
-                                <td>1号機：33.7kW<br>
-                                    2号機：13.5kW
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>発電方式</th>
-                                <td>低落差開放型</td>
-                            </tr>
-                            <tr>
-                                <th>電力用途</th>
-                                <td>全量売電</td>
-                            </tr>
-                            <tr>
-                                <th>事業者</th>
-                                <td>豊沢川土地改良区</td>
-                            </tr>
-                        </table>
                     </div>
                 </li>
-                <li class="card_list nf">
-                    <button class="accordion_header">宮崎県えびの市 田代陣の池ホタル谷発電所</button>
-                    <div class="accordion_content">
-                        <div class="card_img">
-                            <img src="/img/Ebino.webp" alt="田代陣の池ホタル谷発電所" />
+
+                <li class="overflow-hidden justify-self-center max-w-sm min-w-0 md:max-w-none py-8">
+                    <!-- ヘッダー（ボタン） -->
+                    <button class="accordion_header">
+                        宮崎県えびの市 田代陣の池ホタル谷発電所
+                    </button>
+
+                    <!-- 折りたたみコンテンツ -->
+                    <div class="accordion_content bg-inherit">
+                        <div class="accordion_inner px-2 py-4">
+                            <!-- 画像部分 -->
+                            <div class="mb-4 aspect-[16/9]">
+                                <img
+                                    src="/img/Ebino.webp" alt="田代陣の池ホタル谷発電所"
+                                    class="w-full h-full object-cover object-center block rounded-xl border border-black" />
+                            </div>
+                            <!-- 説明リスト（共有のdl/dt/dd） -->
+                            <dl class="gap-y-2 text-sm divide-y divide-gray-300 border-t border-b border-solid border-gray-500 col2_list">
+                                <div>
+                                    <dt>使用流量</dt>
+                                    <dd>0.4m³/s</dd>
+                                </div>
+                                <div>
+                                    <dt>有効落差</dt>
+                                    <dd>5.9m</dd>
+                                </div>
+                                <div>
+                                    <dt>最大発電出力</dt>
+                                    <dd>13.9kW</dd>
+                                </div>
+                                <div>
+                                    <dt>発電方式</dt>
+                                    <dd>中落差配管型</dd>
+                                </div>
+                                <div>
+                                    <dt>電力用途</dt>
+                                    <dd>全量売電</dd>
+                                </div>
+                                <div>
+                                    <dt>事業者</dt>
+                                    <dd>えびの市土地改良区</dd>
+                                </div>
+                            </dl>
                         </div>
-                        <table>
-                            <tr>
-                                <th>使用流量</th>
-                                <td>0.4m³/s</td>
-                            </tr>
-                            <tr>
-                                <th>有効落差</th>
-                                <td>5.9m</td>
-                            </tr>
-                            <tr>
-                                <th>最大発電出力</th>
-                                <td>13.9kW</td>
-                            </tr>
-                            <tr>
-                                <th>発電方式</th>
-                                <td>中落差配管型</td>
-                            </tr>
-                            <tr>
-                                <th>電力用途</th>
-                                <td>全量売電</td>
-                            </tr>
-                            <tr>
-                                <th>事業者</th>
-                                <td>えびの市土地改良区</td>
-                            </tr>
-                        </table>
                     </div>
                 </li>
             </ul>
+        </div>
     </section>
 </main>
 
