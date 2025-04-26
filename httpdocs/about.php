@@ -30,32 +30,32 @@ include 'bread.php';
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mx-auto px-4 py-6">
                 <!-- テキストセクション -->
                 <div class="grid gap-4 w-4/5 max-[480px]:w-full px-4 justify-self-center">
-                    <h3 class="band_style">会社名</h3>
+                    <h3 class="pl-3 py-2 border-l-8 border-[#3656a7] bg-[#f1f0f0] font-bold">会社名</h3>
                     <p>株式会社シーイーエム</p>
 
-                    <h3 class="band_style">設立</h3>
+                    <h3 class="pl-3 py-2 border-l-8 border-[#3656a7] bg-[#f1f0f0] font-bold">設立</h3>
                     <p>1999年5月</p>
 
-                    <h3 class="band_style">代表取締役</h3>
+                    <h3 class="pl-3 py-2 border-l-8 border-[#3656a7] bg-[#f1f0f0] font-bold">代表取締役</h3>
                     <p>下野 満朗</p>
 
-                    <h3 class="band_style">従業員数</h3>
+                    <h3 class="pl-3 py-2 border-l-8 border-[#3656a7] bg-[#f1f0f0] font-bold">従業員数</h3>
                     <p>3名</p>
 
-                    <h3 class="band_style">事業内容</h3>
+                    <h3 class="pl-3 py-2 border-l-8 border-[#3656a7] bg-[#f1f0f0] font-bold">事業内容</h3>
                     <ul>
                         <li>マイクロ水力発電設備の販売・導入支援</li>
                         <li>太陽光発電・蓄電設備の販売・導入支援</li>
                     </ul>
 
-                    <h3 class="band_style">所在地</h3>
+                    <h3 class="pl-3 py-2 border-l-8 border-[#3656a7] bg-[#f1f0f0] font-bold">所在地</h3>
                     <p>
                         〒250-0631<br />
                         神奈川県足柄下郡箱根町仙石原885番地2<br />
                         ミリオンロイヤル箱根仙石原105
                     </p>
 
-                    <h3 class="band_style">TEL・FAX</h3>
+                    <h3 class="pl-3 py-2 border-l-8 border-[#3656a7] bg-[#f1f0f0] font-bold">TEL・FAX</h3>
                     <p>
                         TEL : 0460-83-9535<br />
                         FAX : 0460-83-9537
