@@ -160,23 +160,31 @@ include 'bread.php';
             <p class="justify-self-center px-4 font-medium tracking-wide md:text-lg">
                 日照時間が確保できれば発電自体は可能ですが、無駄なく使用するためには最適な使用環境を見極める必要があります。</p>
 
-            <div class="solar_merit">
-                <div class="merit_label">メリット大</div>
+            <div class="px-6">
+                <div class="relative w-full bg-white max-w-3xl justify-self-center p-2 md:p-6 mt-10 mb-6 shadow-md">
+                    <!-- ラベル -->
+                    <div class="absolute -top-4 -left-4 rotate-[-6deg] bg-green-200 text-pink-800 font-bold px-4 py-2 rounded-lg text-xl shadow-sm">
+                        メリット大
+                    </div>
 
-                <table class="merit_table">
-                    <tr>
-                        <th>折半屋根</th>
-                        <td>取付架台が豊富で安価 施行しやすく早い</td>
-                    </tr>
-                    <tr>
-                        <th>長時間稼働施設</th>
-                        <td>発電した電気を多く利用可</td>
-                    </tr>
-                    <tr>
-                        <th>変動少ない安定的な電気使用</th>
-                        <td>予測・制御がし易く無駄が少ない</td>
-                    </tr>
-                </table>
+                    <!-- テーブル -->
+                    <table class="design_table">
+                        <tbody>
+                            <tr>
+                                <th>折半屋根</th>
+                                <td>取付架台が豊富で安価<br>施行しやすく早い</td>
+                            </tr>
+                            <tr>
+                                <th>長時間稼働施設</th>
+                                <td>発電した電気を多く利用可</td>
+                            </tr>
+                            <tr>
+                                <th>変動少ない安定的な電気使用</th>
+                                <td>予測・制御がし易く無駄が少ない</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <!-- 代表的な設備 -->

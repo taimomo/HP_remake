@@ -16,6 +16,26 @@
         @apply text-right p-2;
     }
 
+    /* 装飾付きテーブル要素 */
+    .design_table {
+        @apply w-full border-collapse text-xs md:text-sm md:text-base;
+    }
+
+    .design_table tr {
+        @apply border-b border-gray-300;
+    }
+    .design_table tr:last-child {
+        @apply border-b-0;
+    }
+
+    .design_table th {
+        @apply p-4 text-left font-medium self-center border-r;
+    }
+
+    .design_table td {
+        @apply p-4 text-left;
+    }
+
     /* アコーディオンのヘッダー部分 */
     .accordion_header {
         @apply relative w-full text-left font-bold text-base
