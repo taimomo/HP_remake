@@ -155,64 +155,90 @@ include 'bread.php';
     </section>
 
     <section id="water_flow" class="py-8">
-        <div class="grid  overflow-hidden">
+        <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
                     <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">導入フロー</h2>
                 </div>
             </div>
-            <div class="flow_contents">
-                <img src="/img/water_flow.webp" alt="水力導入フロー">
-                <div class="flow_list">
-                    <div class="flow_card">
-                        <h3>① 調査・打ち合わせ・契約</h3>
-                        <p>設計会社等に依頼し発電候補地の確認・調査を経て、具体的な仕様検討を行います。</p>
-                        <ul>
-                            <li>水利権等の法的影響</li>
-                            <li>電力会社への接続検討</li>
-                            <li>既存水利用者の同意取得</li>
-                        </ul>
-                        <p>仕様・金額確定後、契約に移ります。</p>
+            <div class="grid gap-8 place-items-center w-full">
+                <!-- 上部のフロー画像 -->
+                <img src="/img/water_flow.webp" alt="水力導入フロー" class="w-4/5 md:w-9/10 mx-auto" />
+                <!-- カードリスト -->
+                <div class="grid min-[600px]:[grid-template-columns:repeat(auto-fit,350px)] justify-center gap-8 p-4 w-full">
+
+                    <!-- 1つ目のカード -->
+                    <div class="grid grid-rows-[60px_auto] bg-white rounded-md shadow-md p-4">
+                        <h3 class="text-xl text-center font-bold mb-2 max-[425px]:text-lg">
+                            ① 調査・打ち合わせ・契約
+                        </h3>
+                        <div class="text-base max-[425px]:text-sm leading-relaxed space-y-2">
+                            <p class="break-words">設計会社等に依頼し発電候補地の確認・調査を経て、具体的な仕様検討を行います。</p>
+                            <ul class="list-disc pl-6 space-y-1">
+                                <li>水利権等の法的影響</li>
+                                <li>電力会社への接続検討</li>
+                                <li>既存水利用者の同意取得</li>
+                            </ul>
+                            <p>仕様・金額確定後、契約に移ります。</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-rows-[60px_auto] bg-white rounded-md shadow-md p-4">
+                        <h3 class="text-xl text-center font-bold mb-2 max-[425px]:text-lg">
+                            ② 設計・製造
+                        </h3>
+                        <div class="text-base max-[425px]:text-sm leading-relaxed space-y-2">
+                            <p>詳細な図面作成、機器設計及び手配・製造を行います。</p>
+                            <p class="font-semibold ">　製造品納期：<br>
+                                　パワーアルキメデス：約6～12ヶ月<br>
+                                　Crutto：約2～3ヶ月</p>
+                            <p class="text-sm">※ ①②は案件次第で内容変更、同時進行する事があります。</p>
+                            <p class="text-sm">※ 補助金等の適用についてはお問い合わせください。</p>
+                        </div>
                     </div>
 
-                    <div class="flow_card">
-                        <h3>② 設計・製造</h3>
-                        <p>詳細な図面作成、機器設計及び手配・製造を行います。</p>
-                        <p class="p_st">　製造品納期：<br>
-                            　パワーアルキメデス：約6～12ヶ月<br>
-                            　Crutto：約2～3ヶ月</p>
-                        <p>※ ①②は案件次第で内容変更、同時進行する事があります。</p>
-                        <p>※ 補助金等の適用についてはお問い合わせください。</p>
+                    <div class="grid grid-rows-[60px_auto] bg-white rounded-md shadow-md p-4">
+                        <h3 class="text-xl text-center font-bold mb-2 max-[425px]:text-lg">
+                            ③ 各種工事
+                        </h3>
+                        <div class="text-base max-[425px]:text-sm leading-relaxed space-y-2">
+                            <p>現場関連の工事を実施します。</p>
+                            <p>極力既存の水利用者様に負担を強いる事がないよう、事前周知の徹底が大事です。</p>
+                            <p class="text-sm">※ 施工はお客様手配の工事会社様でも可能です。</p>
+                            <p class="text-sm">※ 工事会社紹介等についてはお問い合わせください。</p>
+                        </div>
                     </div>
 
-                    <div class="flow_card">
-                        <h3>③ 各種工事</h3>
-                        <p>現場関連の工事を実施します。</p>
-                        <p>
-                            極力既存の水利用者様に負担を強いる事がないよう、事前周知の徹底が大事です。</p><br>
-                        <p>※ 施工はお客様手配の工事会社様でも可能です。</p>
-                        <p>※ 工事会社紹介等についてはお問い合わせください。</p>
+                    <div class="grid grid-rows-[60px_auto] bg-white rounded-md shadow-md p-4">
+                        <h3 class="text-xl text-center font-bold mb-2 max-[425px]:text-lg">
+                            ④ 試運転調整・運転開始
+                        </h3>
+                        <div class="text-base max-[425px]:text-sm leading-relaxed space-y-2">
+                            <p>無水・有水の試験を実施します。</p>
+                            <p>水車発電機独自のものと一般的な項目があるため、詳細は打合せを経て決定します。</p>
+                            <p class="text-sm">※ 基本的に有水試験は現地据付後の実施になります。</p>
+                            <p class="text-sm">※ 電力会社等の立会が必要な場合があります。</p>
+                        </div>
                     </div>
 
-                    <div class="flow_card">
-                        <h3>④ 試運転調整・運転開始</h3>
-                        <p>無水・有水の試験を実施します。</p>
-                        <p>水車発電機独自のものと一般的な項目があるため、詳細は打合せを経て決定します。</p><br>
-                        <p>※ 基本的に有水試験は現地据付後の実施になります。</p>
-                        <p>※ 電力会社等の立会が必要な場合があります</p>
+                    <div class="grid grid-rows-[60px_auto] bg-white rounded-md shadow-md p-4">
+                        <h3 class="text-xl text-center font-bold mb-2 max-[425px]:text-lg">
+                            ⑤ お引き渡し
+                        </h3>
+                        <div class="text-base max-[425px]:text-sm leading-relaxed space-y-2">
+                            <p>各種試験が完了し、試運転の結果が問題なければお引き渡しになります。</p>
+                            <p>不備や追加項目がある場合は後日調整・再見積・再施工等を経て完了となります。</p>
+                        </div>
                     </div>
 
-                    <div class="flow_card">
-                        <h3>⑤ お引き渡し</h3>
-                        <p>各種試験が完了し、試運転の結果が問題なければお引き渡しになります。</p><br>
-                        <p>不備や追加項目がある場合は後日調整・再見積・再施工等を経て完了となります。</p>
-                    </div>
-
-                    <div class="flow_card">
-                        <h3>⑥ アフターメンテ</h3>
-                        <p>機械を正常な状態で維持するためには適切なメンテナンスが欠かせません。</p><br>
-                        <p>日常点検の指導や緊急事態への対応等は随時受け付けております。また、毎年一回の年次点検をおススメしています。</p>
+                    <div class="grid grid-rows-[60px_auto] bg-white rounded-md shadow-md p-4">
+                        <h3 class="text-xl text-center font-bold mb-2 max-[425px]:text-lg">
+                            ⑥ アフターメンテ
+                        </h3>
+                        <div class="text-base max-[425px]:text-sm leading-relaxed space-y-2">
+                            <p>機械を正常な状態で維持するためには適切なメンテナンスが欠かせません。</p>
+                            <p>日常点検の指導や緊急事態への対応等は随時受け付けております。また、毎年一回の年次点検をおススメしています。</p>
+                        </div>
                     </div>
                 </div>
             </div>

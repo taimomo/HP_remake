@@ -46,7 +46,7 @@ include 'bread.php';
 
                 <div class="grid gap-4 w-full px-4">
                     <h3 class="text-lg font-bold justify-self-center">【基本仕様】</h3>
-                    <dl class="w-3/4 lg:w-5/6 max-[510px]:w-full mx-auto border-x-0 border-t border-b border-solid border-gray-500 divide-y divide-gray-300 text-sm spec-table">
+                    <dl class="w-3/4 lg:w-5/6 max-[510px]:w-full mx-auto border-x-0 border-t border-b border-solid border-gray-500 divide-y divide-gray-300 text-sm col2_list">
                         <!-- 各行を grid で 2 列に -->
                         <div>
                             <dt>水車形式</dt>
