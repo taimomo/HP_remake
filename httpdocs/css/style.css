@@ -39,9 +39,6 @@ main {
         }
     }
 
-    .tt_space {
-        margin: 1rem 0;
-    }
     .tx_st {
         font-size: 1.1rem;
         font-weight: bold;
@@ -52,14 +49,6 @@ main {
         padding: 0.5rem;
         border-left: 8px solid #3656a7;
         background-color: #f1f0f0;
-    }
-
-    .no_dc {
-        background-color: initial;
-        border: none;
-        padding: 0.8rem;
-        font-size: 1.2rem;
-        font-weight: bold;
     }
 
     .sc_sp {
@@ -73,31 +62,6 @@ main {
         .sp_line {
             border-top: 1px dashed black;
             height: 1px;
-        }
-    }
-
-    table {
-        width: 100%;
-        border-top: 1px solid #ccc;
-        margin: 1rem 0;
-
-        tbody {
-            tr {
-                th,
-                td {
-                    padding: 0.6rem;
-                    text-align: right;
-                    font-size: 1rem;
-                    border-bottom: 1px solid #999;
-                }
-                th {
-                    width: 30%;
-                    text-align: left;
-                }
-                td {
-                    width: 70%;
-                }
-            }
         }
     }
 
@@ -115,62 +79,6 @@ main {
         }
         @media screen and (max-width: 425px) {
             font-size: 1.5rem;
-        }
-    }
-}
-
-.flow_contents {
-    img {
-        width: 80%;
-        margin: 0 auto;
-
-        @media screen and (max-width: 768px) {
-            width: 90%;
-        }
-    }
-
-    .flow_list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-        padding: 1rem;
-        .flow_card {
-            display: grid;
-            grid-template-rows: 60px auto;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-            border-radius: 6px;
-            padding: 1rem;
-            background-color: #fff;
-
-            h3 {
-                font-size: 1.3rem;
-                margin-bottom: 0.5rem;
-                text-align: center;
-                @media screen and (max-width: 425px) {
-                    font-size: 1.2rem;
-                }
-            }
-            ul,
-            ol {
-                padding-left: 1.2rem;
-                margin: 0.5rem 0;
-            }
-            ul {
-                li {
-                    list-style-type: disc;
-                }
-            }
-            .p_st {
-                font-weight: bolder;
-                margin: 0.5rem 0;
-            }
-
-            @media screen and (max-width: 425px) {
-                p,
-                li {
-                    font-size: 0.9rem;
-                }
-            }
         }
     }
 }

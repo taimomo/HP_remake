@@ -239,73 +239,102 @@ include 'bread.php';
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">導入フロー</h2>
                 </div>
             </div>
-            <div class="flow_contents">
-                <img src="/img/solar_flow.webp" alt="太陽光導入フロー">
-                <div class="flow_list">
-                    <div class="flow_card">
-                        <h3>① 案件組成・設計</h3>
-                        <p>図面及び現地調査による設計検討を行います。現地調査では主に以下の点を重要視します。</p>
-                        <ul>
-                            <li>30分値デマンドデータ（1年分）</li>
-                            <li>屋根荷重</li>
-                            <li>地域環境（屋根形状・勾配、積雪有無、等）</li>
-                        </ul>
-                        <p>上記情報を基に以下の作成に移ります。</p>
-                        <ol>
-                            <li>デマンドシミュレーション（発電量試算）<br>
-                                → 発電容量決定 = モジュールの荷重検討</li>
-                            <li>モジュール及び金具の選定</li>
-                            <li>強度計算書等の提出資料</li>
-                        </ol>
+
+            <div class="grid gap-8 place-items-center w-full">
+                <!-- 上部のフロー画像 -->
+                <img src="/img/solar_flow.webp" alt="太陽光導入フロー" class="w-4/5 md:w-9/10 mx-auto" />
+                <!-- カードリスト -->
+                <div class="grid md:[grid-template-columns:repeat(auto-fit,400px)] justify-center gap-8 p-4 w-full">
+
+                    <!-- 1つ目のカード -->
+                    <div class="grid grid-rows-[60px_auto] bg-white rounded-md shadow-md p-4">
+                        <h3 class="text-xl text-center font-bold mb-2 max-[425px]:text-lg">
+                            ① 案件組成・設計
+                        </h3>
+                        <div class="text-base max-[425px]:text-sm leading-relaxed space-y-2">
+                            <p>図面及び現地調査による設計検討を行います。現地調査では主に以下の点を重要視します。</p>
+                            <ul class="list-disc pl-6 space-y-1">
+                                <li>30分値デマンドデータ（1年分）</li>
+                                <li>屋根荷重</li>
+                                <li>地域環境（屋根形状・勾配、積雪有無、等）</li>
+                            </ul><br>
+                            <p>上記情報を基に以下の作成に移ります。</p>
+                            <ol class="pl-6 space-y-1 list-decimal">
+                                <li>デマンドシミュレーション（発電量試算）
+                                    <br>→ 発電容量決定 = モジュールの荷重検討
+                                </li>
+                                <li>モジュール及び金具の選定</li>
+                                <li>強度計算書等の提出資料</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="grid grid-rows-[60px_auto] bg-white rounded-md shadow-md p-4">
+                        <h3 class="text-xl text-center font-bold mb-2 max-[425px]:text-lg">
+                            ② 各種申請・手続き・打合せ
+                        </h3>
+                        <div class="text-base max-[425px]:text-sm leading-relaxed space-y-2">
+                            <p>電気設備の変更が伴うため主任技術者と打ち合わせが必要です。</p>
+                            <ul class="list-disc pl-6 space-y-1">
+                                <li>発電設備の登録</li>
+                                <li>変電設備改造に伴う立会</li>
+                                <li>主任技術者契約の更新（発電設備追加に伴う
+                                    変更手続き）</li>
+                            </ul>
+                            <p class="text-sm">※ 必ずしも主任技術者が発電設備をメンテする必要はありません。 他業者様への業務委託も可能です。</p>
+                        </div>
                     </div>
 
-                    <div class="flow_card">
-                        <h3>② 各種申請・手続き・打合せ</h3>
-                        <p>詳電気設備の変更が伴うため主任技術者と打ち合わせが必要です</p>
-                        <ul>
-                            <li>発電設備の登録</li>
-                            <li>変電設備改造に伴う立会</li>
-                            <li>主任技術者契約の更新（発電設備追加に伴う
-                                変更手続き）</li>
-                        </ul>
-                        <p>※ 必ずしも主任技術者が発電設備をメンテする必要はありません。 他業者様への業務委託も可能です。</p>
+                    <div class="grid grid-rows-[60px_auto] bg-white rounded-md shadow-md p-4">
+                        <h3 class="text-xl text-center font-bold mb-2 max-[425px]:text-lg">
+                            ③ 各種工事
+                        </h3>
+                        <div class="text-base max-[425px]:text-sm leading-relaxed space-y-2">
+                            <p>現場関連の工事を実施します。</p>
+                            <p>稼働施設に施工する事になるため、業務に支障を来さないよう工事計画は綿密に立てて共有します。</p>
+                        </div>
                     </div>
 
-                    <div class="flow_card">
-                        <h3>③ 各種工事</h3>
-                        <p>現場関連の工事を実施します。</p>
-                        <p>
-                            稼働施設に施工する事になるため、業務に支障を来さないよう工事計画は綿密に立てて共有します。</p>
+                    <div class="grid grid-rows-[60px_auto] bg-white rounded-md shadow-md p-4">
+                        <h3 class="text-xl text-center font-bold mb-2 max-[425px]:text-lg">
+                            ④ 試運転調整・運転開始
+                        </h3>
+                        <div class="text-base max-[425px]:text-sm leading-relaxed space-y-2">
+                            <p>設備完成した後、運用開始前に『自己確認検査』を実施し、結果を経済産業省に提出する必要があります。</p>
+                            <p>【内容例】</p>
+                            <ol class="pl-6 space-y-1 list-decimal">
+                                <li>外観検査</li>
+                                <li>接地抵抗測定</li>
+                                <li>総合インターロック試験</li>
+                                <li>制御電源喪失試験</li>
+                                <li>負荷遮断試験</li>
+                                <li>屋根の耐荷重確認</li>
+                            </ol>
+                        </div>
                     </div>
 
-                    <div class="flow_card">
-                        <h3>④ 試運転調整・運転開始</h3>
-                        <p>設備完成した後、運用開始前に『自己確認検査』を実施し、結果を経済産業省に提出する必要があります。</p><br>
-                        <p>【内容例】</p>
-                        <ol>
-                            <li>外観検査</li>
-                            <li>接地抵抗測定</li>
-                            <li>総合インターロック試験</li>
-                            <li>制御電源喪失試験</li>
-                            <li>負荷遮断試験</li>
-                            <li>屋根の耐荷重確認</li>
-                        </ol>
+                    <div class="grid grid-rows-[60px_auto] bg-white rounded-md shadow-md p-4">
+                        <h3 class="text-xl text-center font-bold mb-2 max-[425px]:text-lg">
+                            ⑤ お引き渡し
+                        </h3>
+                        <div class="text-base max-[425px]:text-sm leading-relaxed space-y-2">
+                            <p>各種試験が完了し、試運転の結果が問題なければお引き渡しになります。</p>
+                            <p>不備や追加項目がある場合は後日調整・再見積・再施工等を経て完了となります。</p>
+                        </div>
                     </div>
 
-                    <div class="flow_card">
-                        <h3>⑤ お引き渡し</h3>
-                        <p>各種試験が完了し、試運転の結果が問題なければお引き渡しになります。</p><br>
-                        <p>不備や追加項目がある場合は後日調整・再見積・再施工等を経て完了となります。</p>
-                    </div>
-
-                    <div class="flow_card">
-                        <h3>⑥ アフターメンテ</h3>
-                        <p>機械を正常な状態で維持するためには適切なメンテナンスが欠かせません。</p><br>
-                        <p>日常点検の指導や緊急事態への対応等は随時受け付けております。</p>
+                    <div class="grid grid-rows-[60px_auto] bg-white rounded-md shadow-md p-4">
+                        <h3 class="text-xl text-center font-bold mb-2 max-[425px]:text-lg">
+                            ⑥ アフターメンテ
+                        </h3>
+                        <div class="text-base max-[425px]:text-sm leading-relaxed space-y-2">
+                            <p>機械を正常な状態で維持するためには適切なメンテナンスが欠かせません。</p>
+                            <p>日常点検の指導や緊急事態への対応等は随時受け付けております。</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="headline">計画・調達・導入まで一貫サポート！</div>
+        </div>
+        <div class="headline">計画・調達・導入まで一貫サポート！</div>
         </div>
     </section>
 </main>
