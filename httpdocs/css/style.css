@@ -39,12 +39,6 @@ main {
         }
     }
 
-    .tx_st {
-        font-size: 1.1rem;
-        font-weight: bold;
-        padding: 1.5rem;
-    }
-
     .sc_sp {
         display: grid;
         grid-template-columns: 1fr auto 1fr;
@@ -273,17 +267,5 @@ main {
 
     th {
         background-color: #f0f0f0;
-    }
-}
-
-/* policyページ */
-
-.policy_contents {
-    padding: 1rem;
-    width: 100%;
-    ul {
-        li {
-            list-style-type: disc;
-        }
     }
 }
