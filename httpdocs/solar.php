@@ -334,7 +334,7 @@ include 'bread.php';
                 </div>
             </div>
         </div>
-        <div class="headline">計画・調達・導入まで一貫サポート！</div>
+        <div class="font-bold text-2xl text-[#a02e5a] text-center m-4 p-4 tracking-wider drop-shadow-md md:text-3xl max-[425px]:text-xl">計画・調達・導入まで一貫サポート！</div>
         </div>
     </section>
 </main>
