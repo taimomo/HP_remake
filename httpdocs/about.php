@@ -62,22 +62,22 @@ include 'bread.php';
                     </p>
                 </div>
 
-                <div class="map_container">
-                    <h3>【アクセス】</h3>
-                    <div id="map"></div>
+                <div class="grid gap-4 w-full p-4 place-self-center">
+                    <h3 class="text-center text-xl font-bold">【アクセス】</h3>
 
-                    <script type="module" src="/js/main.js"></script>
-                    <p>
-                        箱根登山バス・小田急箱根高速バス「仙石原文化センター前」　徒歩1分<br /><br />
-                        <span>※ お車でお越しの場合</span>
+                    <div id="map" class="w-full min-h-[400px] h-[50vh] rounded-lg shadow-md"></div>
+
+                    <p class="mt-2 text-left text-base leading-relaxed">
+                        箱根登山バス・小田急箱根高速バス「仙石原文化センター前」 徒歩1分
+                        <br /><br />
+                        <span class="block mt-2 font-bold">
+                            ※ お車でお越しの場合
+                        </span>
                         建物敷地の駐車場は先着順となっております（予約不可）。<br />
                         駐車できない場合はご相談ください。
                     </p>
                 </div>
-            </div>
     </section>
 </main>
-
-<!-- <script type="module" src="js/map.js"></script> -->
 
 <?php include 'footer.php'; ?>
