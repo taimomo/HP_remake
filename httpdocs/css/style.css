@@ -38,20 +38,6 @@ main {
             );
         }
     }
-
-    .sc_sp {
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        align-items: center;
-        width: 100%;
-        gap: 0.8rem;
-        white-space: nowrap;
-
-        .sp_line {
-            border-top: 1px dashed black;
-            height: 1px;
-        }
-    }
 }
 
 /* contact要素 */

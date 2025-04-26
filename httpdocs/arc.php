@@ -191,7 +191,7 @@ include 'bread.php';
                 不適切な環境に設置すると性能低下・機器破損につながるため、最適な使用環境を相談した上で運用する事が推奨されます。</p>
 
             <!-- 適している場所 -->
-            <h3 class="tx_ul cent"><i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i> 設置に適している場所 <i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i></h3>
+            <h3 class="text-lg md:text-xl text-center mt-10"><i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i> 設置に適している場所 <i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i></h3>
 
             <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
                 <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
@@ -241,10 +241,12 @@ include 'bread.php';
             </ul>
 
             <!-- 適していない場所 -->
-            <div class="sc_sp">
-                <div class="sp_line"></div>
-                <h3><small>設置に適さない場所</small></h3>
-                <div class="sp_line"></div>
+            <div class="w-full grid grid-cols-[1fr_auto_1fr] items-center gap-4 whitespace-nowrap">
+                <div class="border-t-2 border-dashed border-black"></div>
+                <h3 class="text-base font-normal">
+                    設置に適さない場所
+                </h3>
+                <div class="border-t-2 border-dashed border-black"></div>
             </div>
 
             <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
