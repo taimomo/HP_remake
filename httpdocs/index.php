@@ -185,7 +185,7 @@ include 'header.php';
     </section>
 
     <!-- お問い合わせフォーム -->
-    <section id="news" class="py-8">
+    <section id="contact" class="py-8 scroll-mt-24">
         <div class="grid justify-center overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-3 text-left">
@@ -193,92 +193,83 @@ include 'header.php';
                     <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">お問い合わせ</h2>
                 </div>
             </div>
-            <p>
-                お問い合わせ内容をご入力の上、「入力内容を確認」ボタンを押してください。
-            </p>
-            <form id="form" action="confirm.php" method="post" autocomplete="on">
-                <div class="form_body">
-                    <div class="form_label">
-                        <label for="name">お名前</label><span class="required">※必須</span>
-                    </div>
-                    <div class="form_input">
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
+            <div class="container mx-auto px-4 max-w-3xl">
+                <p class="text-xl md:text-2xl mb-8 text-center">
+                    お問い合わせ内容をご入力の上、「入力内容を確認」ボタンを押してください。
+                </p>
+
+                <form id="form" action="confirm.php" method="post" autocomplete="on" class="grid gap-8 w-4/5 max-w-md mx-auto">
+
+                    <!-- お名前 -->
+                    <div class="grid gap-2">
+                        <label for="name" class="font-bold">
+                            お名前<span class="text-red-600 text-sm ml-2">※必須</span>
+                        </label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full border border-gray-300 rounded-md p-2"
                             autocomplete="name"
-                            required
-                            value="<?= htmlspecialchars($form['name'] ?? '') ?>" />
+                            value="<?= htmlspecialchars($form['name'] ?? '') ?>">
                     </div>
-                </div>
 
-                <div class="form_body">
-                    <div class="form_label">
-                        <label for="email">メールアドレス</label><span class="required">※必須</span>
-                    </div>
-                    <div class="form_input">
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
+                    <!-- メールアドレス -->
+                    <div class="grid gap-2">
+                        <label for="email" class="font-bold">
+                            メールアドレス<span class="text-red-600 text-sm ml-2">※必須</span>
+                        </label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full border border-gray-300 rounded-md p-2"
                             autocomplete="email"
-                            required
-                            value="<?= htmlspecialchars($form['email'] ?? '') ?>" />
+                            value="<?= htmlspecialchars($form['email'] ?? '') ?>">
                     </div>
-                </div>
-                <div class="form_body">
-                    <div class="form_label">
-                        <label for="organization">会社名</label>
-                    </div>
-                    <div class="form_input">
-                        <input
-                            type="text"
-                            id="organization"
-                            name="organization"
+
+                    <!-- 会社名 -->
+                    <div class="grid gap-2">
+                        <label for="organization" class="font-bold">会社名</label>
+                        <input type="text" id="organization" name="organization"
+                            class="w-full border border-gray-300 rounded-md p-2"
                             autocomplete="organization"
-                            value="<?= htmlspecialchars($form['organization'] ?? '') ?>" />
+                            value="<?= htmlspecialchars($form['organization'] ?? '') ?>">
                     </div>
-                </div>
-                <div class="form_body">
-                    <div class="form_label">
-                        <label for="tel">電話番号（ハイフン不要）</label>
-                    </div>
-                    <div class="form_input">
-                        <input
-                            type="tel"
-                            id="tel"
-                            name="tel"
+
+                    <!-- 電話番号 -->
+                    <div class="grid gap-2">
+                        <label for="tel" class="font-bold">電話番号（ハイフン不要）</label>
+                        <input type="tel" id="tel" name="tel" pattern="\d{10,11}"
+                            title="10〜11桁の数字で入力してください"
+                            class="w-full border border-gray-300 rounded-md p-2"
                             autocomplete="tel"
-                            pattern="\d{10,11}" title="10〜11桁の数字で入力してください"
-                            value="<?= htmlspecialchars($form['tel'] ?? '') ?>" />
+                            value="<?= htmlspecialchars($form['tel'] ?? '') ?>">
                     </div>
-                </div>
-                <div class="form_body">
-                    <div class="form_label">
-                        <label for="detail">お問い合わせ内容</label>
-                        <span class="required">※必須</span>
-                    </div>
-                    <div class="form_input">
-                        <textarea
-                            id="detail"
-                            name="detail"
-                            required
-                            autocomplete="off"><?= htmlspecialchars($form['detail'] ?? '') ?></textarea>
-                    </div>
-                </div>
 
-                <!-- プライバシーポリシー同意チェックボックス -->
-                <div class="privacy_policy">
-                    <a href="policy.php">プライバシーポリシーを確認する</a>
-                    <label>
-                        <input type="checkbox" name="agree" value="1" <?= isset($form['agree']) ? 'checked' : '' ?> required />
-                        <span>プライバシーポリシーに同意する</span>
-                        <span class="required">※必須</span>
-                    </label>
-                </div>
+                    <!-- お問い合わせ内容 -->
+                    <div class="grid gap-2">
+                        <label for="detail" class="font-bold">
+                            お問い合わせ内容<span class="text-red-600 text-sm ml-2">※必須</span>
+                        </label>
+                        <textarea id="detail" name="detail" required autocomplete="off"
+                            class="w-full border border-gray-300 rounded-md p-2 min-h-[300px]"><?= htmlspecialchars($form['detail'] ?? '') ?></textarea>
+                    </div>
 
-                <button type="submit" class="more_btn btn_blue">入力内容を確認</button>
-            </form>
+                    <!-- プライバシーポリシー同意 -->
+                    <div class="text-center text-sm">
+                        <a href="policy.php" class="text-blue-600 underline mb-2 inline-block">プライバシーポリシーを確認する</a>
+                        <div class="flex justify-center items-center gap-2 mt-2">
+                            <input type="checkbox" id="agree" name="agree" value="1" required
+                                <?= isset($form['agree']) ? 'checked' : '' ?>>
+                            <label for="agree" class="inline-flex items-center">
+                                プライバシーポリシーに同意する
+                                <span class="text-red-600 text-xs ml-1">※必須</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- ボタン -->
+                    <button type="submit"
+                        class="bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">
+                        入力内容を確認
+                    </button>
+                </form>
+            </div>
         </div>
     </section>
 </main>
