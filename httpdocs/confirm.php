@@ -29,8 +29,7 @@ $hideHeaderFooter = true;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php echo isset($page_title) ? $page_title : "CEM"; ?></title>
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/public/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,35 +45,58 @@ $hideHeaderFooter = true;
 
     <main>
         <section id="confirm" class="py-8">
-            <div class="grid justify-center overflow-hidden">
+            <div class="grid overflow-hidden">
                 <div class="grid justify-center my-8 max-[425px]:mt-4">
                     <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
-                        <span class="w-3 h-8 bg-gradient-to-b from-blue-400 to-blue-900 -skew-x-[30deg] block"></span>
                         <h2 class="font-bold text-4xl max-[768px]:text-3xl max-[425px]:text-2xl drop-shadow-lg">入力内容の確認</h2>
                     </div>
                 </div>
-                <dl>
-                    <dt>お名前</dt>
-                    <dd><?= htmlspecialchars($form['name']) ?></dd>
-                    <dt>メールアドレス</dt>
-                    <dd><?= htmlspecialchars($form['email']) ?></dd>
-                    <dt>会社名</dt>
-                    <dd><?= htmlspecialchars($form['organization']) ?></dd>
-                    <dt>電話番号</dt>
-                    <dd><?= htmlspecialchars($form['tel']) ?></dd>
-                    <dt>お問い合わせ内容</dt>
-                    <dd><?= nl2br(htmlspecialchars($form['detail'])) ?></dd>
+                <!-- 入力内容 -->
+                <dl class="grid md:grid-cols-2 grid-cols-1 justify-self-center gap-y-6 gap-x-8 m-6 p-8 border border-gray-300 rounded-lg bg-gray-50 max-w-md md:max-w-xl">
+                    <div class="contents">
+                        <dt class="font-bold underline self-center">お名前</dt>
+                        <dd class="break-words"><?= htmlspecialchars($form['name']) ?></dd>
+                    </div>
+                    <div class="contents">
+                        <dt class="font-bold underline self-center">メールアドレス</dt>
+                        <dd class="break-words"><?= htmlspecialchars($form['email']) ?></dd>
+                    </div>
+                    <div class="contents">
+                        <dt class="font-bold underline self-center">会社名</dt>
+                        <dd class="break-words"><?= htmlspecialchars($form['organization']) ?></dd>
+                    </div>
+                    <div class="contents">
+                        <dt class="font-bold underline self-center">電話番号</dt>
+                        <dd class="break-words"><?= htmlspecialchars($form['tel']) ?></dd>
+                    </div>
+                    <div class="contents">
+                        <dt class="font-bold underline self-center">お問い合わせ内容</dt>
+                        <dd class="break-words"><?= nl2br(htmlspecialchars($form['detail'])) ?></dd>
+                    </div>
                 </dl>
 
-                <form action="send.php" method="post">
-                    <button type="submit" class="more_btn btn_blue btn_space">送信する</button>
-                </form>
-                <form action="index.php#contact" method="post">
-                    <?php foreach ($form as $key => $value): ?>
-                        <input type="hidden" name="<?= htmlspecialchars($key) ?>" value="<?= htmlspecialchars($value) ?>">
-                    <?php endforeach; ?>
-                    <button type="submit" class="more_btn btn_gley btn_space">修正する</button>
-                </form>
+                <!-- ボタンエリア -->
+                <div class="grid gap-4 justify-center">
+
+                    <!-- 送信ボタン -->
+                    <form action="send.php" method="post">
+                        <button type="submit"
+                            class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition">
+                            送信する
+                        </button>
+                    </form>
+
+                    <!-- 修正ボタン -->
+                    <form action="index.php#contact" method="post">
+                        <?php foreach ($form as $key => $value): ?>
+                            <input type="hidden" name="<?= htmlspecialchars($key) ?>" value="<?= htmlspecialchars($value) ?>">
+                        <?php endforeach; ?>
+                        <button type="submit"
+                            class="px-8 py-3 bg-gray-400 hover:bg-gray-500 text-white font-bold rounded-lg transition">
+                            修正する
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>

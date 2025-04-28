@@ -7,7 +7,6 @@
     <title><?php echo isset($page_title) ? $page_title : "CEM"; ?></title>
     <link rel="icon" href="/img/favicon.ico?v=1.0" type="image/x-icon" />
     <link rel="stylesheet" href="/public/output.css">
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
