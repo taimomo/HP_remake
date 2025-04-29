@@ -70,7 +70,7 @@ include 'bread.php';
 
 
     <!-- サービス紹介 -->
-    <section id="service" class="py-8">
+    <section id="service" class="py-8 bg-gray-100">
         <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
@@ -80,7 +80,7 @@ include 'bread.php';
             </div>
 
             <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/10] w-full">
                         <img src="img/promise.webp"
@@ -101,7 +101,7 @@ include 'bread.php';
                     </div>
                 </li>
 
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/10] w-full">
                         <img src="img/mente.webp"
@@ -124,7 +124,7 @@ include 'bread.php';
                     </div>
                 </li>
 
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/10] w-full">
                         <img src="img/advice.webp"
@@ -239,7 +239,7 @@ include 'bread.php';
         </div>
     </section>
 
-    <section id="solar_flow" class="py-8">
+    <section id="solar_flow" class="py-8 bg-gray-100">
         <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
