@@ -106,9 +106,9 @@ include 'bread.php';
                             class="w-full h-full object-cover object-center block rounded-xl" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                    <div class="grid grid-rows-[auto_1fr] gap-4 p-4 place-items-center min-w-0">
+                        <h2 class="text-center font-bold text-lg">【農業用水・排水用 屋外向け】</h2>
                         <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
-                            <p class="text-center font-bold text-lg">【農業用水・排水用 屋外向け】</p>
                             <p class="min-h-[80px]">開放型・配管型兼用の水車発電機です。主に発電所建設による発電事業を対象とした製品です。</p>
                             <p class="font-bold text-md text-center leading-relaxed underline">
                                 適用発電出力：1~50kW
@@ -133,9 +133,9 @@ include 'bread.php';
                             class="w-full h-full object-cover object-center block rounded-xl" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                    <div class="grid grid-rows-[auto_1fr] gap-4 p-4 place-items-center min-w-0">
+                        <h2 class="text-center font-bold text-lg">【施設循環水・冷却水用 屋内向け】</h2>
                         <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
-                            <p class="text-center font-bold text-lg">【施設循環水・冷却水用 屋内向け】</p>
                             <p class="min-h-[80px]">配管専用の水車発電機です。主に施設内での自家消費を対象とした製品です。</p>
                             <p class="font-bold text-md text-center leading-relaxed underline">
                                 適用発電出力：0.2~5kW

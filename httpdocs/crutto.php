@@ -97,75 +97,71 @@ include 'bread.php';
                     </dl>
                 </div>
             </div>
-        </div>
 
-        <!-- 製品情報・カードリスト -->
-        <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
-            <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
-                <!-- 画像エリア -->
-                <div class="aspect-[16/10] w-full">
-                    <img src="img/compar_hydro.webp"
-                        alt="省スペース化"
-                        class="w-full h-full object-cover object-center block rounded-xl border border-black" />
-                </div>
-                <!-- コンテンツエリア -->
-                <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+            <!-- 製品情報・カードリスト -->
+            <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
+
+                <li class="grid grid-rows-[auto_auto_1fr] gap-2 p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/10] w-full">
+                        <img src="img/compar_hydro.webp"
+                            alt="省スペース化"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
+                    </div>
+                    <!-- コンテンツエリア -->
+                    <h3 class="justify-self-start font-bold text-md md:text-lg"><i class="fa-regular fa-pen-to-square"></i> 徹底的な省スペース化を実現</h3>
                     <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
-                        <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 徹底的な省スペース化を実現</p>
-                        <p class="min-h-[80px]">
+                        <p>
                             Cruttoは既設配管にも接続できるよう、徹底的な省スペース化を追求。家電クラスの小型化を実現しました。
                         </p>
-                        <p class="min-h-[80px]">
+                        <p>
                             重量も30~50kgと男性二人いれば持ち上げられるため、施設内で人力運搬も可能です。
                         </p>
                     </div>
-                </div>
-            </li>
+                </li>
 
-            <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
-                <!-- 画像エリア -->
-                <div class="aspect-[16/10] w-full">
-                    <img src="img/low_cost.webp"
-                        alt="ローコストで設置"
-                        class="w-full h-full object-cover object-center block rounded-xl border border-black" />
-                </div>
-                <!-- コンテンツエリア -->
-                <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                <li class="grid grid-rows-[auto_auto_1fr] gap-2 p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/10] w-full">
+                        <img src="img/low_cost.webp"
+                            alt="ローコストで設置"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
+                    </div>
+                    <!-- コンテンツエリア -->
+                    <h3 class="justify-self-start font-bold text-md md:text-lg"><i class="fa-regular fa-pen-to-square"></i> ローコストで設置</h3>
+
                     <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
-                        <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> ローコストで設置</p>
-                        <p class="min-h-[80px]">
+                        <p>
                             既存設備を最大限活かせる事で工事費も削減。これまでの水力発電と比べて導入のハードルがぐんと下がりました。
                         </p>
-                        <p class="min-h-[80px]">
+                        <p>
                             低コストでも安全性はしっかり確保。数々の検証を経て、落差60m相当の水圧にも対応できる高い耐久性を持ち合わせています。
                         </p>
-                        <p class="min-h-[80px] text-sm">
+                        <p class="text-sm">
                             ※ 設置環境によっては対応コストを要する可能性があります。<br>
                             ※ 水車発電機の設置のみ。配線や付帯設備工事等は別途。
                         </p>
                     </div>
-                </div>
-            </li>
+                </li>
 
-            <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
-                <!-- 画像エリア -->
-                <div class="aspect-[16/10] w-full">
-                    <img src="img/100-200v.webp"
-                        alt="100・200V対応"
-                        class="w-full h-full object-cover object-center block rounded-xl border border-black" />
-                </div>
-                <!-- コンテンツエリア -->
-                <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                <li class="grid grid-rows-[auto_auto_1fr] gap-2 p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                    <!-- 画像エリア -->
+                    <div class="aspect-[16/10] w-full">
+                        <img src="img/100-200v.webp"
+                            alt="100・200V対応"
+                            class="w-full h-full object-cover object-center block rounded-xl border border-black" />
+                    </div>
+                    <!-- コンテンツエリア -->
+                    <h3 class="justify-self-start font-bold text-md md:text-lg"><i class="fa-regular fa-pen-to-square"></i> 100V・200V選択可能</h3>
                     <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
-                        <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 100V・200V選択可能</p>
-                        <p class="min-h-[80px]">
+                        <p>
                             電源仕様を100Vか200Vで選択できます。<br>
                             100Vで日常的な電源として、200Vで動力使用や売電を視野に入れる事ができます。
                         </p>
                     </div>
-                </div>
-            </li>
-        </ul>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- 設置推奨場所 -->
@@ -185,7 +181,7 @@ include 'bread.php';
             <h3 class="text-lg md:text-xl text-center mt-10"><i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i> 設置に適している場所 <i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i></h3>
 
             <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
-                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -194,13 +190,10 @@ include 'bread.php';
                             class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
-                            <p class="text-center font-bold text-lg">施設循環水・冷却水</p>
-                        </div>
-                    </div>
+                    <h3 class="text-center font-bold text-lg my-4">施設循環水・冷却水</h3>
+
                 </li>
-                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -209,26 +202,17 @@ include 'bread.php';
                             class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
-                            <p class="text-center font-bold text-lg">工場排水</p>
-                        </div>
-                    </div>
+                    <h3 class="text-center font-bold text-lg my-4">工場排水</h3>
                 </li>
-                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
-                        <img
-                            src="img/treatment_plant.webp"
+                        <img src="img/treatment_plant.webp"
                             alt="浄水場"
                             class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
-                            <p class="text-center font-bold text-lg">浄水場</p>
-                        </div>
-                    </div>
+                    <h3 class="text-center font-bold text-lg my-4">浄水場</h3>
                 </li>
             </ul>
 
@@ -242,7 +226,7 @@ include 'bread.php';
             </div>
 
             <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
-                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -251,14 +235,13 @@ include 'bread.php';
                             class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
-                            <p class="text-center font-bold text-lg">低落差地域</p>
-                            <p class="text-center text-base">※ 4m以上の落差必要</p>
-                        </div>
+                    <div class="grid grid-rows-[auto_1fr] gap-2 p-4 place-items-center min-w-0">
+                        <h3 class="text-center font-bold text-lg">低落差地域</h3>
+                        <p class="self-start text-base">※ 4m以上の落差必要</p>
                     </div>
                 </li>
-                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+
+                <li class="grid grid-rows-[auto_1fr] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -267,16 +250,14 @@ include 'bread.php';
                             class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
-                            <p class="text-center font-bold text-lg">圧送管</p>
-                            <p class="text-center text-base">※ 減圧されるため本来の用途に支障あり <br>
-                                ※ 余剰圧力の使用は可</p>
-                            </p>
-                        </div>
+                    <div class="grid grid-rows-[auto_1fr] gap-2 p-4 place-items-center min-w-0">
+                        <h3 class="text-center font-bold text-lg">圧送管</h3>
+                        <p class="self-start text-base">※ 減圧されるため本来の用途に支障あり <br>
+                            ※ 余剰圧力の使用は可</p>
                     </div>
                 </li>
-                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+
+                <li class="grid grid-rows-[auto_1fr] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -285,12 +266,9 @@ include 'bread.php';
                             class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
-                            <p class="text-center font-bold text-lg">海水・温泉水・廃液</p>
-                            <p class="text-center text-base">※ 金属腐食が激しい水質全般</p>
-                            </p>
-                        </div>
+                    <div class="grid grid-rows-[auto_1fr] gap-2 p-4 place-items-center min-w-0">
+                        <h3 class="text-center font-bold text-lg">海水・温泉水・廃液</h3>
+                        <p class="self-start text-base">※ 金属腐食が激しい水質全般</p>
                     </div>
                 </li>
             </ul>

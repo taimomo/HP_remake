@@ -138,7 +138,7 @@ include 'header.php';
                         <img src="img/micro_exp.webp" alt="マイクロ水力発電" class="w-full h-full object-cover object-center block rounded-xl" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                    <div class="grid grid-rows-[1fr_auto] gap-4 p-4 place-items-center min-w-0">
                         <h3 class="text-xl font-bold text-center my-4">マイクロ水力発電</h3>
                         <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
                             <p>屋外用・屋内用のマイクロ水力発電機を提供しています。</p>
@@ -161,7 +161,7 @@ include 'header.php';
                             class="w-full h-full object-cover object-center block rounded-xl" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
+                    <div class="grid grid-rows-[auto_1fr] gap-4 p-4 place-items-center min-w-0">
                         <h3 class="text-xl font-bold text-center my-4">太陽光発電・蓄電システム</h3>
                         <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
                             <p>
