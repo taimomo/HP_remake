@@ -87,7 +87,7 @@ include 'bread.php';
         </div>
     </section>
 
-    <section id="products" class="py-8">
+    <section id="products" class="py-8  bg-gray-100">
         <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">

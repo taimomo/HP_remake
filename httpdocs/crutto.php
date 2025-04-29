@@ -169,7 +169,7 @@ include 'bread.php';
     </section>
 
     <!-- 設置推奨場所 -->
-    <section id="crutto_place" class="py-8">
+    <section id="crutto_place" class="py-8  bg-gray-100">
         <div class="grid overflow-hidden">
             <div class="grid justify-center my-8 max-[425px]:mt-4">
                 <div class="grid grid-cols-[auto_1fr] items-center gap-4 text-left">
@@ -185,7 +185,7 @@ include 'bread.php';
             <h3 class="text-lg md:text-xl text-center mt-10"><i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i> 設置に適している場所 <i class="fa-regular fa-thumbs-up" style="color: #ff643d;"></i></h3>
 
             <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -200,7 +200,7 @@ include 'bread.php';
                         </div>
                     </div>
                 </li>
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -215,7 +215,7 @@ include 'bread.php';
                         </div>
                     </div>
                 </li>
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -242,7 +242,7 @@ include 'bread.php';
             </div>
 
             <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -258,7 +258,7 @@ include 'bread.php';
                         </div>
                     </div>
                 </li>
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -276,7 +276,7 @@ include 'bread.php';
                         </div>
                     </div>
                 </li>
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
