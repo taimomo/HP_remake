@@ -4,17 +4,15 @@ include 'header.php';
 ?>
 
 <!-- ヒーローセクション -->
-<section
-    id="micro"
-    class="pt-[75px] md:pt-[90px] relative grid grid-cols-12 grid-rows-6 h-80 text-white bg-gray-800 bg-[url('/img/micro_exp.webp')] bg-center bg-cover bg-no-repeat">
-    <!-- 中央に配置するタイトル -->
-    <div class="col-span-12 row-start-2 row-end-4 grid grid-cols-12 bg-gray-700/50">
-        <h2 class="col-start-1 col-end-13 place-self-center md:col-start-1 md:col-end-6 text-3xl md:text-4xl font-bold">
-            マイクロ水力発電
-        </h2>
-    </div>
-</section>
+<?php
+$hero_id      = 'micro';
+$hero_title   = 'マイクロ水力発電';
+$hero_bg      = '/img/micro_exp.webp';
 
+include 'hero.php';
+?>
+
+<!-- パンくずリスト -->
 <?php
 $breadcrumbs = [
     ['url' => '/',               'label' => 'ホーム'],
