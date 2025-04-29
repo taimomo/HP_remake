@@ -6,26 +6,19 @@ $form = $_SESSION['form'] ?? $_POST;
 <?php
 $page_title = "CEM | 水と太陽のエネルギーソリューション";
 include 'header.php';
+
+// --- ヒーローセクション ---
+$hero_id           = 'home';
+$hero_title        = '持続可能な未来へ';
+$hero_bg           = '/img/hero_img2.webp';
+
+$hero_subheading   = "水と太陽のエネルギーソリューションで\n環境経営を積極支援！";
+$hero_sub_cls      = 'col-start-1 col-end-13 row-start-6 row-end-7 grid';
+$hero_sub_h3_cls   = 'bg-blue-700 text-white text-center px-4 py-2 rounded underline shadow-md text-lg md:text-xl max-[425px]:text-base justify-self-center md:justify-self-end';
+
+include 'hero.php';
 ?>
 
-<!-- ヒーローセクション -->
-<section
-    id="home"
-    class="pt-[75px] md:pt-[90px] relative grid grid-cols-12 grid-rows-6 justify-content-center max-h-[70vh] text-white bg-[url('/img/hero_img2.webp')] bg-center bg-cover bg-no-repeat">
-    <!-- 中央上のメイン見出し -->
-    <div class="col-span-12 row-start-2 row-end-3 grid grid-cols-12 bg-gray-700/50">
-        <h2 class="col-start-1 col-end-13 place-self-center md:col-start-1 md:col-end-6 text-3xl md:text-4xl font-bold">
-            持続可能な未来へ
-        </h2>
-    </div>
-    <!-- 右下に配置するサブ見出し -->
-    <div class="col-start-1 col-end-13 row-start-6 row-end-7 grid">
-        <h3 class="bg-blue-700 text-white text-center px-4 py-2 rounded underline shadow-md text-lg md:text-xl max-[425px]:text-base justify-self-center md:justify-self-end">
-            水と太陽のエネルギーソリューションで<br />
-            環境経営を積極支援！
-        </h3>
-    </div>
-</section>
 
 <main>
     <!-- News セクション -->
