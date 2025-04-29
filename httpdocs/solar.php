@@ -80,7 +80,8 @@ include 'bread.php';
             </div>
 
             <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
-                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+
+                <li class="grid grid-rows-[auto_auto_1fr] gap-2 p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/10] w-full">
                         <img src="img/promise.webp"
@@ -88,20 +89,18 @@ include 'bread.php';
                             class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
-                            <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 安心・充実のサポート・保証体制</p>
-                            <p class="min-h-[80px]">
-                                多種多様な製品・サービスが増加し、最適解の選択が難しくなりつつあります。
-                            </p>
-                            <p class="min-h-[80px]">
-                                弊社は熟練の国内メーカー協力の元、お客様の環境・ニーズに基づいた最適プランをご提案。保証も含め、スタートから運用まで強力にサポートいたします。
-                            </p>
-                        </div>
+                    <h3 class="justify-self-start font-bold text-md md:text-lg"><i class="fa-regular fa-pen-to-square"></i> 安心・充実のサポート・保証体制</h3>
+                    <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                        <p>
+                            多種多様な製品・サービスが増加し、最適解の選択が難しくなりつつあります。
+                        </p>
+                        <p>
+                            弊社は熟練の国内メーカー協力の元、お客様の環境・ニーズに基づいた最適プランをご提案。保証も含め、スタートから運用まで強力にサポートいたします。
+                        </p>
                     </div>
                 </li>
 
-                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_auto_1fr] gap-2 p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/10] w-full">
                         <img src="img/mente.webp"
@@ -109,22 +108,20 @@ include 'bread.php';
                             class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
-                            <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 設置場所に配慮した柔軟な設置方法</p>
-                            <p class="min-h-[80px]">
-                                陸屋根・折半屋根両方に対応可能な架台をご用意。<br>
-                                穴開け不要な工法<span class="align-super text-xs">※</span>もあるため、屋根トラブルを防ぎ安心・安全な運用に繋がります。
-                            </p>
-                            <p class="min-h-[80px] text-sm">
-                                ※ 使用に一定の条件があります。詳細はお問い合わせください。
-                                </small>
-                            </p>
-                        </div>
+                    <h3 class="justify-self-start font-bold text-md md:text-lg"><i class="fa-regular fa-pen-to-square"></i> 場所に合わせた柔軟な設置方法</h3>
+
+                    <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                        <p>
+                            陸屋根・折半屋根両方に対応可能な架台をご用意。<br>
+                            穴開け不要な工法<span class="align-super text-xs">※</span>もあるため、屋根トラブルを防ぎ安心・安全な運用に繋がります。
+                        </p>
+                        <p class="text-sm">
+                            ※ 使用に一定の条件があります。詳細はお問い合わせください。
+                        </p>
                     </div>
                 </li>
 
-                <li class="grid grid-rows-[auto_1fr_auto] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_auto_1fr] gap-2 p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/10] w-full">
                         <img src="img/advice.webp"
@@ -132,19 +129,16 @@ include 'bread.php';
                             class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
-                            <p class="text-left font-bold text-lg"><i class="fa-regular fa-pen-to-square"></i> 豊富で頼れる数々のオプション品</p>
-                            <p class="min-h-[80px]">
-                                再エネ機器の導入は短期の収益増以外に、企業価値向上等の目的もあります。
-                            </p>
-                            <p class="min-h-[80px]">
-                                弊社では遠隔監視システムや、外部に成果をPRできる計測・表示システムもラインナップ。お客様のご希望に応じて選択可能です。
-                            </p>
-                        </div>
+                    <h3 class="justify-self-start font-bold text-md md:text-lg"><i class="fa-regular fa-pen-to-square"></i> 豊富で頼れる数々のオプション品</h3>
+                    <div class="space-y-2 text-gray-700 text-base leading-relaxed max-[425px]:text-sm">
+                        <p>再エネ機器の導入は短期の収益増以外に、企業価値向上等の目的もあります。</p>
+                        <p>
+                            弊社では遠隔監視システムや、外部に成果をPRできる計測・表示システムもラインナップ。お客様のご希望に応じて選択可能です。
+                        </p>
                     </div>
                 </li>
             </ul>
+
         </div>
     </section>
 
@@ -190,7 +184,7 @@ include 'bread.php';
             <!-- 代表的な設備 -->
             <h3 class="text-lg font-bold text-center mt-6">【代表的な施設・設備】</h3>
             <ul class="grid gap-6 m-4 justify-center md:[grid-template-columns:repeat(auto-fit,400px)]">
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -199,13 +193,10 @@ include 'bread.php';
                             class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
-                            <p class="text-center font-bold text-lg">冷凍・冷蔵倉庫</p>
-                        </div>
-                    </div>
+                    <h3 class="text-center font-bold text-lg my-4">冷凍・冷蔵倉庫</h3>
+
                 </li>
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
                         <img
@@ -214,28 +205,20 @@ include 'bread.php';
                             class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
-                            <p class="text-center font-bold text-lg">娯楽施設</p>
-                        </div>
-                    </div>
+                    <h3 class="text-center font-bold text-lg my-4">娯楽施設</h3>
                 </li>
-                <li class="grid grid-rows-[auto_1fr_auto] bg-white p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
+                <li class="grid grid-rows-[auto_1fr] p-6 justify-self-center max-w-sm min-w-0 md:max-w-none bg-inherit">
                     <!-- 画像エリア -->
                     <div class="aspect-[16/9] w-full">
-                        <img
-                            src="img/hoslpital.webp"
+                        <img src="img/hoslpital.webp"
                             alt="医療機関"
                             class="w-full h-full object-cover object-center block rounded-xl border border-black" />
                     </div>
                     <!-- コンテンツエリア -->
-                    <div class="grid grid-rows-[auto_1fr_auto] gap-4 p-4 place-items-center min-w-0">
-                        <div class="space-y-2 text-gray-700 leading-relaxed max-[425px]:text-sm">
-                            <p class="text-center font-bold text-lg">医療機関</p>
-                        </div>
-                    </div>
+                    <h3 class="text-center font-bold text-lg my-4">医療機関</h3>
                 </li>
             </ul>
+
         </div>
     </section>
 
