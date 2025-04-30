@@ -1,5 +1,3 @@
-document.cookie = "session_id=abc123; SameSite=None; Secure";
-
 document.addEventListener("DOMContentLoaded", function () {
     if (window.location.hash) {
         const target = document.querySelector(window.location.hash);
