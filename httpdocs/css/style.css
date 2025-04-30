@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+[id] {
+    scroll-margin-top: 80px;
+}
+
 .mask_img {
     -webkit-mask-image: linear-gradient(
             to top,
