@@ -39,7 +39,7 @@
     <!-- ヘッダー -->
     <header class="grid grid-cols-3 md:grid-cols-[auto_1fr_auto] items-center bg-white px-4 py-4 md:py-2 fixed w-full z-30 shadow-md gap-4">
         <!-- 共通チェックボックス（peer） -->
-        <input id="nav_input" type="checkbox" class="peer hidden md:pointer-events-none" aria-label="ナビの切替" />
+        <input id="nav_input" type="checkbox" class="peer hidden md:pointer-events-none" aria-label="ナビゲーションの切替" />
 
         <!-- ハンバーガーアイコン（spanを直接配置） -->
         <span class="md:hidden absolute top-8 right-4 w-[30px] h-[2px] bg-gray-800 transition-transform duration-300 peer-checked:rotate-45 peer-checked:top-[40px] z-40"></span>
