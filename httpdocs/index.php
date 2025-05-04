@@ -76,9 +76,9 @@ include 'hero.php';
     <section id="company" class="py-8">
         <div class="grid overflow-hidden">
             <ul class="grid grid-cols-1">
-                <li class="grid md:grid-cols-[2fr_1fr] grid-cols-1 ">
+                <li class="relative grid md:grid-cols-[2fr_1fr] grid-cols-1 ">
                     <!-- 画像部分 -->
-                    <div class="grid max-h-96 overflow-hidden col-start-1 row-start-1 w-full h-full">
+                    <div class="z-0 grid max-h-96 overflow-hidden col-start-1 row-start-1 w-full h-full">
                         <img
                             src="/img/company_front.webp"
                             alt="会社案内"
@@ -86,7 +86,7 @@ include 'hero.php';
                     </div>
                     <!-- テキスト部分 -->
                     <div
-                        class="grid grid-rows-[auto_1fr_auto] p-4 place-items-center place-self-center gap-6 col-start-1 row-start-1 md:col-start-auto max-w-[65%] md:max-w-full">
+                        class="z-10 grid grid-rows-[auto_1fr_auto] p-4 place-items-center place-self-center gap-6 col-start-1 row-start-1 md:col-start-auto max-w-[65%] md:max-w-full">
                         <!-- タイトル -->
                         <div class="grid justify-center my-4 md:mt-4">
                             <div class="grid grid-cols-[auto_1fr] items-center gap-3 text-left">
@@ -106,7 +106,7 @@ include 'hero.php';
                             href="about.php"
                             role="button"
                             tabindex="0"
-                            class="block w-36 md:w-40 px-4 py-2 text-center rounded-full font-bold bg-[#2e4488] hover:bg-sky-400 text-white shadow-md hover:shadow-lg transition-colors duration-300 ease-in-out max-[425px]:text-[0.8rem]">
+                            class="block w-36 md:w-40 px-4 py-2 text-center rounded-full align-self-end justify-self-center font-bold bg-[#2e4488] hover:bg-sky-400 text-white shadow-md hover:shadow-lg transition-colors duration-300 ease-in-out max-[425px]:text-[0.8rem]">
                             もっと見る
                         </a>
                     </div>

@@ -17,7 +17,8 @@ $hero_sub_h3_cls   = $hero_sub_h3_cls   ?? '';
 ?>
 <section
     id="<?php echo htmlspecialchars($hero_id, ENT_QUOTES); ?>"
-    class="<?php echo $hero_classes; ?> bg-[url('<?php echo htmlspecialchars($hero_bg, ENT_QUOTES); ?>')]">
+    class="<?php echo $hero_classes; ?> "
+    style="background-image: url('<?php echo htmlspecialchars($hero_bg, ENT_QUOTES); ?>');">
     <div class="<?php echo htmlspecialchars($hero_div_cls, ENT_QUOTES); ?>">
         <h2 class="<?php echo htmlspecialchars($hero_h2, ENT_QUOTES); ?>">
             <?php echo htmlspecialchars($hero_title, ENT_QUOTES); ?>
